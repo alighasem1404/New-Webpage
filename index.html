@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fair, diverse, and dependable home for tabletop roleplaying adventures." />
+    <title>Verseluft — Tabletop adventures for every kind of hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Verseluft home">
+          <img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" />
+          <span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop publishing</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="#top">Home</a>
+          <a href="#about">Our values</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#about">About us</a>
+        </nav>
+
+        <div class="header-actions">
+          <label class="search-box" for="site-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="site-search" type="search" placeholder="Search the library" />
+          </label>
+          <a class="small-button" href="#library">Browse library <span>↗</span></a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy" data-hero-base>
+            <div class="eyebrow"><span></span> For curious minds &amp; brave tables</div>
+            <h1 id="hero-title">Bring more<br /><i>stories</i> to the table.</h1>
+            <p class="hero-intro">Thoughtful worlds, unforgettable characters, and everything you need to make your next session one worth retelling.</p>
+            <a class="primary-button" href="#library">Explore the library <span>↗</span></a>
+          </div>
+
+          <div class="hero-art" data-hero-base aria-label="Vast dark-oak tabletop publishing library filled with campaign books and maps" role="img">
+            <img class="hero-image" src="assets/hero-verseluft-02.png" alt="A vast dark-oak tabletop publishing library filled with campaign books, maps, and warm brass lamps" />
+            <div class="art-caption"><span>01</span><p>A well-made world<br />is an open door.</p></div>
+          </div>
+
+          <div class="scroll-note" data-hero-base><span class="scroll-line"></span> Scroll to explore</div>
+
+          <div class="hero-template-two" data-hero-section="2" hidden>
+            <div class="hero-carousel-stage" aria-hidden="true">
+              <div class="hero-carousel-row hero-carousel-row-one"></div>
+              <div class="hero-carousel-row hero-carousel-row-two"></div>
+              <div class="hero-carousel-row hero-carousel-row-three"></div>
+            </div>
+            <div class="hero-glass">
+              <div class="eyebrow"><span></span> A library of possible worlds</div>
+              <h1>Bring more<br /><i>stories</i> to the table.</h1>
+              <p class="hero-intro">Thoughtful worlds, unforgettable characters, and everything you need to make your next session one worth retelling.</p>
+              <a class="primary-button" href="#library">Explore the library <span>↗</span></a>
+            </div>
+            <div class="scroll-note"><span class="scroll-line"></span> Scroll to explore</div>
+          </div>
+        </section>
+
+        <section class="proof-section" id="proof" aria-labelledby="proof-title">
+          <div class="proof-intro-row">
+            <div class="proof-heading">
+              <div>
+                <h2 id="proof-title">Made to be<br /><i>played.</i></h2>
+              </div>
+              <p>Take a look inside a few of our worlds. Every title is built to be useful at the table, beautiful on the shelf, and full of room for your imagination.</p>
+            </div>
+            <div class="stats-row" aria-label="Verseluft publishing statistics">
+              <div class="stat"><strong>86</strong><span>titles published</span></div>
+              <div class="stat"><strong>12.4k</strong><span>backers &amp; supporters</span></div>
+              <div class="stat"><strong>9,680</strong><span>pages created</span></div>
+            </div>
+          </div>
+
+          <div class="content-proof-grid">
+            <div class="flipbook-wrap">
+              <div class="flipbook" aria-label="Interactive two-page preview of the uploaded PDF"><div class="pdf-book" id="pdf-book"></div><div class="pdf-loading" id="pdf-loading">Loading PDF preview…</div></div>
+              <div class="flip-controls"><button class="flip-button" id="flip-prev" type="button" aria-label="Previous spread">←</button><div class="page-dots" aria-label="Spread navigation" id="page-dots"></div><span class="page-count"><strong id="current-page">01–02</strong> / <span id="total-pages">--</span></span><button class="flip-button" id="flip-next" type="button" aria-label="Next spread">→</button></div>
+              <p class="flip-hint">Use the arrows or click the dots to turn the pages</p>
+              <button class="preview-open" id="open-pdf" type="button">View full preview ↗</button>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial-top"><span class="quote-mark">“</span></div>
+              <blockquote>It feels like opening a beautifully made box of possibilities. There’s always something here that makes our table lean in a little closer.</blockquote>
+              <div class="quote-author"><span class="author-avatar">JM</span><span><strong>Jamie M.</strong><small>Backer &amp; game master</small></span></div>
+            </div>
+          </div>
+
+          <div class="pdf-modal" id="pdf-modal" aria-hidden="true">
+            <div class="pdf-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-pdf-title">
+              <div class="pdf-modal-top"><div><span class="modal-kicker">FULL PDF PREVIEW</span><h3 id="modal-pdf-title">The Wilds Beyond</h3></div><button class="modal-close" id="close-pdf" type="button" aria-label="Close full PDF preview">×</button></div>
+              <div class="pdf-modal-book" id="modal-book"></div>
+              <p class="modal-hint">Drag the page or use the corners to turn through the document.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="eyebrow"><span></span> A little about us</p>
+              <h2 id="about-title">Good stories<br />need a <i>good</i><br />home.</h2>
+              <p class="about-lead">We are a TTRPG publishing company built around a simple belief: the best adventures make more room for people to play, create, and belong.</p>
+              <p class="about-body">From the first spark of an idea to the final page at your table, we work with care. We champion creators, explore many kinds of worlds, and make books we are proud to put in your hands.</p>
+            </div>
+            <div class="about-art" aria-label="Publishing workshop with three distinct tabletop roleplaying books" role="img">
+              <img class="about-image" src="assets/about-verseluft-01.png" alt="Three distinct tabletop roleplaying books arranged on a dark oak publishing worktable" />
+              <div class="about-art-note"><strong>MAKE ROOM<br />FOR WONDER</strong><span>VERSELUFT / STUDIO</span></div>
+            </div>
+          </div>
+          <div class="about-values">
+            <div><span>01</span><div><h3>Fairness first</h3><p>Clear, honest relationships with the people who make and play our games.</p></div></div>
+            <div><span>02</span><div><h3>Many ways to play</h3><p>A growing library of genres, settings, voices, and playstyles.</p></div></div>
+            <div><span>03</span><div><h3>Made with care</h3><p>Thoughtful, polished work that earns a place at your table.</p></div></div>
+          </div>
+        </section>
+
+        <section class="projects-section" id="projects" aria-labelledby="projects-title">
+          <div class="projects-heading">
+            <div><p class="eyebrow"><span></span> On the horizon</p><h2 id="projects-title">Stories in<br /><i>motion.</i></h2></div>
+            <p>Follow the worlds we are building right now, and get a first look at the adventures waiting just around the corner.</p>
+          </div>
+
+          <div class="projects-group" id="live-projects-group">
+            <div class="group-label"><span>01</span><h3>Live on Kickstarter</h3><i></i></div>
+            <div class="project-grid live-projects" id="live-projects-grid"></div>
+            <div class="projects-empty" id="live-projects-empty"><strong>Nothing live right now.</strong><p>We are between campaigns, but something new is already taking shape.</p></div>
+          </div>
+
+          <div class="projects-group upcoming-group" id="upcoming-projects-group">
+            <div class="group-label"><span>02</span><h3>Coming next</h3><i></i><a href="#projects">See all upcoming <b>↗</b></a></div>
+            <div class="upcoming-deck-wrap">
+              <div class="upcoming-timer" aria-label="Time until the next upcoming project"><span id="upcoming-timer-bar"></span></div>
+              <button class="upcoming-nav upcoming-prev" id="upcoming-prev" type="button" aria-label="Previous upcoming project">←</button>
+              <div class="upcoming-deck" id="upcoming-deck" aria-live="polite"></div>
+              <button class="upcoming-nav upcoming-next" id="upcoming-next" type="button" aria-label="Next upcoming project">→</button>
+            </div>
+            <div class="upcoming-deck-meta"><span id="upcoming-current">01</span><div class="upcoming-progress"><span id="upcoming-progress-bar"></span></div><span id="upcoming-total">04</span></div>
+          </div>
+        </section>
+
+        <section class="lead-section" aria-labelledby="updates-title" data-lead-section="1" hidden>
+          <div class="lead-orbit-art" aria-hidden="true"><div class="lead-ring ring-one"></div><div class="lead-ring ring-two"></div><div class="lead-signal">✦</div><span class="lead-art-label">G&amp;G / SIGNAL 01</span><span class="lead-art-note">There is always<br />another story.</span></div>
+          <div class="lead-content">
+            <p class="eyebrow"><span></span> Stay in the loop</p>
+            <h2 id="updates-title">Never miss<br />the next <i>adventure.</i></h2>
+            <p class="lead-intro">Get occasional dispatches from our workshop: new releases, Kickstarter launches, free samples, and a little inspiration for your next session.</p>
+            <form class="lead-form lead-form-one" id="updates-form">
+              <div class="lead-input-row"><label><span>Your name</span><input name="name" type="text" placeholder="How should we call you?" required /></label><label><span>Email address</span><input name="email" type="email" placeholder="you@example.com" required /></label></div>
+              <label class="lead-select"><span>What would you like to hear about?</span><select name="interest"><option value="all">New releases &amp; Kickstarter launches</option><option value="releases">New releases only</option><option value="campaigns">Kickstarter campaigns only</option></select></label>
+              <div class="lead-submit-row"><button class="lead-submit" type="submit">Send me the signal <span>↗</span></button><small>Once or twice a month. No noise, no nonsense.</small></div>
+              <p class="lead-success" id="lead-success" hidden>✦ You are on the list. We’ll bring the next story to your inbox.</p>
+            </form>
+            <form class="lead-form lead-form-two" data-lead-form="2" hidden>
+              <span class="form-variant-mark">G&amp;G / DISPATCH</span><h3>Choose your<br /><i>missives.</i></h3><p class="variant-intro">A quiet signal when something worth playing is ready.</p>
+              <label><span>Email address</span><input name="email" type="email" placeholder="you@example.com" required /></label>
+              <div class="interest-chips"><span>New worlds</span><span>Kickstarters</span><span>Free samples</span></div>
+              <div class="variant-submit"><button class="lead-submit" type="submit">Join the dispatch <span>↗</span></button><small>One thoughtful note, never a flood.</small></div><p class="lead-success" hidden>✦ Your first dispatch is on its way.</p>
+            </form>
+            <form class="lead-form lead-form-three" data-lead-form="3" hidden>
+              <div class="postcard-top"><span>FIELD NOTE  /  003</span><b>✦</b></div><h3>Pull up a chair.<br /><i>Stay awhile.</i></h3><label><span>Your name</span><input name="name" type="text" placeholder="Your name" required /></label><label><span>Email address</span><input name="email" type="email" placeholder="you@example.com" required /></label><div class="postcard-bottom"><small>News from the table, delivered gently.</small><button type="submit">Count me in <span>↗</span></button></div><p class="lead-success" hidden>✦ You’re on the list.</p>
+            </form>
+          </div>
+        </section>
+
+        <section class="lead-alt lead-alt-two" aria-labelledby="alt-two-title" data-lead-section="2" hidden>
+          <div class="alt-two-copy"><span class="alt-edition">THE LETTER / 02</span><h2 id="alt-two-title">A good story<br /><i>finds its people.</i></h2><p>Join a small, thoughtful mailing list for new worlds, early previews, and things worth bringing to the table.</p><form class="alt-lead-form" data-alt-form="2"><div class="alt-email-line"><input type="email" name="email" placeholder="Your email address" required /><button type="submit" aria-label="Join the mailing list">↗</button></div><small>New releases, occasional dispatches. Unsubscribe anytime.</small><p class="alt-success" hidden>✦ Consider yourself invited.</p></form></div>
+          <div class="alt-two-art" aria-hidden="true"><div class="alt-paper-circle"></div><div class="alt-paper-star">✦</div><span>WORDS<br />WORLDS<br />WONDER</span><small>Verseluft</small></div>
+        </section>
+
+        <section class="lead-alt lead-alt-three" id="updates" aria-labelledby="alt-three-title" data-lead-section="3">
+          <div class="alt-three-index"><span>03</span><i></i><small>FIELD SIGNAL</small></div><div class="alt-three-copy"><span class="alt-edition">A NOTE FROM THE WORKSHOP</span><h2 id="alt-three-title">Pull up a chair.<br /><em>Stay awhile.</em></h2><p>There is always room at the table. Leave your name and we’ll save you a seat for the next release.</p><form class="alt-lead-form alt-three-form" data-alt-form="3"><div><input type="text" name="name" placeholder="Your name" required /><input type="email" name="email" placeholder="Your email" required /></div><button type="submit">Save my seat <span>↗</span></button><p class="alt-success" hidden>✦ Your seat is saved.</p></form></div><div class="alt-three-mark"><img id="newsletter-art-image" class="newsletter-art-image" src="assets/newsletter-dispatch.png" alt="Gold-sealed dispatch on a dark oak desk" /></div>
+        </section>
+
+        <section class="blog-section" id="blog" aria-labelledby="blog-title">
+          <div class="blog-heading"><div><p class="eyebrow"><span></span> From the journal</p><h2 id="blog-title">Field<br /><i>notes.</i></h2></div><p>The ideas, people, and small discoveries behind the books we make — plus a few useful things for your next game.</p><a class="blog-all-link" href="#blog">View all notes <span>↗</span></a></div>
+          <div class="blog-feature"><div class="blog-feature-art"><img src="assets/test images/article PH1.png" alt="Lava-lit fantasy city from the featured article" /><span>01 / BEHIND THE SCENES</span><strong>Making room<br /><i>for wonder.</i></strong><small>Inside the making of a world</small></div><div class="blog-feature-copy"><span class="blog-category">Behind the scenes · 8 min read</span><h3>What makes a world feel ready to be played?</h3><p>Worldbuilding is more than maps and lore. It is the little invitation hidden in every page — the one that says, “What happens if we try?”</p><a href="#blog" class="blog-read-link">Read the story <span>↗</span></a></div></div>
+          <div class="blog-toolbar"><div class="blog-filters"><button class="blog-filter active" type="button" data-blog-filter="all">All notes</button><button class="blog-filter" type="button" data-blog-filter="advice">GM advice</button><button class="blog-filter" type="button" data-blog-filter="making">Making games</button><button class="blog-filter" type="button" data-blog-filter="news">News</button></div><span class="blog-count">04 notes</span></div>
+          <div class="blog-grid">
+            <article class="blog-card" data-blog-category="advice"><div class="blog-card-art"><img src="assets/test images/article PH2.png" alt="Dark fantasy character from a GM advice article" /><span>GM ADVICE</span></div><div class="blog-card-copy"><span class="blog-category">GM advice · 5 min read</span><h3>Five ways to make a quiet scene matter</h3><a href="#blog">Read note <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="making"><div class="blog-card-art"><img src="assets/test images/article PH3.png" alt="Alchemist in a candlelit workshop from a making games article" /><span>MAKING GAMES</span></div><div class="blog-card-copy"><span class="blog-category">Making games · 7 min read</span><h3>From rough idea to table-ready book</h3><a href="#blog">Read note <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="news"><div class="blog-card-art"><img src="assets/test images/article PH4.png" alt="Dark fantasy queen from a studio news article" /><span>NEWS</span></div><div class="blog-card-copy"><span class="blog-category">News · 3 min read</span><h3>A look at what we are building next</h3><a href="#blog">Read note <span>↗</span></a></div></article>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div class="footer-top"><a class="brand footer-brand" href="#top" aria-label="Verseluft home"><img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" /><span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop publishing</small></span></a><p>Thoughtful worlds for<br /><i>curious tables.</i></p><a class="footer-up" href="#top">Back to the top <span>↑</span></a></div>
+        <div class="footer-links"><div><span class="footer-label">Explore</span><a href="#projects">Projects</a><a href="#blog">Blog</a><a href="#updates">Get updates</a></div><div><span class="footer-label">Company</span><a href="#about">About us</a><a href="#about">Our values</a><a href="#proof">Library</a></div><div><span class="footer-label">Find us</span><a href="#">Kickstarter ↗</a><a href="#">Instagram ↗</a><a href="#">Contact ↗</a></div></div>
+        <div class="footer-bottom"><span>© 2026 Verseluft</span><span>Made for the joy of playing</span><span>Privacy · Terms</span></div>
+      </footer>
+    </div>
+    <aside class="project-test-panel" aria-label="Test-only live project count controls">
+      <span>TEST ONLY</span>
+      <strong>Live projects</strong>
+      <small>Preview each project count</small>
+      <div class="test-counts"><button type="button" data-live-count="0">0</button><button type="button" data-live-count="1">1</button><button type="button" data-live-count="2" class="active">2</button><button type="button" data-live-count="3">3</button><button type="button" data-live-count="4">4</button></div>
+    </aside>
+    <aside class="palette-test-panel" aria-label="Test-only color palette controls">
+      <span>TEST ONLY</span>
+      <strong>Color palette</strong>
+      <small>Try a different mood</small>
+      <div class="palette-presets">
+        <button type="button" data-palette="oak-gold" class="active"><i class="palette-swatch palette-swatch-oak-gold"></i><span>Dark Oak &amp; Gold</span></button>
+        <button type="button" data-palette="midnight-gold"><i class="palette-swatch palette-swatch-midnight-gold"></i><span>Midnight Gold</span></button>
+      </div>
+      <div class="custom-palette"><span class="custom-palette-title">Custom palette</span><div class="custom-palette-fields"><label><span>Accent</span><div><input id="custom-color-orange-text" type="text" value="#D2A846" maxlength="7" inputmode="text" aria-label="Custom accent hex code" /><input id="custom-color-orange-picker" type="color" value="#d2a846" aria-label="Choose custom accent color" /></div></label><label><span>Deep tone</span><div><input id="custom-color-ink-text" type="text" value="#FCE6CF" maxlength="7" inputmode="text" aria-label="Custom deep tone hex code" /><input id="custom-color-ink-picker" type="color" value="#fce6cf" aria-label="Choose custom deep tone color" /></div></label><label><span>Surface</span><div><input id="custom-color-paper-text" type="text" value="#1C1712" maxlength="7" inputmode="text" aria-label="Custom surface hex code" /><input id="custom-color-paper-picker" type="color" value="#1c1712" aria-label="Choose custom surface color" /></div></label><label><span>Main background</span><div><input id="custom-color-cream-text" type="text" value="#100D0A" maxlength="7" inputmode="text" aria-label="Custom main background hex code" /><input id="custom-color-cream-picker" type="color" value="#100d0a" aria-label="Choose custom main background color" /></div></label></div></div>
+    </aside>
+    <aside class="newsletter-art-test-panel" aria-label="Test-only newsletter artwork controls">
+      <span>TEST ONLY</span>
+      <strong>Newsletter art</strong>
+      <small>Compare three directions</small>
+      <div class="newsletter-art-counts"><button type="button" data-newsletter-art="dispatch" class="active">01</button><button type="button" data-newsletter-art="lantern">02</button><button type="button" data-newsletter-art="seat">03</button></div>
+    </aside>
+    <aside class="hero-template-test-panel" aria-label="Test-only hero template controls">
+      <span>TEST ONLY</span>
+      <strong>Hero template</strong>
+      <small>Compare two directions</small>
+      <div class="hero-template-counts"><button type="button" data-hero-template="1" class="active">01</button><button type="button" data-hero-template="2">02</button></div>
+    </aside>
+    <script src="assets/page-flip.browser.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
