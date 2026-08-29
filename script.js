@@ -409,9 +409,10 @@ const heroBaseElements = [...document.querySelectorAll('[data-hero-base]')];
 const heroCarouselTemplate = document.querySelector('[data-hero-section="2"]');
 
 function selectHeroTemplate(name) {
-  const isCarousel = name === '2';
-  heroBaseElements.forEach((element) => { element.hidden = isCarousel; });
-  heroCarouselTemplate.hidden = !isCarousel;
+  const showCarousel = name === '2' || name === '3';
+  heroBaseElements.forEach((element) => { element.hidden = showCarousel; });
+  heroCarouselTemplate.hidden = !showCarousel;
+  heroCarouselTemplate.classList.toggle('is-expanded', name === '3');
   document.querySelector('.hero').dataset.heroTemplate = name;
   document.querySelectorAll('[data-hero-template]').forEach((button) => {
     button.classList.toggle('active', button.dataset.heroTemplate === name);
@@ -424,3 +425,63 @@ document.querySelectorAll('[data-hero-template]').forEach((button) => {
 
 buildHeroCarousel();
 selectHeroTemplate('1');
+
+const fontCatalog = {
+  normal: [
+    { id: 'elvaro', label: 'Elvaro Grotesque', family: 'VerseluftNormalElvaro', src: 'assets/fonts/normal/elvaro-grotesque-sans-family-2026-04-07-06-22-32-utc/WOFF/TBJElvaro-Regular.woff2', format: 'woff2' },
+    { id: 'sentino', label: 'Sentino', family: 'VerseluftNormalSentino', src: 'assets/fonts/normal/modern-minimalist-sans-serif-family-sentino-2026-04-07-06-25-02-utc/RCLSentino/Web-PS/RCLSentino-Regular.woff2', format: 'woff2' },
+    { id: 'gothic', label: 'Gothic', family: 'VerseluftNormalGothic', src: 'assets/fonts/normal/gothic-2026-04-07-06-21-46-utc/Gothic.woff', format: 'woff' },
+    { id: 'she-dance', label: 'She Dance (decorative)', family: 'VerseluftNormalSheDance', src: 'assets/fonts/normal/she-dance-celtyic-typeface-2026-04-07-06-23-11-utc/She Dance/She Dance.woff2', format: 'woff2' },
+  ],
+  alternative: [
+    { id: 'serifon', label: 'The Serifon Editorial', family: 'VerseluftAlternativeSerifon', src: 'assets/fonts/alternative/the-serifon-editorial-2026-04-07-06-22-44-utc/Web-TT/The Serifon Editoral.woff2', format: 'woff2' },
+    { id: 'agondav', label: 'Agondav', family: 'VerseluftAlternativeAgondav', src: 'assets/fonts/alternative/agondav-old-vintage-font-2026-04-07-06-02-48-utc/Agondav/Agondav.ttf', format: 'truetype' },
+    { id: 'basefigh', label: 'NCL Basefigh', family: 'VerseluftAlternativeBasefigh', src: 'assets/fonts/alternative/basefigh-medieval-rounded-blackletter-font-2026-04-07-06-14-34-utc/WOFF/Web-PS/NCL Basefigh.woff2', format: 'woff2' },
+    { id: 'black-deamond', label: 'Black Deamond', family: 'VerseluftAlternativeBlackDeamond', src: 'assets/fonts/alternative/black-deamond-typeface-2026-04-07-06-17-19-utc/BlackDeamond-Regular.woff', format: 'woff' },
+    { id: 'catelyn', label: 'Catelyn Rough', family: 'VerseluftAlternativeCatelyn', src: 'assets/fonts/alternative/catelyn-rough-2026-04-07-06-11-23-utc/Catelyn Rough/CatelynRough-Regular.ttf', format: 'truetype' },
+    { id: 'eisenkraft', label: 'Eisenkraft', family: 'VerseluftAlternativeEisenkraft', src: 'assets/fonts/alternative/eisenkraft-medieval-blackletter-typeface-2026-04-07-06-20-40-utc/Eisenkraft.woff2', format: 'woff2' },
+    { id: 'heraldic-shadows', label: 'Heraldic Shadows', family: 'VerseluftAlternativeHeraldicShadows', src: 'assets/fonts/alternative/heraldic-shadows-blackletter-display-font-2026-04-07-06-10-12-utc/OpenType-TT/Heraldic Shadows.ttf', format: 'truetype' },
+    { id: 'hortens', label: 'Hortens', family: 'VerseluftAlternativeHortens', src: 'assets/fonts/alternative/hortens-medieval-display-typeface-2026-04-07-05-56-04-utc/Hortens/HORTENS.woff2', format: 'woff2' },
+    { id: 'she-dance', label: 'She Dance', family: 'VerseluftAlternativeSheDance', src: 'assets/fonts/alternative/she-dance-celtyic-typeface-2026-04-07-06-23-11-utc/She Dance/She Dance.woff2', format: 'woff2' },
+    { id: 'snavirus', label: 'Snavirus', family: 'VerseluftAlternativeSnavirus', src: 'assets/fonts/alternative/snavirus-medieval-blackletter-font-2026-04-07-06-17-58-utc/Snavirus - Medieval Blackletter Font/3. WOFF/Snavirus.woff', format: 'woff' },
+    { id: 'tooth-and-nail', label: 'Tooth & Nail', family: 'VerseluftAlternativeToothAndNail', src: 'assets/fonts/alternative/tooth-and-nail-2026-04-07-06-17-48-utc/Tooth And Nail/TTF/Tooth & Nail.ttf', format: 'truetype' },
+    { id: 'wolther', label: 'Wolther', family: 'VerseluftAlternativeWolther', src: 'assets/fonts/alternative/wolther-blackletter-font-2026-08-12-00-28-54-utc/CS Wolther/CSWolther-Regular.woff2', format: 'woff2' },
+  ],
+};
+
+const fontRoot = document.documentElement;
+const fontFaceStyle = document.createElement('style');
+const fontUrl = (src) => src.split('/').map((part) => encodeURIComponent(part)).join('/');
+fontFaceStyle.textContent = [...fontCatalog.normal, ...fontCatalog.alternative].map((font) => `@font-face { font-family: '${font.family}'; src: url('${fontUrl(font.src)}') format('${font.format}'); font-style: normal; font-weight: 400; font-display: swap; }`).join('\n');
+document.head.append(fontFaceStyle);
+
+function fillFontSelect(select, fonts) {
+  fonts.forEach((font) => {
+    const option = document.createElement('option');
+    option.value = font.id;
+    option.textContent = font.label;
+    select.append(option);
+  });
+}
+
+const normalFontSelect = document.querySelector('#font-normal-select');
+const alternativeFontSelect = document.querySelector('#font-alternative-select');
+fillFontSelect(normalFontSelect, fontCatalog.normal);
+fillFontSelect(alternativeFontSelect, fontCatalog.alternative);
+
+function getFont(type, id) {
+  return fontCatalog[type].find((font) => font.id === id) || fontCatalog[type][0];
+}
+
+function applyFontChoice(type, id) {
+  const font = getFont(type, id);
+  fontRoot.style.setProperty(`--font-${type}`, `'${font.family}', sans-serif`);
+  fontRoot.dataset[`font${type[0].toUpperCase()}${type.slice(1)}`] = font.id;
+}
+
+normalFontSelect.addEventListener('change', () => applyFontChoice('normal', normalFontSelect.value));
+alternativeFontSelect.addEventListener('change', () => applyFontChoice('alternative', alternativeFontSelect.value));
+normalFontSelect.value = 'elvaro';
+alternativeFontSelect.value = 'serifon';
+applyFontChoice('normal', normalFontSelect.value);
+applyFontChoice('alternative', alternativeFontSelect.value);
