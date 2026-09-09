@@ -289,102 +289,26 @@ document.querySelectorAll('[data-blog-filter]').forEach((button) => {
   });
 });
 
-const palettePresets = {
-  'oak-gold': { ink: '#fce6cf', cream: '#100d0a', paper: '#1c1712', orange: '#d2a846', plum: '#1c1712', line: 'rgba(252,230,207,.2)', 'hero-text': '#fce6cf' },
-  'midnight-gold': { ink: '#fce6cf', cream: '#14141f', paper: '#0c0c13', orange: '#d2a846', plum: '#0c0c13', line: 'rgba(252,230,207,.2)', 'hero-text': '#fce6cf' },
-};
-
-const paletteRoot = document.documentElement;
-const customColorFields = [
-  { key: 'orange', text: document.querySelector('#custom-color-orange-text'), picker: document.querySelector('#custom-color-orange-picker') },
-  { key: 'ink', text: document.querySelector('#custom-color-ink-text'), picker: document.querySelector('#custom-color-ink-picker') },
-  { key: 'paper', text: document.querySelector('#custom-color-paper-text'), picker: document.querySelector('#custom-color-paper-picker') },
-  { key: 'cream', text: document.querySelector('#custom-color-cream-text'), picker: document.querySelector('#custom-color-cream-picker') },
-];
-
-function setPaletteVariables(palette) {
-  Object.entries(palette).forEach(([name, value]) => paletteRoot.style.setProperty(`--${name}`, value));
-}
-
-function normalizeHex(value) {
-  const candidate = value.trim().startsWith('#') ? value.trim() : `#${value.trim()}`;
-  return /^#[0-9a-f]{6}$/i.test(candidate) ? candidate.toLowerCase() : null;
-}
-
-function setCustomColor(key, value, field) {
-  const hex = normalizeHex(value);
-  if (!hex) return;
-  paletteRoot.style.setProperty(`--${key}`, hex);
-  paletteRoot.dataset.palette = 'custom';
-  paletteRoot.classList.remove('is-dark-palette');
-  field.text.value = hex.toUpperCase();
-  field.picker.value = hex;
-  document.querySelectorAll('[data-palette]').forEach((item) => item.classList.remove('active'));
-}
-
-function syncCustomColors(palette) {
-  customColorFields.forEach((field) => {
-    const value = palette[field.key];
-    field.text.value = value.toUpperCase();
-    field.picker.value = value;
-  });
-}
-
-function selectPalette(name) {
-  const palette = palettePresets[name];
-  if (!palette) return;
-  setPaletteVariables(palette);
-  paletteRoot.dataset.palette = name;
-  paletteRoot.classList.toggle('is-dark-palette', name === 'oak-gold' || name === 'midnight-gold');
-  syncCustomColors(palette);
-  document.querySelectorAll('[data-palette]').forEach((item) => item.classList.toggle('active', item.dataset.palette === name));
-}
-
-document.querySelectorAll('[data-palette]').forEach((button) => {
-  button.addEventListener('click', () => selectPalette(button.dataset.palette));
-});
-
-customColorFields.forEach((field) => {
-  field.text.addEventListener('input', () => setCustomColor(field.key, field.text.value, field));
-  field.picker.addEventListener('input', () => setCustomColor(field.key, field.picker.value, field));
-});
-selectPalette('oak-gold');
-
-const newsletterArtChoices = {
-  dispatch: { src: 'assets/newsletter-dispatch.png', alt: 'Gold-sealed dispatch on a dark oak desk' },
-  lantern: { src: 'assets/newsletter-lantern.png', alt: 'Brass signal lantern casting gold light over fantasy maps' },
-  seat: { src: 'assets/newsletter-seat.png', alt: 'Empty chair waiting at a welcoming tabletop' },
-};
-const newsletterArtImage = document.querySelector('#newsletter-art-image');
-
-function selectNewsletterArt(name) {
-  const choice = newsletterArtChoices[name];
-  if (!choice) return;
-  newsletterArtImage.src = choice.src;
-  newsletterArtImage.alt = choice.alt;
-  document.querySelectorAll('[data-newsletter-art]').forEach((item) => item.classList.toggle('active', item.dataset.newsletterArt === name));
-}
-
-document.querySelectorAll('[data-newsletter-art]').forEach((button) => {
-  button.addEventListener('click', () => selectNewsletterArt(button.dataset.newsletterArt));
-});
-selectNewsletterArt('dispatch');
-
 const heroCarouselImagePool = [
-  'assets/test images/banner (4).png',
-  'assets/test images/banner 2.jpg',
-  'assets/test images/banner.png',
-  'assets/test images/bbeg banner 1.png',
-  'assets/test images/article PH1.png',
-  'assets/test images/article PH2.png',
-  'assets/test images/article PH3.png',
-  'assets/test images/article PH4.png',
-  'assets/hero-verseluft-01.png',
-  'assets/hero-verseluft-02.png',
-  'assets/about-verseluft-01.png',
-  'assets/newsletter-dispatch.png',
-  'assets/newsletter-lantern.png',
-  'assets/newsletter-seat.png',
+  'assets/covers/Tal Doluth cover.webp',
+  'assets/covers/Order of Tavern Sample cover.webp',
+  'assets/covers/Merchant book cover new.webp',
+  'assets/covers/Into the Dwarf Fortress Book Cover.webp',
+  'assets/covers/dbb517_250-3-3-.webp',
+  'assets/covers/criminal cover.webp',
+  'assets/covers/cover2536.webp',
+  'assets/covers/cover.webp',
+  'assets/covers/cover-3.webp',
+  'assets/covers/cover-2.webp',
+  'assets/covers/cover variations.webp',
+  'assets/covers/COVER TOWN 3.webp',
+  'assets/covers/cover drivethru.webp',
+  'assets/covers/cover Civil Registry.webp',
+  'assets/covers/cover (1).webp',
+  'assets/covers/city 6 cover.webp',
+  'assets/covers/brothel tales.webp',
+  'assets/covers/book cover.webp',
+  'assets/covers/book cover (1).webp',
 ];
 
 function buildHeroCarousel() {
