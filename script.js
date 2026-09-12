@@ -166,16 +166,16 @@ document.addEventListener('keydown', (event) => {
 // Replace these draft entries with the live campaign data when it is ready.
 const projectData = {
   live: [
-    { code: 'LIVE NOW / G&G 014', title: 'The Wilds Beyond', type: 'Adventure guide · 5e compatible', description: 'A field guide to strange horizons, hidden roads, and the stories waiting beyond the lantern light.', funded: '412%', days: '18 days', backers: '1.8k', progress: 82, image: 'assets/test images/banner (4).png', link: '#' },
-    { code: 'LIVE NOW / G&G 022', title: 'City of Embers', type: 'Campaign setting · 5e compatible', description: 'A setting of rooftops, old magic, and a city that refuses to go quietly into the dark.', funded: '238%', days: '9 days', backers: '940', progress: 58, image: 'assets/test images/banner 2.jpg', link: '#' },
-    { code: 'LIVE NOW / G&G 027', title: 'The Lantern Moth', type: 'Creature compendium · system agnostic', description: 'Strange creatures, memorable encounters, and useful tools for making every road feel alive.', funded: '176%', days: '24 days', backers: '620', progress: 46, image: 'assets/test images/banner.png', link: '#' },
-    { code: 'LIVE NOW / G&G 029', title: 'Ash & Oath', type: 'Short campaign · 5e compatible', description: 'A compact campaign of old promises, dangerous ruins, and choices that leave a mark.', funded: '109%', days: '6 days', backers: '310', progress: 31, image: 'assets/test images/bbeg banner 1.png', link: '#' },
+    { code: 'LIVE NOW / G&G 014', title: 'The Wilds Beyond', type: 'Adventure guide · D&D supplement', description: 'An adventure guide for D&D campaigns. Follow hidden roads, explore strange horizons, and discover stories beyond the lantern light.', funded: '412%', days: '18 days', backers: '1.8k', progress: 82, image: 'assets/test images/banner (4).png', link: '#' },
+    { code: 'LIVE NOW / G&G 022', title: 'City of Embers', type: 'Campaign setting · D&D supplement', description: 'A D&D campaign setting of rooftops and old magic. Explore a city that refuses to go quietly into the dark.', funded: '238%', days: '9 days', backers: '940', progress: 58, image: 'assets/test images/banner 2.jpg', link: '#' },
+    { code: 'LIVE NOW / G&G 027', title: 'The Lantern Moth', type: 'Creature compendium · D&D supplement', description: 'A creature compendium for your D&D campaign. Discover strange monsters and encounter ideas that make every road feel alive.', funded: '176%', days: '24 days', backers: '620', progress: 46, image: 'assets/test images/banner.png', link: '#' },
+    { code: 'LIVE NOW / G&G 029', title: 'Ash & Oath', type: 'Short campaign · D&D supplement', description: 'A short D&D campaign of old promises and dangerous ruins. Give your players choices that shape the story and leave a mark.', funded: '109%', days: '6 days', backers: '310', progress: 31, image: 'assets/test images/bbeg banner 1.png', link: '#' },
   ],
   upcoming: [
-    { code: 'COMING SOON / G&G 031', title: 'The Glass Isles', type: 'A nautical hexcrawl for curious crews', description: 'Island maps, impossible tides, and a sea that remembers everyone who crosses it.', image: 'assets/test images/banner (4).png' },
-    { code: 'COMING SOON / G&G 032', title: 'Mercenary Organizations', type: 'Faction guide · 5e compatible', description: 'Every war has a price. Build rival companies, hard choices, and campaigns shaped by the cost of victory.', image: 'assets/test images/banner 2.jpg' },
-    { code: 'COMING SOON / G&G 033', title: 'The Entertainers', type: 'NPC vault · system agnostic', description: 'Thirty-two performers, sixteen traditions, and a story behind every stage.', image: 'assets/test images/banner.png' },
-    { code: 'COMING SOON / G&G 034', title: 'Villain Story Engine', type: 'GM toolkit · 5e compatible', description: 'Fully realized villains with secrets, plans, and lairs that drive the story forward.', image: 'assets/test images/bbeg banner 1.png' },
+    { code: 'COMING SOON / G&G 031', title: 'The Glass Isles', type: 'A nautical hexcrawl for curious crews', description: 'A nautical hexcrawl for D&D, with island maps and impossible tides. Chart a course through a sea that remembers everyone who crosses it.', image: 'assets/test images/banner (4).png' },
+    { code: 'COMING SOON / G&G 032', title: 'Mercenary Organizations', type: 'Faction guide · D&D supplement', description: 'A faction guide for Dungeon Masters. Build rival mercenary companies and put the cost of victory at the heart of your D&D campaign.', image: 'assets/test images/banner 2.jpg' },
+    { code: 'COMING SOON / G&G 033', title: 'The Entertainers', type: 'NPC vault · D&D supplement', description: 'Performer NPCs and entertainment traditions for D&D. Bring memorable characters and new stories to the stages and taverns of your world.', image: 'assets/test images/banner.png' },
+    { code: 'COMING SOON / G&G 034', title: 'Villain Story Engine', type: 'GM toolkit · D&D supplement', description: 'A Dungeon Master toolkit for memorable D&D villains. Use their secrets, plans, and lairs to drive your campaign forward.', image: 'assets/test images/bbeg banner 1.png' },
   ],
 };
 
@@ -338,17 +338,11 @@ function selectHeroTemplate(name) {
   heroCarouselTemplate.hidden = !showCarousel;
   heroCarouselTemplate.classList.toggle('is-expanded', name === '3');
   document.querySelector('.hero').dataset.heroTemplate = name;
-  document.querySelectorAll('[data-hero-template]').forEach((button) => {
-    button.classList.toggle('active', button.dataset.heroTemplate === name);
-  });
+  document.querySelector('.hero').setAttribute('aria-labelledby', showCarousel ? 'hero-carousel-title' : 'hero-title');
 }
 
-document.querySelectorAll('[data-hero-template]').forEach((button) => {
-  button.addEventListener('click', () => selectHeroTemplate(button.dataset.heroTemplate));
-});
-
 buildHeroCarousel();
-selectHeroTemplate('1');
+selectHeroTemplate('2');
 
 const fontCatalog = {
   normal: [
@@ -356,6 +350,7 @@ const fontCatalog = {
     { id: 'sentino', label: 'Sentino', family: 'VerseluftNormalSentino', src: 'assets/fonts/normal/modern-minimalist-sans-serif-family-sentino-2026-04-07-06-25-02-utc/RCLSentino/Web-PS/RCLSentino-Regular.woff2', format: 'woff2' },
     { id: 'gothic', label: 'Gothic', family: 'VerseluftNormalGothic', src: 'assets/fonts/normal/gothic-2026-04-07-06-21-46-utc/Gothic.woff', format: 'woff' },
     { id: 'she-dance', label: 'She Dance (decorative)', family: 'VerseluftNormalSheDance', src: 'assets/fonts/normal/she-dance-celtyic-typeface-2026-04-07-06-23-11-utc/She Dance/She Dance.woff2', format: 'woff2' },
+    { id: 'ibm-plex-serif', label: 'IBM Plex Serif', family: 'IBM Plex Serif' },
   ],
   alternative: [
     { id: 'serifon', label: 'The Serifon Editorial', family: 'VerseluftAlternativeSerifon', src: 'assets/fonts/alternative/the-serifon-editorial-2026-04-07-06-22-44-utc/Web-TT/The Serifon Editoral.woff2', format: 'woff2' },
@@ -376,7 +371,7 @@ const fontCatalog = {
 const fontRoot = document.documentElement;
 const fontFaceStyle = document.createElement('style');
 const fontUrl = (src) => src.split('/').map((part) => encodeURIComponent(part)).join('/');
-fontFaceStyle.textContent = [...fontCatalog.normal, ...fontCatalog.alternative].map((font) => `@font-face { font-family: '${font.family}'; src: url('${fontUrl(font.src)}') format('${font.format}'); font-style: normal; font-weight: 400; font-display: swap; }`).join('\n');
+fontFaceStyle.textContent = [...fontCatalog.normal, ...fontCatalog.alternative].filter((font) => font.src).map((font) => `@font-face { font-family: '${font.family}'; src: url('${fontUrl(font.src)}') format('${font.format}'); font-style: normal; font-weight: 400; font-display: swap; }`).join('\n');
 document.head.append(fontFaceStyle);
 
 function fillFontSelect(select, fonts) {
@@ -405,7 +400,7 @@ function applyFontChoice(type, id) {
 
 normalFontSelect.addEventListener('change', () => applyFontChoice('normal', normalFontSelect.value));
 alternativeFontSelect.addEventListener('change', () => applyFontChoice('alternative', alternativeFontSelect.value));
-normalFontSelect.value = 'elvaro';
-alternativeFontSelect.value = 'serifon';
+normalFontSelect.value = 'ibm-plex-serif';
+alternativeFontSelect.value = 'black-deamond';
 applyFontChoice('normal', normalFontSelect.value);
 applyFontChoice('alternative', alternativeFontSelect.value);
