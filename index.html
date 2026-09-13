@@ -3,24 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://verseluft.com/" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
     <meta name="description" content="Discover third-party D&amp;D adventures, campaign settings, and supplements. Explore books for the 2014 rules and newer releases using the 2024 rules at Verseluft." />
     <title>D&amp;D Adventures &amp; Supplements (2014 &amp; 2024) | Verseluft</title>
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://verseluft.com/" />
     <meta property="og:site_name" content="Verseluft" />
     <meta property="og:title" content="D&amp;D Adventures &amp; Supplements (2014 &amp; 2024) | Verseluft" />
     <meta property="og:description" content="Discover third-party D&amp;D adventures, campaign settings, and supplements. Explore books for the 2014 rules and newer releases using the 2024 rules at Verseluft." />
     <meta name="twitter:title" content="D&amp;D Adventures &amp; Supplements (2014 &amp; 2024) | Verseluft" />
     <meta name="twitter:description" content="Discover third-party D&amp;D adventures, campaign settings, and supplements. Explore books for the 2014 rules and newer releases using the 2024 rules at Verseluft." />
+    <meta property="og:image" content="https://verseluft.com/assets/social-preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Verseluft D&amp;D adventures. Your next story." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://verseluft.com/assets/social-preview.jpg" />
+    <meta name="twitter:image:alt" content="Verseluft D&amp;D adventures. Your next story." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://verseluft.com/#organization",
+            "name": "Verseluft",
+            "url": "https://verseluft.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://verseluft.com/#logo",
+              "url": "https://verseluft.com/assets/images/Verseluft%20logo.webp",
+              "contentUrl": "https://verseluft.com/assets/images/Verseluft%20logo.webp",
+              "width": 2048,
+              "height": 2048
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://verseluft.com/#website",
+            "url": "https://verseluft.com/",
+            "name": "Verseluft",
+            "publisher": {
+              "@id": "https://verseluft.com/#organization"
+            }
+          }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=20260910" />
+    <style>
+      .upcoming-group:not(.is-enhanced) .upcoming-deck-wrap {
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      .upcoming-group:not(.is-enhanced) .upcoming-deck {
+        display: grid;
+        height: auto;
+        gap: 24px;
+        perspective: none;
+      }
+
+      .upcoming-group:not(.is-enhanced) .upcoming-deck .upcoming-card {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: min(100%, 840px) !important;
+        margin: 0 auto;
+        transform: none !important;
+        opacity: 1 !important;
+        filter: none !important;
+        pointer-events: auto !important;
+      }
+
+      .upcoming-group:not(.is-enhanced) .upcoming-deck-wrap .upcoming-nav,
+      .upcoming-group:not(.is-enhanced) .upcoming-deck-wrap .upcoming-timer,
+      .upcoming-group:not(.is-enhanced) .upcoming-deck-meta {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <div class="site-shell">
       <header class="site-header" id="top">
         <a class="brand" href="#top" aria-label="Verseluft home">
-          <img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" />
+          <img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" width="2048" height="2048" />
           <span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop RPG publishing</small></span>
         </a>
 
@@ -42,24 +114,10 @@
       </header>
 
       <main>
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="hero-copy" data-hero-base>
-            <div class="eyebrow"><span></span> For Dungeon Masters &amp; players</div>
-            <h1 id="hero-title">D&amp;D adventures.<br /><i>Your next story.</i></h1>
-            <p class="hero-intro">Discover third-party Dungeons &amp; Dragons adventures, campaign settings, and supplements for Dungeon Masters and players. Our catalog includes books for the 2014 rules, with newer releases using the 2024 rules.</p>
-            <a class="primary-button" href="#library">Browse D&amp;D books <span>↗</span></a>
-          </div>
-
-          <div class="hero-art" data-hero-base aria-label="Vast dark-oak tabletop publishing library filled with campaign books and maps" role="img">
-            <img class="hero-image" src="assets/hero-verseluft-02.png" alt="A vast dark-oak tabletop publishing library filled with campaign books, maps, and warm brass lamps" />
-            <div class="art-caption"><span>01</span><p>A well-made world<br />is an open door.</p></div>
-          </div>
-
-          <div class="scroll-note" data-hero-base><span class="scroll-line"></span> Scroll to explore</div>
-
-          <div class="hero-template-two" data-hero-section="2" hidden>
+        <section class="hero" aria-labelledby="hero-carousel-title">
+          <div class="hero-carousel-hero">
             <div class="hero-carousel-stage" aria-hidden="true">
-              <div class="hero-carousel-row hero-carousel-row-one"></div>
+              <div class="hero-carousel-row hero-carousel-row-one"><img src="assets/covers/Tal Doluth cover.webp" alt="" width="247" height="320" fetchpriority="high" decoding="async" /></div>
               <div class="hero-carousel-row hero-carousel-row-two"></div>
               <div class="hero-carousel-row hero-carousel-row-three"></div>
             </div>
@@ -90,10 +148,10 @@
 
           <div class="content-proof-grid">
             <div class="flipbook-wrap">
-              <div class="flipbook" aria-label="Interactive sample of a Verseluft D&amp;D supplement"><div class="pdf-book" id="pdf-book"></div><div class="pdf-loading" id="pdf-loading">Loading book sample…</div></div>
-              <div class="flip-controls"><button class="flip-button" id="flip-prev" type="button" aria-label="Previous spread">←</button><div class="page-dots" aria-label="Spread navigation" id="page-dots"></div><span class="page-count"><strong id="current-page">01–02</strong> / <span id="total-pages">--</span></span><button class="flip-button" id="flip-next" type="button" aria-label="Next spread">→</button></div>
-              <p class="flip-hint">Use the arrows or click the dots to turn the pages</p>
-              <button class="preview-open" id="open-pdf" type="button">Read the book sample ↗</button>
+              <div class="flipbook" aria-label="Interactive sample of a Verseluft D&amp;D supplement"><div class="pdf-book" id="pdf-book"></div><div class="pdf-loading" id="pdf-loading" role="status" aria-live="polite"><strong>Inside a Verseluft book</strong><p id="pdf-loading-message">Loading sample pages…</p></div></div>
+              <div class="flip-controls" id="flip-controls" hidden><button class="flip-button" id="flip-prev" type="button" aria-label="Previous spread">←</button><div class="page-dots" aria-label="Spread navigation" id="page-dots"></div><span class="page-count"><strong id="current-page">01–02</strong> / <span id="total-pages">--</span></span><button class="flip-button" id="flip-next" type="button" aria-label="Next spread">→</button></div>
+              <p class="flip-hint" id="flip-hint" hidden>Use the arrows or click the dots to turn the pages</p>
+              <button class="preview-open" id="open-pdf" type="button">Open full-screen preview ↗</button>
             </div>
 
             <div class="testimonial">
@@ -122,7 +180,7 @@
               <div class="about-actions" aria-label="Verseluft community links"><a href="#" class="about-action-button about-action-discord">Discord <span>↗</span></a><a href="#updates" class="about-action-button about-action-newsletter">Newsletter <span>↗</span></a><a href="#" class="about-action-button about-action-creators">Our Creators <span>↗</span></a></div>
             </div>
             <div class="about-art" aria-label="Verseluft-style tabletop roleplaying character sheet on a dark oak studio table" role="img">
-              <img class="about-image" src="assets/about-verseluft-03.png" alt="Verseluft D&amp;D character sheet with an adventurer portrait, ability scores, skills, armor, hit points, and equipment panels" />
+              <img class="about-image" src="assets/about-verseluft-03.webp" srcset="assets/responsive/about-verseluft-03-480.webp 480w, assets/responsive/about-verseluft-03-720.webp 720w, assets/about-verseluft-03.webp 1003w" sizes="(max-width: 900px) 100vw, (max-width: 1400px) 36vw, 510px" alt="Verseluft D&amp;D character sheet with an adventurer portrait, ability scores, skills, armor, hit points, and equipment panels" width="1003" height="1568" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="about-values">
@@ -138,10 +196,26 @@
             <p>Discover upcoming D&amp;D adventures, campaign settings, and Dungeon Master resources from Verseluft. Our newer books use the 2024 rules. Explore the projects below and follow their journey to your table.</p>
           </div>
 
-          <div class="projects-group" id="live-projects-group">
+          <div class="projects-group">
             <div class="group-label"><span>01</span><h3>Live on Kickstarter</h3><i></i></div>
-            <div class="project-grid live-projects" id="live-projects-grid"></div>
-            <div class="projects-empty" id="live-projects-empty"><strong>No live Kickstarter campaigns right now.</strong><p>Explore our upcoming D&amp;D projects below, or join the newsletter for launch announcements.</p></div>
+            <div class="project-grid live-projects" id="live-projects-grid">
+              <article class="project-card project-card-large">
+                <div class="project-art"><img class="project-banner" src="assets/test images/banner (4).webp" alt="The Wilds Beyond campaign artwork" width="4800" height="2700" loading="lazy" decoding="async" /></div>
+                <div class="project-card-body"><div><h3>The Wilds Beyond</h3><p>An adventure guide for D&amp;D campaigns. Follow hidden roads, explore strange horizons, and discover stories beyond the lantern light.</p></div><div class="project-meta"><span><strong>412%</strong> funded</span><span><strong>18 days</strong> to go</span><span><strong>1.8k</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 82%"></span></div><a class="project-arrow" href="#" aria-label="View The Wilds Beyond Kickstarter campaign">↗</a></div></div>
+              </article>
+              <article class="project-card">
+                <div class="project-art"><img class="project-banner" src="assets/test images/banner 2.webp" alt="City of Embers campaign artwork" width="1672" height="941" loading="lazy" decoding="async" /></div>
+                <div class="project-card-body"><div><h3>City of Embers</h3><p>A D&amp;D campaign setting of rooftops and old magic. Explore a city that refuses to go quietly into the dark.</p></div><div class="project-meta"><span><strong>238%</strong> funded</span><span><strong>9 days</strong> to go</span><span><strong>940</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 58%"></span></div><a class="project-arrow" href="#" aria-label="View City of Embers Kickstarter campaign">↗</a></div></div>
+              </article>
+              <article class="project-card">
+                <div class="project-art"><img class="project-banner" src="assets/test images/banner.webp" alt="The Lantern Moth campaign artwork" width="1672" height="941" loading="lazy" decoding="async" /></div>
+                <div class="project-card-body"><div><h3>The Lantern Moth</h3><p>A creature compendium for your D&amp;D campaign. Discover strange monsters and encounter ideas that make every road feel alive.</p></div><div class="project-meta"><span><strong>176%</strong> funded</span><span><strong>24 days</strong> to go</span><span><strong>620</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 46%"></span></div><a class="project-arrow" href="#" aria-label="View The Lantern Moth Kickstarter campaign">↗</a></div></div>
+              </article>
+              <article class="project-card">
+                <div class="project-art"><img class="project-banner" src="assets/test images/bbeg banner 1.webp" alt="Ash and Oath campaign artwork" width="1672" height="941" loading="lazy" decoding="async" /></div>
+                <div class="project-card-body"><div><h3>Ash &amp; Oath</h3><p>A short D&amp;D campaign of old promises and dangerous ruins. Give your players choices that shape the story and leave a mark.</p></div><div class="project-meta"><span><strong>109%</strong> funded</span><span><strong>6 days</strong> to go</span><span><strong>310</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 31%"></span></div><a class="project-arrow" href="#" aria-label="View Ash and Oath Kickstarter campaign">↗</a></div></div>
+              </article>
+            </div>
           </div>
 
           <div class="projects-group upcoming-group" id="upcoming-projects-group">
@@ -149,78 +223,39 @@
             <div class="upcoming-deck-wrap">
               <div class="upcoming-timer" aria-label="Time until the next upcoming project"><span id="upcoming-timer-bar"></span></div>
               <button class="upcoming-nav upcoming-prev" id="upcoming-prev" type="button" aria-label="Previous upcoming project">←</button>
-              <div class="upcoming-deck" id="upcoming-deck" aria-live="polite"></div>
+              <div class="upcoming-deck" id="upcoming-deck" aria-live="polite">
+                <article class="project-card upcoming-card deck-0"><div class="project-art"><img class="project-banner" src="assets/test images/banner (4).webp" alt="The Glass Isles cover artwork" width="4800" height="2700" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>The Glass Isles</h3><p>A nautical hexcrawl for D&amp;D, with island maps and impossible tides. Chart a course through a sea that remembers everyone who crosses it.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
+                <article class="project-card upcoming-card deck-1"><div class="project-art"><img class="project-banner" src="assets/test images/banner 2.webp" alt="Mercenary Organizations cover artwork" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>Mercenary Organizations</h3><p>A faction guide for Dungeon Masters. Build rival mercenary companies and put the cost of victory at the heart of your D&amp;D campaign.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
+                <article class="project-card upcoming-card deck-2"><div class="project-art"><img class="project-banner" src="assets/test images/banner.webp" alt="The Entertainers cover artwork" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>The Entertainers</h3><p>Performer NPCs and entertainment traditions for D&amp;D. Bring memorable characters and new stories to the stages and taverns of your world.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
+                <article class="project-card upcoming-card deck-3"><div class="project-art"><img class="project-banner" src="assets/test images/bbeg banner 1.webp" alt="Villain Story Engine cover artwork" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>Villain Story Engine</h3><p>A Dungeon Master toolkit for memorable D&amp;D villains. Use their secrets, plans, and lairs to drive your campaign forward.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
+              </div>
               <button class="upcoming-nav upcoming-next" id="upcoming-next" type="button" aria-label="Next upcoming project">→</button>
             </div>
             <div class="upcoming-deck-meta"><span id="upcoming-current">01</span><div class="upcoming-progress"><span id="upcoming-progress-bar"></span></div><span id="upcoming-total">04</span></div>
           </div>
         </section>
 
-        <section class="lead-section" aria-labelledby="updates-title" data-lead-section="1" hidden>
-          <div class="lead-orbit-art" aria-hidden="true"><div class="lead-ring ring-one"></div><div class="lead-ring ring-two"></div><div class="lead-signal">✦</div><span class="lead-art-label">VERSELUFT / NEWSLETTER</span><span class="lead-art-note">There is always<br />another story.</span></div>
-          <div class="lead-content">
-            <p class="eyebrow"><span></span> The Verseluft newsletter</p>
-            <h2 id="updates-title">New books.<br /><i>Fresh inspiration.</i></h2>
-            <p class="lead-intro">Hear about our latest D&amp;D supplements for the 2024 rules, Kickstarter launches, and book previews. Bring fresh inspiration to your campaign.</p>
-            <form class="lead-form lead-form-one" id="updates-form">
-              <div class="lead-input-row"><label><span>Your name</span><input name="name" type="text" placeholder="Your name" required /></label><label><span>Email address</span><input name="email" type="email" placeholder="you@example.com" required /></label></div>
-              <label class="lead-select"><span>What would you like to hear about?</span><select name="interest"><option value="all">New releases &amp; Kickstarter launches</option><option value="releases">New releases only</option><option value="campaigns">Kickstarter campaigns only</option></select></label>
-              <div class="lead-submit-row"><button class="lead-submit" type="submit">Join the newsletter <span>↗</span></button><small>D&amp;D book releases, previews, and Kickstarter news.</small></div>
-              <p class="lead-success" id="lead-success" hidden>✦ You are on the list. We’ll bring the next story to your inbox.</p>
-            </form>
-            <form class="lead-form lead-form-two" data-lead-form="2" hidden>
-              <span class="form-variant-mark">VERSELUFT / NEWSLETTER</span><h3>New books.<br /><i>New possibilities.</i></h3><p class="variant-intro">D&amp;D supplements and campaign news from the Verseluft workshop.</p>
-              <label><span>Email address</span><input name="email" type="email" placeholder="you@example.com" required /></label>
-              <div class="interest-chips"><span>New D&amp;D books</span><span>Kickstarters</span><span>Book previews</span></div>
-              <div class="variant-submit"><button class="lead-submit" type="submit">Join the newsletter <span>↗</span></button><small>Updates from our tabletop publishing workshop.</small></div><p class="lead-success" hidden>✦ You're on the list for Verseluft news.</p>
-            </form>
-            <form class="lead-form lead-form-three" data-lead-form="3" hidden>
-              <div class="postcard-top"><span>FIELD NOTE  /  003</span><b>✦</b></div><h3>Pull up a chair.<br /><i>Stay awhile.</i></h3><label><span>Your name</span><input name="name" type="text" placeholder="Your name" required /></label><label><span>Email address</span><input name="email" type="email" placeholder="you@example.com" required /></label><div class="postcard-bottom"><small>News from the table, delivered gently.</small><button type="submit">Count me in <span>↗</span></button></div><p class="lead-success" hidden>✦ You’re on the list.</p>
-            </form>
-          </div>
-        </section>
-
-        <section class="lead-alt lead-alt-two" aria-labelledby="alt-two-title" data-lead-section="2" hidden>
-          <div class="alt-two-copy"><span class="alt-edition">THE VERSELUFT NEWSLETTER</span><h2 id="alt-two-title">New books.<br /><i>Fresh inspiration.</i></h2><p>Get news of our D&amp;D book releases for the 2024 rules, Kickstarter launches, and previews from the Verseluft workshop.</p><form class="alt-lead-form" data-alt-form="2"><div class="alt-email-line"><input type="email" name="email" placeholder="Your email address" aria-label="Email address" required /><button type="submit" aria-label="Join the newsletter">↗</button></div><small>D&amp;D publishing news, delivered to your inbox.</small><p class="alt-success" hidden>✦ You're on the list for Verseluft news.</p></form></div>
-          <div class="alt-two-art" aria-hidden="true"><div class="alt-paper-circle"></div><div class="alt-paper-star">✦</div><span>WORDS<br />WORLDS<br />WONDER</span><small>Verseluft</small></div>
-        </section>
-
-        <section class="lead-alt lead-alt-three" id="updates" aria-labelledby="alt-three-title" data-lead-section="3">
-          <div class="alt-three-index"></div><div class="alt-three-copy"><span class="alt-edition">D&amp;D NEWS FROM VERSELUFT</span><h2 id="alt-three-title">Pull up a chair.<br /><em>Stay inspired.</em></h2><p>Hear about our latest D&amp;D supplements for the 2024 rules, Kickstarter launches, and book previews. Bring fresh inspiration to your campaign.</p><form class="alt-lead-form alt-three-form" data-alt-form="3"><div><input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="given-name" required /><input type="email" name="email" placeholder="Your email" aria-label="Email address" autocomplete="email" required /></div><button type="submit">Join the newsletter <span>↗</span></button><p class="alt-success" hidden>✦ You're on the list for Verseluft news.</p></form></div><div class="alt-three-mark"><img id="newsletter-art-image" class="newsletter-art-image" src="assets/newsletter-dispatch.png" alt="Gold-sealed dispatch on a dark oak desk" /></div><div class="alt-three-index alt-three-index-right" aria-hidden="true"></div>
+        <section class="lead-alt lead-alt-three" id="updates" aria-labelledby="alt-three-title">
+          <div class="alt-three-index"></div><div class="alt-three-copy"><span class="alt-edition">D&amp;D NEWS FROM VERSELUFT</span><h2 id="alt-three-title">Pull up a chair.<br /><em>Stay inspired.</em></h2><p>Hear about our latest D&amp;D supplements for the 2024 rules, Kickstarter launches, and book previews. Bring fresh inspiration to your campaign.</p><form class="alt-lead-form alt-three-form"><div><input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="given-name" required /><input type="email" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required /></div><button type="submit">Join the newsletter <span>↗</span></button><p class="alt-success" hidden>✦ You're on the list for Verseluft news.</p></form></div><div class="alt-three-mark"><img id="newsletter-art-image" class="newsletter-art-image" src="assets/newsletter-dispatch.webp" srcset="assets/responsive/newsletter-dispatch-480.webp 480w, assets/responsive/newsletter-dispatch-800.webp 800w, assets/newsletter-dispatch.webp 1122w" sizes="(max-width: 900px) 1px, 39vw" alt="Gold-sealed dispatch on a dark oak desk" width="1122" height="1402" loading="lazy" decoding="async" /></div><div class="alt-three-index alt-three-index-right" aria-hidden="true"></div>
         </section>
 
         <section class="blog-section" id="blog" aria-labelledby="blog-title">
           <div class="blog-heading"><div><p class="eyebrow"><span></span> The Verseluft journal</p><h2 id="blog-title">DM advice &amp;<br /><i>studio notes.</i></h2></div><p>Find inspiration for your D&amp;D campaign with worldbuilding ideas, advice for Dungeon Masters, and a look behind the scenes of our books.</p></div>
-          <div class="blog-feature"><div class="blog-feature-art"><img src="assets/test images/article PH1.png" alt="Fantasy city illuminated by lava" /><span>01 / BEHIND THE SCENES</span><strong>Worldbuilding<br /><i>for the table.</i></strong><small>Inside the making of a campaign world</small></div><div class="blog-feature-copy"><span class="blog-category">Behind the scenes · 8 min read</span><h3>D&amp;D worldbuilding: what makes a setting playable?</h3><p>A memorable D&amp;D setting gives players reasons to explore. Look beyond maps and lore to the people, places, and unanswered questions that invite your group into the story.</p><a href="#blog" class="blog-read-link">Read the worldbuilding article <span>↗</span></a></div></div>
+          <div class="blog-feature"><div class="blog-feature-art"><img src="assets/test images/article PH1.webp" alt="Fantasy city illuminated by lava" width="1672" height="941" loading="lazy" decoding="async" /><span>01 / BEHIND THE SCENES</span><strong>Worldbuilding<br /><i>for the table.</i></strong><small>Inside the making of a campaign world</small></div><div class="blog-feature-copy"><span class="blog-category">Behind the scenes · 8 min read</span><h3>D&amp;D worldbuilding: what makes a setting playable?</h3><p>A memorable D&amp;D setting gives players reasons to explore. Look beyond maps and lore to the people, places, and unanswered questions that invite your group into the story.</p><a href="#blog" class="blog-read-link">Read the worldbuilding article <span>↗</span></a></div></div>
           <div class="blog-toolbar"><div class="blog-filters"><button class="blog-filter active" type="button" data-blog-filter="all">All notes</button><button class="blog-filter" type="button" data-blog-filter="advice">DM advice</button><button class="blog-filter" type="button" data-blog-filter="making">Making games</button><button class="blog-filter" type="button" data-blog-filter="news">News</button></div><a class="blog-all-link" href="#blog">View all notes <span>↗</span></a></div>
           <div class="blog-grid">
-            <article class="blog-card" data-blog-category="advice"><div class="blog-card-art"><img src="assets/test images/article PH2.png" alt="Dark fantasy character" /><span>DM ADVICE</span></div><div class="blog-card-copy"><span class="blog-category">DM advice · 5 min read</span><h3>5 ways to make quiet D&amp;D scenes matter</h3><a href="#blog">Read the DM advice <span>↗</span></a></div></article>
-            <article class="blog-card" data-blog-category="making"><div class="blog-card-art"><img src="assets/test images/article PH3.png" alt="Alchemist in a candlelit workshop" /><span>MAKING GAMES</span></div><div class="blog-card-copy"><span class="blog-category">Making games · 7 min read</span><h3>Creating a D&amp;D supplement: from idea to table</h3><a href="#blog">Explore the publishing process <span>↗</span></a></div></article>
-            <article class="blog-card" data-blog-category="news"><div class="blog-card-art"><img src="assets/test images/article PH4.png" alt="Dark fantasy queen" /><span>NEWS</span></div><div class="blog-card-copy"><span class="blog-category">News · 3 min read</span><h3>Upcoming D&amp;D books from Verseluft</h3><a href="#blog">Read the studio update <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="advice"><div class="blog-card-art"><img src="assets/test images/article PH2.webp" alt="Dark fantasy character" width="1672" height="941" loading="lazy" decoding="async" /><span>DM ADVICE</span></div><div class="blog-card-copy"><span class="blog-category">DM advice · 5 min read</span><h3>5 ways to make quiet D&amp;D scenes matter</h3><a href="#blog">Read the DM advice <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="making"><div class="blog-card-art"><img src="assets/test images/article PH3.webp" alt="Alchemist in a candlelit workshop" width="1672" height="941" loading="lazy" decoding="async" /><span>MAKING GAMES</span></div><div class="blog-card-copy"><span class="blog-category">Making games · 7 min read</span><h3>Creating a D&amp;D supplement: from idea to table</h3><a href="#blog">Explore the publishing process <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="news"><div class="blog-card-art"><img src="assets/test images/article PH4.webp" alt="Dark fantasy queen" width="1672" height="941" loading="lazy" decoding="async" /><span>NEWS</span></div><div class="blog-card-copy"><span class="blog-category">News · 3 min read</span><h3>Upcoming D&amp;D books from Verseluft</h3><a href="#blog">Read the studio update <span>↗</span></a></div></article>
           </div>
         </section>
       </main>
       <footer class="site-footer">
-        <div class="footer-top"><a class="brand footer-brand" href="#top" aria-label="Verseluft home"><img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" /><span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop RPG publishing</small></span></a><p>D&amp;D supplements for<br /><i>your next adventure.</i></p><a class="footer-up" href="#top">Back to the top <span>↑</span></a></div>
+        <div class="footer-top"><a class="brand footer-brand" href="#top" aria-label="Verseluft home"><img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" width="2048" height="2048" /><span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop RPG publishing</small></span></a><p>D&amp;D supplements for<br /><i>your next adventure.</i></p><a class="footer-up" href="#top">Back to the top <span>↑</span></a></div>
         <div class="footer-links"><div><span class="footer-label">Explore</span><a href="#projects">Projects</a><a href="#blog">Blog</a><a href="#updates">Get updates</a></div><div><span class="footer-label">Company</span><a href="#about">About us</a><a href="#about">Our values</a><a href="#proof">Library</a></div><div><span class="footer-label">Find us</span><a href="#">Kickstarter ↗</a><a href="#">Instagram ↗</a><a href="#">Contact ↗</a></div></div>
         <div class="footer-bottom"><span>© 2026 Verseluft</span><span>Made for the joy of playing</span><span>Privacy · Terms</span></div>
       </footer>
     </div>
-    <aside class="project-test-panel" aria-label="Test-only live project count controls">
-      <span>TEST ONLY</span>
-      <strong>Live projects</strong>
-      <small>Preview each project count</small>
-      <div class="test-counts"><button type="button" data-live-count="0">0</button><button type="button" data-live-count="1">1</button><button type="button" data-live-count="2" class="active">2</button><button type="button" data-live-count="3">3</button><button type="button" data-live-count="4">4</button></div>
-    </aside>
-    <aside class="font-test-panel" aria-label="Test-only typography controls" hidden>
-      <span>TEST ONLY</span>
-      <strong>Typography</strong>
-      <small>Compare the reading and display voices</small>
-      <label><span>Normal / body</span><select id="font-normal-select" aria-label="Choose normal body font"></select></label>
-      <label><span>Alternative / titles</span><select id="font-alternative-select" aria-label="Choose alternative title font"></select></label>
-      <em>Two fonts are enough for now. Keep a third only for a future utility system.</em>
-    </aside>
-    <script src="assets/page-flip.browser.min.js"></script>
-    <script type="module" src="script.js?v=20260910-dnd"></script>
+    <script type="module" src="script.js?v=20260912-phase1-images"></script>
   </body>
 </html>
