@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "books": [
+    {
+      "id": "book-001",
+      "slug": "the-arcane-bookshelf",
+      "title": "The Arcane Bookshelf",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Game master resource"
+      ],
+      "shortDescription": "More than 100 books to place into your world as loot.",
+      "description": "A collection of more than 100 books that can be looted and placed into a D&D world.",
+      "coverImage": "/assets/covers/cover2536.webp",
+      "detailImage": "/assets/covers/old%20big%20images/cover2536.webp",
+      "coverAlt": "The Arcane Bookshelf cover",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 1,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-002",
+      "slug": "into-the-dwarf-fortress",
+      "title": "Into the Dwarf Fortress",
+      "category": "adventure",
+      "categoryLabel": "Adventure · 5e",
+      "tags": [
+        "Adventure",
+        "5e"
+      ],
+      "shortDescription": "A 5e adventure set among the halls of a dwarven fortress.",
+      "description": "A D&D 5e adventure that leads players into a dwarven fortress.",
+      "coverImage": "/assets/covers/Into%20the%20Dwarf%20Fortress%20Book%20Cover.webp",
+      "detailImage": "/assets/covers/old%20big%20images/Into%20the%20Dwarf%20Fortress%20Book%20Cover.webp",
+      "coverAlt": "Into the Dwarf Fortress cover",
+      "heroPosition": "left",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 2,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-003",
+      "slug": "tal-doluth",
+      "title": "Tal Doluth",
+      "category": "setting",
+      "categoryLabel": "Setting · Complete Town 5",
+      "tags": [
+        "Setting",
+        "Complete Town 5"
+      ],
+      "shortDescription": "A detailed town setting to make your own.",
+      "description": "The fifth entry in the Complete Town series.",
+      "coverImage": "/assets/covers/Tal%20Doluth%20cover.webp",
+      "detailImage": "/assets/covers/old%20big%20images/Tal%20Doluth%20cover.webp",
+      "coverAlt": "Tal Doluth, Complete Town 5 cover",
+      "heroPosition": "back",
+      "series": {
+        "name": "Complete Town",
+        "number": 5
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 3,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-004",
+      "slug": "criminals",
+      "title": "Criminals",
+      "category": "resource",
+      "categoryLabel": "Game master resource · 5e",
+      "tags": [
+        "Game master resource",
+        "5e"
+      ],
+      "shortDescription": "A guide to criminal organizations for your campaign.",
+      "description": "A 5e guide to criminal organizations for use in a D&D campaign.",
+      "coverImage": "/assets/covers/criminal%20cover.webp",
+      "detailImage": "/assets/covers/old%20big%20images/criminal%20cover.webp",
+      "coverAlt": "Criminals, a 5e criminal organization guide cover",
+      "heroPosition": "right",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 4,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-005",
+      "slug": "the-queen-of-atlantis",
+      "title": "The Queen of Atlantis",
+      "category": "adventure",
+      "categoryLabel": "Adventure series",
+      "tags": [
+        "Adventure",
+        "Adventure series"
+      ],
+      "shortDescription": "An adventure series for your D&D table.",
+      "description": "A D&D adventure series about the Queen of Atlantis.",
+      "coverImage": "/assets/covers/cover-3.webp",
+      "detailImage": "/assets/covers/old%20big%20images/cover-3.webp",
+      "coverAlt": "The Queen of Atlantis D&D adventure cover",
+      "series": {
+        "name": "The Queen of Atlantis"
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 5,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-006",
+      "slug": "golden-dungeons",
+      "title": "Golden Dungeons",
+      "category": "adventure",
+      "categoryLabel": "Adventure · Level 3",
+      "tags": [
+        "Adventure",
+        "Level 3"
+      ],
+      "shortDescription": "An in-session adventure for level 3 characters.",
+      "description": "An in-session D&D adventure for players of level 3.",
+      "coverImage": "/assets/covers/dbb517_250-3-3-.webp",
+      "detailImage": "/assets/covers/old%20big%20images/dbb517_250-3-3-.webp",
+      "coverAlt": "Golden Dungeons, an in-session adventure for level 3 cover",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 6,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-007",
+      "slug": "merchant-organization-guide",
+      "title": "Merchant Organization Guide",
+      "category": "resource",
+      "categoryLabel": "Game master resource · 5e",
+      "tags": [
+        "Game master resource",
+        "5e"
+      ],
+      "shortDescription": "A guide to merchant organizations for a 5e campaign.",
+      "description": "A 5e guide to merchant organizations.",
+      "coverImage": "/assets/covers/Merchant%20book%20cover%20new.webp",
+      "detailImage": "/assets/covers/old%20big%20images/Merchant%20book%20cover%20new.webp",
+      "coverAlt": "Merchant organization guide cover",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 7,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-008",
+      "slug": "witchy-grounds",
+      "title": "Witchy Grounds",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Game master resource",
+        "Locations",
+        "Encounters"
+      ],
+      "shortDescription": "50+ drop-in locations with lore, loot, NPCs, and monsters.",
+      "description": "More than 50 drop-in locations across cursed, blessed, and neutral themes, with lore, loot, NPCs, and monsters.",
+      "coverImage": "/assets/covers/book%20cover.webp",
+      "detailImage": "/assets/covers/old%20big%20images/book%20cover.webp",
+      "coverAlt": "Witchy Grounds locations and encounters cover",
+      "heroPosition": "front",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 8,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-009",
+      "slug": "beyond-the-gates",
+      "title": "Beyond the Gates",
+      "category": "setting",
+      "categoryLabel": "Setting · Complete Town 8",
+      "tags": [
+        "Setting",
+        "Complete Town 8"
+      ],
+      "shortDescription": "Town-building material, chests, and a civil registry.",
+      "description": "Complete Town 8, with chests, backer-building material, and a civil registry.",
+      "coverImage": "/assets/covers/cover%20Civil%20Registry.webp",
+      "detailImage": "/assets/covers/old%20big%20images/cover%20Civil%20Registry.webp",
+      "coverAlt": "Beyond the Gates, Complete Town 8 cover",
+      "series": {
+        "name": "Complete Town",
+        "number": 8
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 9,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-010",
+      "slug": "azu-shores",
+      "title": "Azu Shores",
+      "category": "setting",
+      "categoryLabel": "Setting · Complete Town 3",
+      "tags": [
+        "Setting",
+        "Complete Town 3"
+      ],
+      "shortDescription": "A coastal town setting for a new campaign stop.",
+      "description": "The third entry in the Complete Town series.",
+      "coverImage": "/assets/covers/COVER%20TOWN%203.webp",
+      "detailImage": "/assets/covers/old%20big%20images/COVER%20TOWN%203.webp",
+      "coverAlt": "Azu Shores, Complete Town 3 cover",
+      "series": {
+        "name": "Complete Town",
+        "number": 3
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 10,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-011",
+      "slug": "ashbourne",
+      "title": "Ashbourne",
+      "category": "setting",
+      "categoryLabel": "Setting · Complete Town 4",
+      "tags": [
+        "Setting",
+        "Complete Town 4"
+      ],
+      "shortDescription": "A city setting from the Complete Town series.",
+      "description": "The fourth entry in the Complete Town series.",
+      "coverImage": "/assets/covers/book%20cover%20(1).webp",
+      "detailImage": "/assets/covers/old%20big%20images/book%20cover%20(1).webp",
+      "coverAlt": "Ashbourne, Complete Town 4 cover",
+      "series": {
+        "name": "Complete Town",
+        "number": 4
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 11,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-012",
+      "slug": "buccaneers-back-alley",
+      "title": "Buccaneer's Back-Alley",
+      "category": "setting",
+      "categoryLabel": "Setting · Complete Town 2",
+      "tags": [
+        "Setting",
+        "Complete Town 2"
+      ],
+      "shortDescription": "An atmospheric town setting for a campaign.",
+      "description": "The second entry in the Complete Town series.",
+      "coverImage": "/assets/covers/cover%20(1).webp",
+      "detailImage": "/assets/covers/old%20big%20images/cover%20(1).webp",
+      "coverAlt": "Buccaneer's Back-Alley, Complete Town 2 cover",
+      "series": {
+        "name": "Complete Town",
+        "number": 2
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 12,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    },
+    {
+      "id": "book-013",
+      "slug": "village-chronicles",
+      "title": "Village Chronicles",
+      "category": "setting",
+      "categoryLabel": "Setting · Complete Town 9",
+      "tags": [
+        "Setting",
+        "Complete Town 9"
+      ],
+      "shortDescription": "A village setting from the Complete Town series.",
+      "description": "The ninth entry in the Complete Town series.",
+      "coverImage": "/assets/covers/cover-2.webp",
+      "detailImage": "/assets/covers/old%20big%20images/cover-2.webp",
+      "coverAlt": "Village Chronicles, Complete Town 9 cover",
+      "series": {
+        "name": "Complete Town",
+        "number": 9
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 13,
+      "storeUrl": "https://www.drivethrurpg.com/",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "display": "Price coming soon"
+      }
+    }
+  ]
+}

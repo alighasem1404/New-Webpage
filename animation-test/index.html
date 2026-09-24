@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#100d0a" />
+    <meta name="description" content="A local test lab for atmospheric backgrounds and interactive CSS effects on Verseluft." />
+    <title>Motion Study | Verseluft</title>
+    <link rel="icon" type="image/png" href="../favicon.png" sizes="64x64" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="animation-test.css" />
+    <script src="animation-test.js" defer></script>
+  </head>
+  <body>
+    <div class="motion-shell">
+      <header class="motion-header">
+        <a class="brand" href="../" aria-label="Verseluft home">
+          <img src="../assets/images/Verseluft%20logo.webp" alt="" width="76" height="76" />
+          <span><strong>Verseluft</strong><small>Motion study · 002</small></span>
+        </a>
+        <a class="back-link" href="../">Back to the site <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <div class="intro-backdrop" aria-hidden="true">
+            <div class="hero-haze haze-one"></div><div class="hero-haze haze-two"></div>
+            <div class="hero-constellation"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="hero-sigil"><span>✳</span></div>
+          </div>
+          <div class="intro-copy">
+            <p class="eyebrow"><span></span> Atmosphere, with a little magic</p>
+            <h1 id="page-title">Let the world<br /><i>breathe.</i></h1>
+            <p class="intro-text">A living backdrop can set the mood before anyone reads a word. A little response can make a book, button, or card feel almost touchable.</p>
+            <div class="intro-actions">
+              <a class="button button-gold" href="#backdrops">Explore the backgrounds <span aria-hidden="true">↓</span></a>
+              <button class="text-button" id="toggle-motion" type="button" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button>
+            </div>
+          </div>
+          <div class="intro-side-note"><span class="side-note-rule"></span><span>Cosmetic motion<br />Interactive details</span></div>
+          <a class="scroll-cue" href="#backdrops"><span></span> Scroll to explore</a>
+        </section>
+
+        <section class="backdrop-section" id="backdrops" aria-labelledby="backdrop-title">
+          <div class="section-heading">
+            <div><p class="eyebrow"><span></span> Background studies</p><h2 id="backdrop-title">Set the <i>atmosphere.</i></h2></div>
+            <p>Try a moving sky, drifting sparks, or the slow lines of an enchanted map. Move your pointer across the scene to draw a pool of light.</p>
+          </div>
+
+          <div class="scene-switcher" role="group" aria-label="Choose an animated background">
+            <button class="scene-choice is-active" type="button" data-scene="aurora" aria-pressed="true"><span class="choice-mark mark-aurora"></span><span><strong>Veil of light</strong><small>Flowing color</small></span></button>
+            <button class="scene-choice" type="button" data-scene="embers" aria-pressed="false"><span class="choice-mark mark-embers"></span><span><strong>Emberfall</strong><small>Floating particles</small></span></button>
+            <button class="scene-choice" type="button" data-scene="cartography" aria-pressed="false"><span class="choice-mark mark-map"></span><span><strong>Living map</strong><small>Drifting contours</small></span></button>
+            <button class="scene-choice" type="button" data-scene="moonlit" aria-pressed="false"><span class="choice-mark mark-moon"></span><span><strong>Moonlit tide</strong><small>Liquid reflections</small></span></button>
+            <button class="scene-choice" type="button" data-scene="inkbloom" aria-pressed="false"><span class="choice-mark mark-ink"></span><span><strong>Ink bloom</strong><small>Organic clouds</small></span></button>
+            <button class="scene-choice" type="button" data-scene="lanterns" aria-pressed="false"><span class="choice-mark mark-lantern"></span><span><strong>Lantern drift</strong><small>Floating glows</small></span></button>
+          </div>
+
+          <div class="backdrop-demo" id="backdrop-demo" data-scene="aurora" tabindex="0" aria-label="Animated background preview. Move the pointer to move the light.">
+            <div class="backdrop-light"></div>
+            <div class="backdrop-layers" aria-hidden="true">
+              <div class="aurora-layer aurora-one"></div><div class="aurora-layer aurora-two"></div><div class="aurora-layer aurora-three"></div>
+              <div class="scene-stars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="ember-field"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="map-contours"></div><div class="map-trail"></div>
+              <div class="moonlit-scene"><span class="moon-disc"></span><span class="moon-halo"></span><span class="tide-line tide-one"></span><span class="tide-line tide-two"></span><span class="tide-line tide-three"></span><span class="tide-line tide-four"></span></div>
+              <div class="ink-bloom"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="lantern-field"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="rune-orbit orbit-large"><span>✳</span><span>✦</span><span>✧</span></div>
+              <div class="rune-orbit orbit-small"><span>✧</span><span>✳</span></div>
+            </div>
+            <div class="scene-copy"><span id="scene-kicker">01 / VEIL OF LIGHT</span><strong id="scene-heading">A little wonder<br /><i>in the distance.</i></strong><p id="scene-caption">Slow gradients · soft stars · pointer-reactive light</p></div>
+            <span class="pointer-hint"><i></i> Move your pointer through the scene</span>
+            <span class="scene-counter" id="scene-counter">01 <i>/</i> 06</span>
+          </div>
+          <p class="scene-status" id="scene-status" aria-live="polite">Veil of light background selected</p>
+        </section>
+
+        <section class="interactive-section" id="interactions" aria-labelledby="interaction-title">
+          <div class="section-heading">
+            <div><p class="eyebrow"><span></span> Element interactions</p><h2 id="interaction-title">Let the details <i>answer back.</i></h2></div>
+            <p>Small pointer and click responses can make covers and controls feel tangible. Try each one with your mouse or keyboard.</p>
+          </div>
+
+          <div class="interaction-grid">
+            <article class="interaction-card">
+              <div class="interaction-heading"><span>01 / POINTER</span><h3>Light follows the book</h3></div>
+              <div class="tilt-stage" id="tilt-stage">
+                <div class="tilt-glow"></div>
+                <button class="tilt-book" id="tilt-book" type="button" aria-pressed="false" aria-label="Tilt the book cover">
+                  <div class="book-shimmer"></div><div class="book-border"></div>
+                  <span class="book-kicker">VERSELUFT · FIELD GUIDE</span>
+                  <strong>The<br /><i>Waking</i><br />Wilds</strong>
+                  <span class="book-footer">A wilderness of old magic</span><b aria-hidden="true">✳</b>
+                </button>
+                <span class="interaction-hint">Move across the cover</span>
+              </div>
+              <p class="interaction-description">Pointer tilt + a traveling sheen. On touch screens, tap the cover to tilt it.</p>
+            </article>
+
+            <article class="interaction-card">
+              <div class="interaction-heading"><span>02 / HOVER</span><h3>A button with a little pull</h3></div>
+              <div class="magnetic-stage" id="magnetic-stage">
+                <div class="magnetic-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+                <button class="magnetic-button" id="magnetic-button" type="button"><span>Enter the archive</span><i aria-hidden="true">↗</i></button>
+                <span class="interaction-hint">Bring your pointer close</span>
+              </div>
+              <p class="interaction-description">The button leans toward your pointer, then settles back into place.</p>
+            </article>
+
+            <article class="interaction-card interaction-card-wide">
+              <div class="interaction-heading"><span>03 / CLICK OR TAP</span><h3>Reveal a hidden detail</h3></div>
+              <div class="reveal-stage">
+                <div class="reveal-card" id="reveal-card">
+                  <div class="reveal-art" aria-hidden="true"><span class="reveal-moon"></span><span class="reveal-gate">✧</span><span class="reveal-stars">✦　✧　✦</span></div>
+                  <div class="reveal-copy"><span>FIELD NOTE 07</span><strong>The gate only opens<br />for a curious mind.</strong><p class="reveal-extra" id="reveal-extra">Behind it, a hidden path winds toward the old observatory.</p><button class="reveal-trigger" id="reveal-trigger" type="button" aria-expanded="false" aria-controls="reveal-extra">Read the field note <span aria-hidden="true">↓</span></button></div>
+                </div>
+                <span class="interaction-hint">Press to reveal the note</span>
+              </div>
+              <p class="interaction-description">A detail unfolds on demand, with the card’s art responding to the change.</p>
+            </article>
+
+            <article class="interaction-card">
+              <div class="interaction-heading"><span>04 / POINTER</span><h3>Turn the compass</h3></div>
+              <div class="compass-stage" id="compass-stage">
+                <div class="compass-glow"></div>
+                <button class="compass" id="compass" type="button" aria-label="Turn the compass toward the pointer"><span class="compass-ring compass-ring-outer"></span><span class="compass-ring compass-ring-inner"></span><span class="compass-needle"></span><span class="compass-hub">✦</span><b>N</b><b>E</b><b>S</b><b>W</b></button>
+                <span class="interaction-hint">Guide the needle</span>
+              </div>
+              <p class="interaction-description">A pointer-driven compass adds a quiet sense of direction to maps, menus, and discovery moments.</p>
+            </article>
+
+            <article class="interaction-card">
+              <div class="interaction-heading"><span>05 / HOVER</span><h3>A lantern that notices you</h3></div>
+              <div class="lantern-stage">
+                <div class="lantern-shadow"></div>
+                <button class="lantern-object" type="button" aria-label="Wake the lantern"><span class="lantern-top"></span><span class="lantern-glass"><i></i></span><span class="lantern-base"></span></button>
+                <span class="interaction-hint">Come a little closer</span>
+              </div>
+              <p class="interaction-description">A small hover glow, a flicker, and a rising shadow make a static object feel awake.</p>
+            </article>
+
+            <article class="interaction-card interaction-card-wide constellation-card">
+              <div class="interaction-heading"><span>06 / CLICK OR TAP</span><h3>Build a constellation</h3></div>
+              <div class="constellation-stage" id="constellation-stage">
+                <div class="constellation-lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+                <button class="star-node node-one" type="button" aria-label="Light star one" aria-pressed="false">✦</button><button class="star-node node-two" type="button" aria-label="Light star two" aria-pressed="false">✦</button><button class="star-node node-three" type="button" aria-label="Light star three" aria-pressed="false">✦</button><button class="star-node node-four" type="button" aria-label="Light star four" aria-pressed="false">✦</button><button class="star-node node-five" type="button" aria-label="Light star five" aria-pressed="false">✦</button>
+                <div class="constellation-copy"><span>THE NIGHT ARCHIVE</span><strong id="constellation-message">Touch the stars to draw a path.</strong><small id="constellation-count">0 / 5 lights awake</small></div>
+              </div>
+              <p class="interaction-description">A tiny interaction reward: each click adds another point of light until the shape appears.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="motion-note" aria-label="Motion accessibility note">
+          <span class="note-spark">✳</span><p><strong>Keep the atmosphere gentle.</strong> Motion can stay in the background, react only when invited, and respect reduced-motion settings.</p><button id="reduced-motion" class="reduced-toggle" type="button" aria-pressed="false">Preview reduced motion <span aria-hidden="true">↗</span></button>
+        </section>
+      </main>
+
+      <footer class="motion-footer"><a class="brand footer-brand" href="../"><img src="../assets/images/Verseluft%20logo.webp" alt="" width="76" height="76" /><span><strong>Verseluft</strong><small>Tabletop RPG publishing</small></span></a><span>AN EXPERIMENT IN MOTION <i>·</i> 2026</span></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+Options -Indexes
+
+# Fail closed by default. In cPanel, enable Directory Privacy for this folder,
+# create only your admin account(s), and let cPanel write AuthType/AuthUserFile/
+# Require valid-user rules here. Remove this deny rule only after confirming
+# the cPanel-generated password protection is active for this folder.
+Require all denied

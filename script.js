@@ -1,13 +1,3 @@
-const searchInput = document.querySelector('#site-search');
-searchInput.addEventListener('search', () => {
-  if (searchInput.value.trim()) {
-    searchInput.setCustomValidity('Library search will be available soon.');
-    searchInput.reportValidity();
-    searchInput.setCustomValidity('');
-    searchInput.value = '';
-  }
-});
-
 document.querySelectorAll('.main-nav a').forEach((link) => {
   link.addEventListener('click', () => {
     document.querySelectorAll('.main-nav a').forEach((item) => item.classList.remove('active'));
@@ -275,54 +265,8 @@ document.addEventListener('keydown', (event) => {
 
 initializePdfPreview().catch(showPdfError);
 
-const upcomingCards = [...document.querySelectorAll('.upcoming-deck .upcoming-card')];
-let upcomingIndex = 0;
-let upcomingTimerProgress = 0;
-let upcomingTimerPaused = false;
-let previousTimerTick = performance.now();
-const upcomingTimerDuration = 7000;
-
-function updateUpcomingDeck() {
-  const cards = upcomingCards;
-  if (!cards.length) return;
-  upcomingIndex = (upcomingIndex + cards.length) % cards.length;
-  cards.forEach((card, index) => {
-    const offset = (index - upcomingIndex + cards.length) % cards.length;
-    card.className = `project-card upcoming-card deck-${offset}`;
-  });
-  document.querySelector('#upcoming-current').textContent = String(upcomingIndex + 1).padStart(2, '0');
-  document.querySelector('#upcoming-progress-bar').style.width = `${((upcomingIndex + 1) / cards.length) * 100}%`;
-}
-
-function moveUpcoming(direction) {
-  upcomingIndex += direction;
-  upcomingTimerProgress = 0;
-  previousTimerTick = performance.now();
-  document.querySelector('#upcoming-timer-bar').style.width = '0%';
-  updateUpcomingDeck();
-}
-
-document.querySelector('#upcoming-total').textContent = String(upcomingCards.length).padStart(2, '0');
-updateUpcomingDeck();
-document.querySelector('#upcoming-prev').addEventListener('click', () => moveUpcoming(-1));
-document.querySelector('#upcoming-next').addEventListener('click', () => moveUpcoming(1));
 const upcomingGroup = document.querySelector('.upcoming-group');
-const upcomingDeckWrap = document.querySelector('.upcoming-deck-wrap');
-upcomingDeckWrap.addEventListener('mouseenter', () => { upcomingTimerPaused = true; });
-upcomingDeckWrap.addEventListener('mouseleave', () => { upcomingTimerPaused = false; previousTimerTick = performance.now(); });
-
-function animateUpcomingTimer(timestamp) {
-  const elapsed = timestamp - previousTimerTick;
-  previousTimerTick = timestamp;
-  if (!upcomingTimerPaused && upcomingCards.length > 1) {
-    upcomingTimerProgress += elapsed / upcomingTimerDuration;
-    document.querySelector('#upcoming-timer-bar').style.width = `${Math.min(upcomingTimerProgress, 1) * 100}%`;
-    if (upcomingTimerProgress >= 1) moveUpcoming(1);
-  }
-  requestAnimationFrame(animateUpcomingTimer);
-}
-requestAnimationFrame(animateUpcomingTimer);
-upcomingGroup.classList.add('is-enhanced');
+if (upcomingGroup) upcomingGroup.classList.add('is-enhanced');
 
 document.querySelectorAll('.alt-lead-form').forEach((form) => form.addEventListener('submit', (event) => {
   event.preventDefault();

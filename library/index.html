@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://verseluft.com/library/" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
+    <meta name="description" content="Browse featured Verseluft D&amp;D adventures, settings, and game master resources from a catalog of more than 90 published books." />
+    <title>The Library | D&amp;D Adventures &amp; Books | Verseluft</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://verseluft.com/library/" />
+    <meta property="og:site_name" content="Verseluft" />
+    <meta property="og:title" content="The Library | D&amp;D Adventures &amp; Books | Verseluft" />
+    <meta property="og:description" content="Browse featured Verseluft D&amp;D adventures, settings, and game master resources from a catalog of more than 90 published books." />
+    <meta property="og:image" content="https://verseluft.com/assets/social-preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Verseluft D&amp;D adventures. Your next story." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Library | D&amp;D Adventures &amp; Books | Verseluft" />
+    <meta name="twitter:description" content="Browse featured Verseluft D&amp;D adventures, settings, and game master resources from a catalog of more than 90 published books." />
+    <meta name="twitter:image" content="https://verseluft.com/assets/social-preview.jpg" />
+    <meta name="twitter:image:alt" content="Verseluft D&amp;D adventures. Your next story." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css?v=20260910" />
+    <link rel="stylesheet" href="/library/library.css?v=20260913" />
+    <script src="/library/library.js?v=20260913" defer></script>
+  </head>
+  <body class="library-page">
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <a class="brand" href="/" aria-label="Verseluft home">
+          <img class="brand-logo" src="/assets/images/Verseluft%20logo.webp" alt="" width="2048" height="2048" />
+          <span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop RPG publishing</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/projects/">Projects</a>
+          <a href="/blog/">Blog</a>
+          <a class="active" href="/library/" aria-current="page">Library</a>
+          <a href="/about/">About us</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a class="small-button" href="#catalog">Browse books <span aria-hidden="true">↓</span></a>
+        </div>
+      </header>
+
+      <main>
+        <section class="library-hero" aria-labelledby="library-title">
+          <div class="library-hero-copy">
+            <nav class="library-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Library</span></nav>
+            <p class="library-kicker"><span aria-hidden="true"></span> The Verseluft library</p>
+            <h1 id="library-title">Your Next <i>Adventure.</i></h1>
+            <p class="library-intro">Browse D&amp;D adventures, settings, and table-ready resources for Dungeon Masters and players. These featured covers are a glimpse of a catalog with more than 90 published books.</p>
+            <a class="library-hero-link" href="#catalog">Find a book <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="library-hero-art" id="library-hero-art" aria-hidden="true">
+            <span class="library-art-orbit library-art-orbit-one"></span><span class="library-art-orbit library-art-orbit-two"></span>
+          </div>
+        </section>
+
+        <section class="library-catalog" id="catalog" aria-labelledby="catalog-title">
+          <div class="catalog-heading">
+            <div><p class="library-kicker"><span aria-hidden="true"></span> Stories, settings &amp; tools</p><h2 id="catalog-title">Find your <i>next read.</i></h2></div>
+            <p>Search the featured titles or filter by what you need for your table. Rules versions vary by book; check a title’s details before play.</p>
+          </div>
+
+          <div class="catalog-toolbar">
+            <div class="catalog-filters" role="group" aria-label="Filter books by type">
+              <button class="catalog-filter is-active" type="button" data-library-filter="all" aria-pressed="true">All featured <span id="all-featured-count">0</span></button>
+              <button class="catalog-filter" type="button" data-library-filter="adventure" aria-pressed="false">Adventures</button>
+              <button class="catalog-filter" type="button" data-library-filter="setting" aria-pressed="false">Settings</button>
+              <button class="catalog-filter" type="button" data-library-filter="resource" aria-pressed="false">DM resources</button>
+            </div>
+            <label class="catalog-search" for="library-search"><span aria-hidden="true">⌕</span><input id="library-search" type="search" placeholder="Search featured books" autocomplete="off" aria-label="Search featured books" /><span class="search-shortcut" aria-hidden="true">TITLE</span></label>
+          </div>
+
+          <p class="catalog-result" id="catalog-result" aria-live="polite">Loading featured titles…</p>
+          <div class="catalog-grid" id="catalog-grid" aria-busy="true"></div>
+          <p class="catalog-empty" id="catalog-empty" hidden>No featured books match that search. Try a different title or category.</p>
+          <p class="catalog-footnote"><span aria-hidden="true">✦</span> Verseluft publishes for both the 2014 and 2024 D&amp;D rules. Confirm each book’s rules version before play.</p>
+        </section>
+
+        <section class="library-contact" aria-label="Need help choosing a book?">
+          <div><p class="library-kicker"><span aria-hidden="true"></span> Need a hand?</p><h2>Not sure where to <i>begin?</i></h2></div>
+          <p>Tell us what your group enjoys, and we’ll help you find a good place to start.</p>
+          <a class="library-hero-link" href="/contact/">Get in touch <span aria-hidden="true">↗</span></a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <a class="brand footer-brand" href="/" aria-label="Verseluft home"><img class="brand-logo" src="/assets/images/Verseluft%20logo.webp" alt="" width="2048" height="2048" /><span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop RPG publishing</small></span></a>
+          <p>D&amp;D supplements for<br /><i>your next adventure.</i></p>
+          <a class="footer-up" href="#top">Back to the top <span aria-hidden="true">↑</span></a>
+        </div>
+        <div class="footer-links">
+          <div><span class="footer-label">Explore</span><a href="/projects/">Projects</a><a href="/blog/">Blog</a><a href="/library/" aria-current="page">Library</a></div>
+          <div><span class="footer-label">Company</span><a href="/about/">About us</a><a href="/about/#principles">Our values</a><a href="/contact/">Contact</a></div>
+          <div><span class="footer-label">Find us</span><a href="#">Kickstarter ↗</a><a href="#">Instagram ↗</a><a href="/contact/">Get in touch ↗</a></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 Verseluft</span><span>Made for the joy of playing</span><span>Privacy · Terms</span></div>
+      </footer>
+    </div>
+
+  </body>
+</html>
+

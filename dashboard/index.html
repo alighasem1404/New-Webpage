@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#17130f" />
+  <title>Studio Dashboard | Verseluft</title>
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/dashboard/dashboard.css?v=20260922" />
+  <script src="/dashboard/dashboard.js?v=20260922" defer></script>
+</head>
+<body class="studio-dashboard">
+  <div class="dashboard-frame">
+    <aside class="dashboard-sidebar" id="dashboard-sidebar">
+      <a class="dashboard-brand" href="/" aria-label="Verseluft home">
+        <img src="/assets/images/Verseluft%20logo.webp" alt="" width="2048" height="2048" />
+        <span><strong>Verseluft</strong><small>STUDIO DESK</small></span>
+      </a>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav class="dashboard-nav" aria-label="Dashboard navigation">
+        <button class="nav-item is-active" type="button" data-view="overview"><span class="nav-icon">⌂</span>Overview</button>
+        <button class="nav-item" type="button" data-view="content"><span class="nav-icon">▤</span>Content <span class="nav-count" id="nav-content-count">—</span></button>
+        <button class="nav-item" type="button" data-view="analytics"><span class="nav-icon">⌁</span>Analytics</button>
+      </nav>
+      <div class="sidebar-label sidebar-label-second">MANAGE</div>
+      <nav class="dashboard-nav" aria-label="Content categories">
+        <button class="nav-item nav-filter" type="button" data-kind="blog"><span class="kind-dot dot-blog"></span>Journal</button>
+        <button class="nav-item nav-filter" type="button" data-kind="book"><span class="kind-dot dot-book"></span>Library</button>
+        <button class="nav-item nav-filter" type="button" data-kind="project"><span class="kind-dot dot-project"></span>Projects</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="local-note"><span class="local-note-icon">✦</span><div><strong>Site-connected projects</strong><p>After cPanel setup, edits update the public homepage and Projects page.</p></div></div>
+        <a class="site-link" href="/" target="_blank" rel="noreferrer">Open live site <span>↗</span></a>
+        <div class="profile-row"><span class="profile-avatar">V</span><span><strong>Verseluft Studio</strong><small>Workspace owner</small></span><span class="profile-more">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <button class="mobile-menu" type="button" id="mobile-menu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span>/</span><strong id="breadcrumb-current">Overview</strong></div>
+        <div class="topbar-actions"><span class="today-label" id="today-label"></span><button class="icon-button" id="export-button" type="button" title="Export dashboard data" aria-label="Export dashboard data">⇩</button><span class="top-avatar">V</span></div>
+      </header>
+      <div class="sample-banner" id="project-api-warning" role="alert" hidden><span class="sample-banner-icon">!</span><span><strong>Project service unavailable:</strong> configure the protected PHP endpoint on cPanel before editing public project content.</span></div>
+
+      <section class="view-panel is-visible" id="overview-view" aria-labelledby="page-title">
+        <div class="page-heading"><div><p class="eyebrow"><span></span><span id="overview-date">YOUR PUBLISHING DESK</span></p><h1 id="page-title"><span id="greeting">Welcome back,</span> <i>studio.</i></h1><p class="page-subtitle">A clear view of your publishing desk: what’s live, what’s growing, and what needs attention.</p></div><button class="primary-button" type="button" data-create><span>＋</span> Create content</button></div>
+        <div class="sample-banner"><span class="sample-banner-icon">i</span><span><strong>Preview data:</strong> traffic and engagement figures below are sample analytics. Connect a real analytics source to see actual performance.</span><button type="button" aria-label="Dismiss notice" id="dismiss-sample">×</button></div>
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-top"><span>Total visitors</span><span class="metric-icon">◉</span></div><strong class="metric-value" id="metric-visitors">24,860</strong><div class="metric-foot"><span class="trend-up">↗ 12.8%</span><span>vs previous period</span></div><div class="mini-bars" aria-hidden="true"><i style="height:32%"></i><i style="height:44%"></i><i style="height:38%"></i><i style="height:61%"></i><i style="height:52%"></i><i style="height:78%"></i><i style="height:65%"></i><i style="height:92%"></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Content views</span><span class="metric-icon">▧</span></div><strong class="metric-value" id="metric-views">38,420</strong><div class="metric-foot"><span class="trend-up">↗ 8.4%</span><span>vs previous period</span></div><div class="mini-bars mini-bars-cream" aria-hidden="true"><i style="height:52%"></i><i style="height:35%"></i><i style="height:62%"></i><i style="height:47%"></i><i style="height:75%"></i><i style="height:59%"></i><i style="height:82%"></i><i style="height:96%"></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Engagement rate</span><span class="metric-icon">✳</span></div><strong class="metric-value" id="metric-engagement">4.86<span>%</span></strong><div class="metric-foot"><span class="trend-up">↗ 0.6%</span><span>vs previous period</span></div><div class="mini-bars mini-bars-green" aria-hidden="true"><i style="height:37%"></i><i style="height:56%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:81%"></i><i style="height:72%"></i><i style="height:96%"></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Published content</span><span class="metric-icon">✦</span></div><strong class="metric-value" id="metric-published">—</strong><div class="metric-foot"><span id="metric-drafts" class="metric-neutral">— drafts</span><span>across all categories</span></div><div class="published-ring"><span>LIVE<br /><strong id="published-ratio">—</strong></span></div></article>
+        </div>
+
+        <div class="overview-grid">
+          <section class="panel performance-panel" aria-labelledby="performance-title"><div class="panel-heading"><div><p class="panel-kicker">TRAFFIC OVERVIEW</p><h2 id="performance-title">Your audience <i>at a glance.</i></h2></div><label class="select-wrap"><span class="sr-only">Analytics date range</span><select id="overview-range"><option value="30">Last 30 days</option><option value="7">Last 7 days</option><option value="90">Last 90 days</option></select></label></div><div class="chart-legend"><span><i class="legend-visitors"></i>Visitors</span><span><i class="legend-views"></i>Page views</span><span class="chart-unit">DAILY VISITORS</span></div><div class="chart-wrap"><div class="chart-y-axis"><span>2.5k</span><span>1.8k</span><span>1.2k</span><span>600</span><span>0</span></div><div class="traffic-chart" id="traffic-chart" role="img" aria-label="Sample traffic chart"></div></div><div class="chart-x-axis" id="chart-x-axis"><span>Aug 24</span><span>Aug 31</span><span>Sep 07</span><span>Sep 14</span><span>Sep 21</span></div></section>
+          <section class="panel top-content-panel" aria-labelledby="top-content-title"><div class="panel-heading compact-heading"><div><p class="panel-kicker">WHAT READERS LOVE</p><h2 id="top-content-title">Top content</h2></div><button class="text-button" type="button" data-view="analytics">Full report <span>↗</span></button></div><div class="top-content-list" id="top-content-list"></div><div class="source-note">Sample performance data · last 30 days</div></section>
+        </div>
+
+        <section class="panel recent-panel" aria-labelledby="recent-title"><div class="panel-heading compact-heading"><div><p class="panel-kicker">YOUR PUBLISHING QUEUE</p><h2 id="recent-title">Recently updated</h2></div><button class="text-button" type="button" data-view="content">View all content <span>↗</span></button></div><div class="table-scroll"><table class="content-table"><thead><tr><th>CONTENT</th><th>TYPE</th><th>STATUS</th><th>LAST UPDATED</th><th></th></tr></thead><tbody id="recent-table-body"></tbody></table></div></section>
+      </section>
+
+      <section class="view-panel" id="content-view" aria-labelledby="content-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow"><span></span>YOUR PUBLISHING WORKSPACE</p><h1 id="content-title">Content <i>library.</i></h1><p class="page-subtitle">Keep your journal, book catalog, and project pipeline in one place.</p></div><button class="primary-button" type="button" data-create><span>＋</span> New content</button></div>
+        <div class="content-summary" id="content-summary"></div>
+        <section class="panel content-manager"><div class="manager-toolbar"><div class="manager-tabs" role="tablist" aria-label="Filter content by type"><button class="manager-tab is-active" data-filter="all" type="button" role="tab" aria-selected="true">Everything <span id="count-all">0</span></button><button class="manager-tab" data-filter="blog" type="button" role="tab" aria-selected="false">Journal <span id="count-blog">0</span></button><button class="manager-tab" data-filter="book" type="button" role="tab" aria-selected="false">Books <span id="count-book">0</span></button><button class="manager-tab" data-filter="project" type="button" role="tab" aria-selected="false">Projects <span id="count-project">0</span></button></div><label class="manager-search"><span>⌕</span><input id="content-search" type="search" placeholder="Search content" aria-label="Search content" /><kbd>⌘ K</kbd></label></div><div class="table-scroll"><table class="content-table manager-table"><thead><tr><th>CONTENT</th><th>TYPE</th><th>STATUS</th><th>UPDATED</th><th>PERFORMANCE*</th><th></th></tr></thead><tbody id="content-table-body"></tbody></table></div><div class="table-footer"><span id="table-result-count">0 items</span><span>Projects save to the website <i class="storage-dot"></i></span></div></section>
+        <p class="local-disclaimer">*Performance figures are illustrative sample data. Once cPanel/API setup is complete, project changes publish to the homepage and Projects page; journal and book edits remain dashboard-only.</p>
+      </section>
+
+      <section class="view-panel" id="analytics-view" aria-labelledby="analytics-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow"><span></span>GROWTH &amp; REACH</p><h1 id="analytics-title">Performance <i>report.</i></h1><p class="page-subtitle">Understand what is drawing readers in and where they discover you.</p></div><label class="select-wrap report-range"><span class="sr-only">Analytics date range</span><select id="analytics-range"><option value="30">Last 30 days</option><option value="7">Last 7 days</option><option value="90">Last 90 days</option></select></label></div>
+        <div class="sample-banner"><span class="sample-banner-icon">i</span><span><strong>Demo analytics:</strong> this project has no tracking integration. These figures and sources are illustrative only—not real visitors, sales, or engagement.</span></div>
+        <div class="analytics-metrics"><article class="report-metric"><span>Visitors</span><strong>24,860</strong><small class="trend-up">↗ 12.8% <span>compared to prior period</span></small></article><article class="report-metric"><span>Page views</span><strong>38,420</strong><small class="trend-up">↗ 8.4% <span>compared to prior period</span></small></article><article class="report-metric"><span>Average session</span><strong>3m 42s</strong><small class="trend-up">↗ 16s <span>compared to prior period</span></small></article><article class="report-metric"><span>Engagement rate</span><strong>4.86%</strong><small class="trend-up">↗ 0.6% <span>compared to prior period</span></small></article></div>
+        <div class="overview-grid analytics-grid"><section class="panel performance-panel"><div class="panel-heading"><div><p class="panel-kicker">AUDIENCE GROWTH</p><h2>Visitors &amp; page views</h2></div><span class="demo-tag">ILLUSTRATIVE</span></div><div class="chart-legend"><span><i class="legend-visitors"></i>Visitors</span><span><i class="legend-views"></i>Page views</span></div><div class="chart-wrap chart-large"><div class="chart-y-axis"><span>2.5k</span><span>1.8k</span><span>1.2k</span><span>600</span><span>0</span></div><div class="traffic-chart" id="analytics-chart" role="img" aria-label="Illustrative traffic chart"></div></div><div class="chart-x-axis"><span>Aug 24</span><span>Aug 31</span><span>Sep 07</span><span>Sep 14</span><span>Sep 21</span></div></section><section class="panel sources-panel"><div class="panel-heading compact-heading"><div><p class="panel-kicker">HOW THEY FIND YOU</p><h2>Traffic sources</h2></div></div><div class="source-list" id="source-list"></div><div class="source-note">Sample breakdown · last 30 days</div></section></div>
+        <div class="overview-grid analytics-lower"><section class="panel"><div class="panel-heading compact-heading"><div><p class="panel-kicker">CONTENT DISCOVERY</p><h2>Most viewed pages</h2></div><span class="demo-tag">ILLUSTRATIVE</span></div><div id="analytics-top-pages" class="top-content-list"></div></section><section class="panel insight-panel"><p class="panel-kicker">A NOTE FROM THE DESK</p><h2>Make the next good thing <i>easier to find.</i></h2><p>Your journal, library, and project pages give readers different ways into your world. Once real analytics are connected, use this report to see which paths are working.</p><button class="text-button" type="button" data-view="content">Review your content <span>↗</span></button></section></div>
+      </section>
+      <div class="toast" id="dashboard-toast" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+
+<dialog class="content-dialog" id="content-dialog" aria-labelledby="dialog-title"><form id="content-form"><div class="dialog-heading"><div><p class="panel-kicker" id="dialog-kicker">CREATE CONTENT</p><h2 id="dialog-title">New <i>entry.</i></h2></div><button class="dialog-close" type="button" id="dialog-close" aria-label="Close">×</button></div><input type="hidden" id="entry-id" /><div class="form-grid"><label class="form-field">Content type<select id="entry-kind"><option value="blog">Journal article</option><option value="book">Book</option><option value="project">Project</option></select></label><label class="form-field">Status<select id="entry-status"><option value="Draft">Draft</option><option value="Published">Published</option><option value="In progress">In progress</option><option value="Coming soon">Coming soon</option></select></label><label class="form-field form-field-wide">Title<input id="entry-title" required maxlength="100" placeholder="Give this entry a title" /></label><label class="form-field form-field-wide">Short description<textarea id="entry-description" rows="3" maxlength="500" placeholder="A sentence to help people understand what it is"></textarea></label><label class="form-field form-field-wide">Image path <span class="optional-label">required for public projects</span><input id="entry-image" placeholder="/assets/covers/your-cover.webp" /></label><label class="form-field form-field-wide">Category / note <span class="optional-label">optional</span><input id="entry-category" placeholder="For example: DM advice" /></label><div class="project-options form-grid form-field-wide" id="project-options" hidden><label class="form-field">Website section<select id="project-section"><option value="live">Live / current</option><option value="upcoming">Upcoming</option></select></label><label class="form-field">Funding %<input id="project-funding" type="number" min="0" max="100000" step="1" value="0" /></label><label class="form-field">Days remaining<input id="project-days" type="number" min="0" max="3650" step="1" value="0" /></label><label class="form-field">Backers<input id="project-backers" type="number" min="0" max="10000000" step="1" value="0" /></label><label class="form-field">Progress bar %<input id="project-progress" type="number" min="0" max="100" step="1" value="0" /></label><label class="form-field form-field-wide">Image description <span class="optional-label">for accessibility</span><input id="project-image-alt" maxlength="160" placeholder="Describe the project artwork" /></label><label class="form-field form-field-wide">Campaign link <span class="optional-label">optional, HTTPS only</span><input id="project-link" type="url" placeholder="https://www.kickstarter.com/..." /></label></div></div><div class="dialog-footer"><button class="secondary-button" type="button" id="dialog-cancel">Cancel</button><button class="primary-button" type="submit" id="save-entry">Save entry</button></div></form></dialog>
+</body>
+</html>

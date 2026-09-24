@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verseluft library catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "books"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "books": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "slug",
+          "title",
+          "category",
+          "categoryLabel",
+          "tags",
+          "shortDescription",
+          "description",
+          "coverImage",
+          "coverAlt",
+          "storeUrl",
+          "price",
+          "series",
+          "status",
+          "featured",
+          "sortOrder"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": ["adventure", "setting", "resource"]
+          },
+          "categoryLabel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "shortDescription": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coverImage": {
+            "type": "string",
+            "pattern": "^/assets/covers/.+"
+          },
+          "detailImage": {
+            "type": "string",
+            "pattern": "^/assets/covers/.+"
+          },
+          "storeUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "price": {
+            "oneOf": [
+              { "type": "null" },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["display"],
+                "properties": {
+                  "amount": { "type": ["number", "null"], "minimum": 0 },
+                  "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+                  "display": { "type": "string", "minLength": 1 }
+                }
+              }
+            ]
+          },
+          "coverAlt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "heroPosition": {
+            "enum": ["back", "left", "right", "front"]
+          },
+          "series": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["name"],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "number": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                }
+              }
+            ]
+          },
+          "status": {
+            "enum": ["draft", "published"]
+          },
+          "featured": {
+            "type": "boolean"
+          },
+          "sortOrder": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  }
+}

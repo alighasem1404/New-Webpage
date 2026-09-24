@@ -99,17 +99,19 @@
         <nav class="main-nav" aria-label="Main navigation">
           <a class="active" href="#top">Home</a>
           <a href="#about">Our values</a>
-          <a href="#projects">Projects</a>
-          <a href="#blog">Blog</a>
-          <a href="#about">About us</a>
+          <a href="/projects/">Projects</a>
+          <a href="/blog/">Blog</a>
+          <a href="/library/">Library</a>
+          <a href="/about/">About us</a>
+          <a href="/contact/">Contact</a>
         </nav>
 
         <div class="header-actions">
-          <label class="search-box" for="site-search">
+          <form class="search-box" role="search" action="/library/" method="get">
             <span aria-hidden="true">⌕</span>
-            <input id="site-search" type="search" placeholder="Search the library" />
-          </label>
-          <a class="small-button" href="#library">Browse D&amp;D books <span>↗</span></a>
+            <input id="site-search" name="q" type="search" placeholder="Search the library" aria-label="Search the library" />
+          </form>
+          <a class="small-button" href="/library/">Browse D&amp;D books <span>↗</span></a>
         </div>
       </header>
 
@@ -125,7 +127,7 @@
               <div class="eyebrow"><span></span> For Dungeon Masters &amp; players</div>
               <h1 id="hero-carousel-title">D&amp;D adventures.<br /><i>Your next story.</i></h1>
               <p class="hero-intro">Discover third-party Dungeons &amp; Dragons adventures, campaign settings, and supplements for Dungeon Masters and players. Our catalog includes books for the 2014 rules, with newer releases using the 2024 rules.</p>
-              <a class="primary-button" href="#library">Browse D&amp;D books <span>↗</span></a>
+              <a class="primary-button" href="/library/">Browse D&amp;D books <span>↗</span></a>
             </div>
             <div class="scroll-note"><span class="scroll-line"></span> Scroll to explore</div>
           </div>
@@ -198,24 +200,7 @@
 
           <div class="projects-group">
             <div class="group-label"><span>01</span><h3>Live on Kickstarter</h3><i></i></div>
-            <div class="project-grid live-projects" id="live-projects-grid">
-              <article class="project-card project-card-large">
-                <div class="project-art"><img class="project-banner" src="assets/test images/banner (4).webp" alt="The Wilds Beyond campaign artwork" width="4800" height="2700" loading="lazy" decoding="async" /></div>
-                <div class="project-card-body"><div><h3>The Wilds Beyond</h3><p>An adventure guide for D&amp;D campaigns. Follow hidden roads, explore strange horizons, and discover stories beyond the lantern light.</p></div><div class="project-meta"><span><strong>412%</strong> funded</span><span><strong>18 days</strong> to go</span><span><strong>1.8k</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 82%"></span></div><a class="project-arrow" href="#" aria-label="View The Wilds Beyond Kickstarter campaign">↗</a></div></div>
-              </article>
-              <article class="project-card">
-                <div class="project-art"><img class="project-banner" src="assets/test images/banner 2.webp" alt="City of Embers campaign artwork" width="1672" height="941" loading="lazy" decoding="async" /></div>
-                <div class="project-card-body"><div><h3>City of Embers</h3><p>A D&amp;D campaign setting of rooftops and old magic. Explore a city that refuses to go quietly into the dark.</p></div><div class="project-meta"><span><strong>238%</strong> funded</span><span><strong>9 days</strong> to go</span><span><strong>940</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 58%"></span></div><a class="project-arrow" href="#" aria-label="View City of Embers Kickstarter campaign">↗</a></div></div>
-              </article>
-              <article class="project-card">
-                <div class="project-art"><img class="project-banner" src="assets/test images/banner.webp" alt="The Lantern Moth campaign artwork" width="1672" height="941" loading="lazy" decoding="async" /></div>
-                <div class="project-card-body"><div><h3>The Lantern Moth</h3><p>A creature compendium for your D&amp;D campaign. Discover strange monsters and encounter ideas that make every road feel alive.</p></div><div class="project-meta"><span><strong>176%</strong> funded</span><span><strong>24 days</strong> to go</span><span><strong>620</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 46%"></span></div><a class="project-arrow" href="#" aria-label="View The Lantern Moth Kickstarter campaign">↗</a></div></div>
-              </article>
-              <article class="project-card">
-                <div class="project-art"><img class="project-banner" src="assets/test images/bbeg banner 1.webp" alt="Ash and Oath campaign artwork" width="1672" height="941" loading="lazy" decoding="async" /></div>
-                <div class="project-card-body"><div><h3>Ash &amp; Oath</h3><p>A short D&amp;D campaign of old promises and dangerous ruins. Give your players choices that shape the story and leave a mark.</p></div><div class="project-meta"><span><strong>109%</strong> funded</span><span><strong>6 days</strong> to go</span><span><strong>310</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width: 31%"></span></div><a class="project-arrow" href="#" aria-label="View Ash and Oath Kickstarter campaign">↗</a></div></div>
-              </article>
-            </div>
+            <div class="project-grid live-projects" id="live-projects-grid" aria-live="polite" aria-busy="true"></div>
           </div>
 
           <div class="projects-group upcoming-group" id="upcoming-projects-group">
@@ -223,12 +208,7 @@
             <div class="upcoming-deck-wrap">
               <div class="upcoming-timer" aria-label="Time until the next upcoming project"><span id="upcoming-timer-bar"></span></div>
               <button class="upcoming-nav upcoming-prev" id="upcoming-prev" type="button" aria-label="Previous upcoming project">←</button>
-              <div class="upcoming-deck" id="upcoming-deck" aria-live="polite">
-                <article class="project-card upcoming-card deck-0"><div class="project-art"><img class="project-banner" src="assets/test images/banner (4).webp" alt="The Glass Isles cover artwork" width="4800" height="2700" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>The Glass Isles</h3><p>A nautical hexcrawl for D&amp;D, with island maps and impossible tides. Chart a course through a sea that remembers everyone who crosses it.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
-                <article class="project-card upcoming-card deck-1"><div class="project-art"><img class="project-banner" src="assets/test images/banner 2.webp" alt="Mercenary Organizations cover artwork" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>Mercenary Organizations</h3><p>A faction guide for Dungeon Masters. Build rival mercenary companies and put the cost of victory at the heart of your D&amp;D campaign.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
-                <article class="project-card upcoming-card deck-2"><div class="project-art"><img class="project-banner" src="assets/test images/banner.webp" alt="The Entertainers cover artwork" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>The Entertainers</h3><p>Performer NPCs and entertainment traditions for D&amp;D. Bring memorable characters and new stories to the stages and taverns of your world.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
-                <article class="project-card upcoming-card deck-3"><div class="project-art"><img class="project-banner" src="assets/test images/bbeg banner 1.webp" alt="Villain Story Engine cover artwork" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><span class="project-status upcoming">◌ Coming soon</span><h3>Villain Story Engine</h3><p>A Dungeon Master toolkit for memorable D&amp;D villains. Use their secrets, plans, and lairs to drive your campaign forward.</p></div><span class="notify-label">Get notified <b>↗</b></span></div></article>
-              </div>
+              <div class="upcoming-deck" id="upcoming-deck" aria-live="polite" aria-busy="true"></div>
               <button class="upcoming-nav upcoming-next" id="upcoming-next" type="button" aria-label="Next upcoming project">→</button>
             </div>
             <div class="upcoming-deck-meta"><span id="upcoming-current">01</span><div class="upcoming-progress"><span id="upcoming-progress-bar"></span></div><span id="upcoming-total">04</span></div>
@@ -242,7 +222,7 @@
         <section class="blog-section" id="blog" aria-labelledby="blog-title">
           <div class="blog-heading"><div><p class="eyebrow"><span></span> The Verseluft journal</p><h2 id="blog-title">DM advice &amp;<br /><i>studio notes.</i></h2></div><p>Find inspiration for your D&amp;D campaign with worldbuilding ideas, advice for Dungeon Masters, and a look behind the scenes of our books.</p></div>
           <div class="blog-feature"><div class="blog-feature-art"><img src="assets/test images/article PH1.webp" alt="Fantasy city illuminated by lava" width="1672" height="941" loading="lazy" decoding="async" /><span>01 / BEHIND THE SCENES</span><strong>Worldbuilding<br /><i>for the table.</i></strong><small>Inside the making of a campaign world</small></div><div class="blog-feature-copy"><span class="blog-category">Behind the scenes · 8 min read</span><h3>D&amp;D worldbuilding: what makes a setting playable?</h3><p>A memorable D&amp;D setting gives players reasons to explore. Look beyond maps and lore to the people, places, and unanswered questions that invite your group into the story.</p><a href="#blog" class="blog-read-link">Read the worldbuilding article <span>↗</span></a></div></div>
-          <div class="blog-toolbar"><div class="blog-filters"><button class="blog-filter active" type="button" data-blog-filter="all">All notes</button><button class="blog-filter" type="button" data-blog-filter="advice">DM advice</button><button class="blog-filter" type="button" data-blog-filter="making">Making games</button><button class="blog-filter" type="button" data-blog-filter="news">News</button></div><a class="blog-all-link" href="#blog">View all notes <span>↗</span></a></div>
+          <div class="blog-toolbar"><div class="blog-filters"><button class="blog-filter active" type="button" data-blog-filter="all">All notes</button><button class="blog-filter" type="button" data-blog-filter="advice">DM advice</button><button class="blog-filter" type="button" data-blog-filter="making">Making games</button><button class="blog-filter" type="button" data-blog-filter="news">News</button></div><a class="blog-all-link" href="/blog/">View all notes <span>↗</span></a></div>
           <div class="blog-grid">
             <article class="blog-card" data-blog-category="advice"><div class="blog-card-art"><img src="assets/test images/article PH2.webp" alt="Dark fantasy character" width="1672" height="941" loading="lazy" decoding="async" /><span>DM ADVICE</span></div><div class="blog-card-copy"><span class="blog-category">DM advice · 5 min read</span><h3>5 ways to make quiet D&amp;D scenes matter</h3><a href="#blog">Read the DM advice <span>↗</span></a></div></article>
             <article class="blog-card" data-blog-category="making"><div class="blog-card-art"><img src="assets/test images/article PH3.webp" alt="Alchemist in a candlelit workshop" width="1672" height="941" loading="lazy" decoding="async" /><span>MAKING GAMES</span></div><div class="blog-card-copy"><span class="blog-category">Making games · 7 min read</span><h3>Creating a D&amp;D supplement: from idea to table</h3><a href="#blog">Explore the publishing process <span>↗</span></a></div></article>
@@ -252,10 +232,11 @@
       </main>
       <footer class="site-footer">
         <div class="footer-top"><a class="brand footer-brand" href="#top" aria-label="Verseluft home"><img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" width="2048" height="2048" /><span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop RPG publishing</small></span></a><p>D&amp;D supplements for<br /><i>your next adventure.</i></p><a class="footer-up" href="#top">Back to the top <span>↑</span></a></div>
-        <div class="footer-links"><div><span class="footer-label">Explore</span><a href="#projects">Projects</a><a href="#blog">Blog</a><a href="#updates">Get updates</a></div><div><span class="footer-label">Company</span><a href="#about">About us</a><a href="#about">Our values</a><a href="#proof">Library</a></div><div><span class="footer-label">Find us</span><a href="#">Kickstarter ↗</a><a href="#">Instagram ↗</a><a href="#">Contact ↗</a></div></div>
+        <div class="footer-links"><div><span class="footer-label">Explore</span><a href="/projects/">Projects</a><a href="/blog/">Blog</a><a href="#updates">Get updates</a></div><div><span class="footer-label">Company</span><a href="/about/">About us</a><a href="#about">Our values</a><a href="/library/">Library</a></div><div><span class="footer-label">Find us</span><a href="#">Kickstarter ↗</a><a href="#">Instagram ↗</a><a href="/contact/">Contact ↗</a></div></div>
         <div class="footer-bottom"><span>© 2026 Verseluft</span><span>Made for the joy of playing</span><span>Privacy · Terms</span></div>
       </footer>
     </div>
+    <script src="/projects/projects.js?v=20260922-dashboard" defer></script>
     <script type="module" src="script.js?v=20260912-phase1-images"></script>
   </body>
 </html>
