@@ -102,7 +102,7 @@ function showPdfError() {
 function updateControls(pageIndex) {
   const leftPage = pageIndex + 1;
   const rightPage = Math.min(pageIndex + 2, pageCount);
-  currentPage.textContent = `${String(leftPage).padStart(2, '0')}â€“${String(rightPage).padStart(2, '0')}`;
+  currentPage.textContent = `${String(leftPage).padStart(2, '0')}–${String(rightPage).padStart(2, '0')}`;
   document.querySelectorAll('.page-dot').forEach((dot, index) => dot.classList.toggle('active', index === pageIndex));
 }
 

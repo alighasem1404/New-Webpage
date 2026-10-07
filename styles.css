@@ -946,8 +946,15 @@ h6 i,
 
 .about-action-creators:hover {
   border-color: var(--paper);
-  color: var(--cream);
+  color: var(--ink);
   background: var(--paper);
+}
+
+.stat strong .stat-plus {
+  display: inline;
+  font-size: .58em;
+  letter-spacing: 0;
+  vertical-align: baseline;
 }
 
 .blog-heading {

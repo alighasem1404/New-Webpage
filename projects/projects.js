@@ -1,6 +1,17 @@
 (() => {
   const LOCAL_PREVIEW_KEY = 'verseluft-projects-preview-v1';
   const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  const isFilePreview = window.location.protocol === 'file:';
+  const filePreviewProjects = [
+    { id: 'the-wilds-beyond', section: 'live', title: 'The Wilds Beyond', description: 'An adventure guide for D&D campaigns. Follow hidden roads, explore strange horizons, and discover stories beyond the lantern light.', image: 'assets/test%20images/banner%20(4).webp', imageAlt: 'The Wilds Beyond campaign artwork', fundingPercent: 412, daysRemaining: 18, backers: 1800, progressWidth: 82 },
+    { id: 'city-of-embers', section: 'live', title: 'City of Embers', description: 'A D&D campaign setting of rooftops and old magic. Explore a city that refuses to go quietly into the dark.', image: 'assets/test%20images/banner%202.webp', imageAlt: 'City of Embers campaign artwork', fundingPercent: 238, daysRemaining: 9, backers: 940, progressWidth: 58 },
+    { id: 'the-lantern-moth', section: 'live', title: 'The Lantern Moth', description: 'A creature compendium for your D&D campaign. Discover strange monsters and encounter ideas that make every road feel alive.', image: 'assets/test%20images/banner.webp', imageAlt: 'The Lantern Moth campaign artwork', fundingPercent: 176, daysRemaining: 24, backers: 620, progressWidth: 46 },
+    { id: 'ash-and-oath', section: 'live', title: 'Ash & Oath', description: 'A short D&D campaign of old promises and dangerous ruins. Give your players choices that shape the story and leave a mark.', image: 'assets/test%20images/bbeg%20banner%201.webp', imageAlt: 'Ash and Oath campaign artwork', fundingPercent: 109, daysRemaining: 6, backers: 310, progressWidth: 31 },
+    { id: 'the-glass-isles', section: 'upcoming', title: 'The Glass Isles', description: 'A nautical hexcrawl for D&D, with island maps and impossible tides. Chart a course through a sea that remembers everyone who crosses it.', image: 'assets/test%20images/banner%20(4).webp', imageAlt: 'The Glass Isles cover artwork', status: 'Coming soon' },
+    { id: 'mercenary-organizations', section: 'upcoming', title: 'Mercenary Organizations', description: 'A faction guide for Dungeon Masters. Build rival mercenary companies and put the cost of victory at the heart of your D&D campaign.', image: 'assets/test%20images/banner%202.webp', imageAlt: 'Mercenary Organizations cover artwork', status: 'Coming soon' },
+    { id: 'the-entertainers', section: 'upcoming', title: 'The Entertainers', description: 'Performer NPCs and entertainment traditions for D&D. Bring memorable characters and new stories to the stages and taverns of your world.', image: 'assets/test%20images/banner.webp', imageAlt: 'The Entertainers cover artwork', status: 'Coming soon' },
+    { id: 'villain-story-engine', section: 'upcoming', title: 'Villain Story Engine', description: 'A Dungeon Master toolkit for memorable D&D villains. Use their secrets, plans, and lairs to drive your campaign forward.', image: 'assets/test%20images/bbeg%20banner%201.webp', imageAlt: 'Villain Story Engine cover artwork', status: 'Coming soon' },
+  ];
   const liveGrid = document.querySelector('#live-projects-grid, #live-projects');
   const deck = document.querySelector('#upcoming-deck');
   if (!liveGrid && !deck) return;
@@ -68,11 +79,14 @@
     deckWrap.addEventListener('mouseleave', () => { timerPaused = false; timerStart = performance.now(); });
   }
 
-  fetch('/projects/data/projects.json', { cache: 'no-store' })
-    .then((response) => {
+  const projectData = isFilePreview
+    ? Promise.resolve({ projects: filePreviewProjects })
+    : fetch('/projects/data/projects.json', { cache: 'no-store' }).then((response) => {
       if (!response.ok) throw new Error(`Project data returned ${response.status}`);
       return response.json();
-    })
+    });
+
+  projectData
     .then((data) => {
       if (!data || !Array.isArray(data.projects)) throw new Error('Project data is not in the expected format.');
       if (isLocalPreview) {
