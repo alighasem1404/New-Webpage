@@ -20,7 +20,7 @@
 .contact-intro-copy { max-width: 545px; margin: 22px 0 0; color: #b7aa94; font: italic 18px/1.65 'IBM Plex Serif', Georgia, serif; }
 .contact-art { position: absolute; z-index: 0; inset: 0; margin: 0; overflow: hidden; background: #100d0a; }
 .contact-art::after { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16,13,10,.9) 0%, rgba(16,13,10,.76) 35%, rgba(16,13,10,.3) 64%, rgba(16,13,10,.06) 88%), linear-gradient(0deg, #100d0a 0%, rgba(16,13,10,.82) 8%, rgba(16,13,10,.12) 42%, transparent 75%); content: ''; pointer-events: none; }
-.contact-art img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 52%; transform: scale(1.22); transform-origin: 80% 50%; }
+.contact-art img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; object-position: right center; }
 .contact-embers { position: absolute; z-index: 1; inset: 0; overflow: hidden; pointer-events: none; mix-blend-mode: screen; }
 .contact-embers i { position: absolute; left: var(--x); bottom: -12px; width: var(--size); height: var(--size); border-radius: 50%; background: #ffd08a; box-shadow: 0 0 16px 4px rgba(220,120,53,.76); opacity: 0; animation: contact-ember-rise var(--duration) var(--delay) linear infinite; }
 .contact-embers i:nth-child(1) { --x: 7%; --size: 3px; --duration: 39s; --delay: -3s; --drift: 22px; }
@@ -57,7 +57,7 @@
 .contact-embers i:nth-child(32) { --x: 8%; --size: 2px; --duration: 36s; --delay: -29s; --drift: 15px; }
 @keyframes contact-ember-rise { 0% { opacity: 0; transform: translate3d(0,0,0) scale(.55); } 9% { opacity: .76; } 78% { opacity: .58; } 100% { opacity: 0; transform: translate3d(var(--drift),-1750px,0) scale(.25); } }
 
-.contact-content { position: relative; padding: 0 8% 100px; background: #100d0a; }
+.contact-content { position: relative; padding: 30px 8% 100px; background: #100d0a; }
 .contact-page .contact-content::before { position: absolute; z-index: 0; inset: 0; height: auto; background: radial-gradient(ellipse at 20% 12%, rgba(171,82,43,.17), transparent 39%), radial-gradient(ellipse at 84% 70%, rgba(210,168,70,.1), transparent 37%); background-size: 150% 130%, 140% 145%; content: ''; pointer-events: none; animation: contact-ember-wash 22s ease-in-out infinite alternate; }
 @keyframes contact-ember-wash { from { background-position: 0% 0%, 100% 100%; } to { background-position: 100% 30%, 0% 65%; } }
 .contact-layout { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, .9fr) minmax(440px, 1.1fr); gap: clamp(35px, 7vw, 92px); max-width: 1170px; margin: 0 auto; align-items: start; }
@@ -68,22 +68,13 @@
 .contact-guidance h2 i { color: var(--orange); font: 400 italic 1.05em 'IBM Plex Serif', Georgia, serif; letter-spacing: -.05em; }
 .contact-guidance-copy { max-width: 340px; margin: 0 0 25px; color: #a69b89; font-size: 12px; line-height: 1.7; }
 .contact-topic-list { border-top: 1px solid rgba(252,230,207,.18); }
-.contact-topic { display: grid; grid-template-columns: 31px minmax(0, 1fr) 16px; gap: 13px; align-items: center; min-height: 81px; border-bottom: 1px solid rgba(252,230,207,.18); transition: background .2s ease, padding .2s ease; }
+.contact-topic { display: grid; grid-template-columns: 31px minmax(0, 1fr); gap: 13px; align-items: center; min-height: 81px; border-bottom: 1px solid rgba(252,230,207,.18); transition: background .2s ease, padding .2s ease; }
 .contact-topic:hover, .contact-topic:focus-visible { padding-right: 10px; padding-left: 10px; background: rgba(252,230,207,.035); }
 .contact-topic-icon { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid rgba(210,168,70,.4); border-radius: 50%; color: var(--orange); font-size: 13px; transition: transform .35s ease, box-shadow .35s ease, background .35s ease; }
 .contact-topic:hover .contact-topic-icon, .contact-topic:focus-visible .contact-topic-icon { transform: rotate(24deg) scale(1.08); background: rgba(239,170,114,.06); box-shadow: 0 0 15px rgba(239,170,114,.24); }
 .contact-topic-copy strong, .contact-topic-copy small { display: block; }
 .contact-topic-copy strong { color: var(--ink); font-size: 11px; }
 .contact-topic-copy small { max-width: 275px; margin-top: 5px; color: #908675; font-size: 10px; line-height: 1.5; }
-.contact-topic-index { align-self: start; padding-top: 20px; color: #736b5d; font: 9px 'Unbounded', sans-serif; }
-.contact-direct-routes { margin-top: 22px; padding: 15px 14px 13px; border: 1px dashed rgba(210,168,70,.28); background: rgba(252,230,207,.018); }
-.contact-direct-label { display: flex; align-items: center; gap: 9px; margin: 0 0 12px; color: #897c64; font: 600 8px 'Unbounded', sans-serif; letter-spacing: .07em; text-transform: uppercase; }
-.contact-direct-label span:first-child { display: grid; width: 20px; height: 20px; place-items: center; border: 1px solid rgba(210,168,70,.38); border-radius: 50%; color: var(--orange); font-size: 7px; }
-.contact-direct-route { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid rgba(252,230,207,.11); }
-.contact-direct-route > span { color: #918675; font-size: 9px; }
-.contact-direct-route strong { color: #c6b79e; font-size: 9px; font-weight: 500; text-align: right; }
-.contact-placeholder-note { margin: 8px 0 0; color: #766b58; font-size: 8px; line-height: 1.5; }
-
 .contact-form-panel { position: relative; padding: 28px clamp(22px, 3vw, 39px) 30px; color: #2e261b; background-color: #eee3ca; background-image: radial-gradient(rgba(77,61,37,.06) .7px, transparent .7px); background-size: 5px 5px; box-shadow: 0 24px 65px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,255,255,.4); }
 .contact-form-panel::before { position: absolute; inset: 9px; border: 1px solid rgba(81,64,37,.18); content: ''; pointer-events: none; }
 .contact-panel-topline { position: relative; z-index: 1; display: flex; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid rgba(67,54,35,.23); color: #83765e; font: 600 8px 'Unbounded', sans-serif; letter-spacing: .08em; text-transform: uppercase; }

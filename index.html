@@ -55,7 +55,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260910" />
+    <link rel="stylesheet" href="styles.css?v=20261011-about-buttons" />
+<link rel="stylesheet" href="responsive.css?v=20261011-about-buttons" />
     <style>
       .upcoming-group:not(.is-enhanced) .upcoming-deck-wrap {
         height: auto !important;
@@ -98,7 +99,6 @@
 
         <nav class="main-nav" aria-label="Main navigation">
           <a class="active" href="#top">Home</a>
-          <a href="#about">Our values</a>
           <a href="/projects/">Projects</a>
           <a href="/blog/">Blog</a>
           <a href="/library/">Library</a>
@@ -111,7 +111,7 @@
             <span aria-hidden="true">⌕</span>
             <input id="site-search" name="q" type="search" placeholder="Search the library" aria-label="Search the library" />
           </form>
-          <a class="small-button" href="/library/">Browse Library <span>↗</span></a>
+          <a class="small-button" href="/library/">Browse books <span aria-hidden="true">↗</span></a>
         </div>
       </header>
 
@@ -127,7 +127,10 @@
               <div class="eyebrow"><span></span></div>
               <h1 id="hero-carousel-title">Everything a DM Could Ever Need<br /><i></i></h1>
               <p class="hero-intro">A vast library of Plug-and-Play D&amp;D content for Game Masters: adventures, NPCs, locations, settings, encounters, mechanics, and countless tools for building better games.</p>
-              <a class="primary-button" href="/library/">Browse Library <span>↗</span></a>
+              <div class="hero-actions">
+                <a class="primary-button" href="/library/">Browse Library <span aria-hidden="true">↗</span></a>
+                <a class="hero-values-button" href="#about">Our values <span aria-hidden="true">↓</span></a>
+              </div>
             </div>
             <div class="scroll-note"><span class="scroll-line"></span> Scroll to explore</div>
           </div>
@@ -179,7 +182,7 @@
               <h2 id="about-title">Expanding the<br /><i>Collective imagination</i></h2>
               <p class="about-lead">We are a collective of indie DnD creators, DMs, and players, who make and share what we wish we had.</p>
               <p class="about-body">We want to add to the collective imagination of the D&amp;D community—creating adventures, NPCs, settings, and ideas that give Game Masters more to work with and players more to discover.</p>
-              <div class="about-actions" aria-label="Verseluft community links"><a href="#" class="about-action-button about-action-discord">Discord <span>↗</span></a><a href="#updates" class="about-action-button about-action-newsletter">Newsletter <span>↗</span></a><a href="#" class="about-action-button about-action-creators">Our Creators <span>↗</span></a></div>
+              <div class="about-actions" aria-label="Verseluft community links"><a href="#" class="about-action-button about-action-discord">Discord</a><a href="#updates" class="about-action-button about-action-newsletter">Newsletter</a><a href="#" class="about-action-button about-action-creators">Our Creators</a></div>
             </div>
             <div class="about-art" aria-label="Verseluft-style tabletop roleplaying character sheet on a dark oak studio table" role="img">
               <img class="about-image" src="assets/about-verseluft-03.webp" srcset="assets/responsive/about-verseluft-03-480.webp 480w, assets/responsive/about-verseluft-03-720.webp 720w, assets/about-verseluft-03.webp 1003w" sizes="(max-width: 900px) 100vw, (max-width: 1400px) 36vw, 510px" alt="Verseluft D&amp;D character sheet with an adventurer portrait, ability scores, skills, armor, hit points, and equipment panels" width="1003" height="1568" loading="lazy" decoding="async" />
@@ -211,7 +214,7 @@
               <div class="upcoming-deck" id="upcoming-deck" aria-live="polite" aria-busy="true"></div>
               <button class="upcoming-nav upcoming-next" id="upcoming-next" type="button" aria-label="Next upcoming project">→</button>
             </div>
-            <div class="upcoming-deck-meta"><span id="upcoming-current">01</span><div class="upcoming-progress"><span id="upcoming-progress-bar"></span></div><span id="upcoming-total">04</span></div>
+            <div class="upcoming-deck-meta"><span id="upcoming-current">1</span><span aria-hidden="true">/</span><span id="upcoming-total">4</span></div>
           </div>
         </section>
 
@@ -236,7 +239,7 @@
         <div class="footer-bottom"><span>© 2026 Verseluft</span><span>Made for the joy of playing</span><span>Privacy · Terms</span></div>
       </footer>
     </div>
-    <script src="/projects/projects.js?v=20260922-dashboard" defer></script>
-    <script type="module" src="script.js?v=20260912-phase1-images"></script>
+    <script src="/projects/projects.js?v=20261011-page-count" defer></script>
+    <script type="module" src="script.js?v=20261011-pdf-fix"></script>
   </body>
 </html>

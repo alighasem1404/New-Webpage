@@ -48,6 +48,7 @@
   const timerDuration = 7000;
   const current = document.querySelector('#upcoming-current');
   const total = document.querySelector('#upcoming-total');
+  document.querySelectorAll('.upcoming-progress').forEach((indicator) => indicator.remove());
   const progress = document.querySelector('#upcoming-progress-bar, #upcoming-timer-bar');
   const prev = document.querySelector('#upcoming-prev');
   const next = document.querySelector('#upcoming-next');
@@ -59,7 +60,7 @@
       card.className = `project-card upcoming-card deck-${offset}`;
       card.setAttribute('aria-hidden', String(offset > 2));
     });
-    if (current) current.textContent = String(upcomingIndex + 1).padStart(2, '0');
+    if (current) current.textContent = String(upcomingIndex + 1);
     if (progress) progress.style.width = `${((upcomingIndex + 1) / upcomingCards.length) * 100}%`;
   }
 
@@ -117,7 +118,7 @@
         });
         upcomingCards = [...deck.querySelectorAll('.upcoming-card')];
         deck.setAttribute('aria-busy', 'false');
-        if (total) total.textContent = String(upcomingCards.length).padStart(2, '0');
+        if (total) total.textContent = String(upcomingCards.length);
         updateUpcomingDeck();
       }
       if (upcomingCards.length > 1) {

@@ -919,29 +919,21 @@ h6 i,
 }
 
 .about-action-discord {
-  border-color: #5865f2;
-  color: #fff;
-  background: #5865f2;
-}
-
-.about-action-discord span {
-  color: currentColor;
+  border-color: rgba(252, 230, 207, .32);
+  color: var(--ink);
+  background: transparent;
 }
 
 .about-action-discord:hover {
-  border-color: #4752c4;
+  border-color: #5865f2;
   color: #fff;
-  background: #4752c4;
+  background: #5865f2;
 }
 
 .about-action-creators {
   border-color: var(--ink);
   color: var(--cream);
   background: var(--ink);
-}
-
-.about-action-creators span {
-  color: currentColor;
 }
 
 .about-action-creators:hover {
@@ -971,6 +963,11 @@ h6 i,
 .upcoming-deck-meta,
 .upcoming-deck-wrap .upcoming-timer {
   width: min(90%, 840px);
+}
+
+.upcoming-deck-meta {
+  justify-content: center;
+  gap: 5px;
 }
 
 .blog-heading h2,

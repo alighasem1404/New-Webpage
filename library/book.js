@@ -267,7 +267,7 @@ function updateBookPdfControls(index) {
 async function initializeBookPdfPreview() {
   if (!bookPdfElement || !bookPdfLoading) return;
   try {
-    const pdfjsLib = await import('../assets/pdfjs/pdf.mjs');
+    const pdfjsLib = await import('../assets/pdfjs/pdf.js');
     if (!window.St?.PageFlip) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
@@ -277,7 +277,7 @@ async function initializeBookPdfPreview() {
         document.head.append(script);
       });
     }
-    pdfjsLib.GlobalWorkerOptions.workerSrc = '../assets/pdfjs/pdf.worker.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '../assets/pdfjs/pdf.worker.js';
     bookPdfDocument = await pdfjsLib.getDocument(bookPdfPath).promise;
     bookPdfPageCount = bookPdfDocument.numPages;
     bookPdfTotal.textContent = String(bookPdfPageCount).padStart(2, '0');

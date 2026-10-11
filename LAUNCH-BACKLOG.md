@@ -18,7 +18,7 @@ Launch-critical functionality, content access, readability, and layout.
 
 | ID | Task | Estimate | Status | Implementation notes |
 |---|---|---:|---|---|
-| M01 | Make the site responsive on mobile, tablet, and desktop. | 4–8 hours | Not started | Check the main pages and common screen sizes. |
+| M01 | Make the site responsive on mobile, tablet, and desktop. | 4–8 hours | Done | Added shared responsive refinements across public pages. Follow-up mobile reviews fixed PDF flipbook overflow, centered the newsletter panel, blog intro, and proof heading; improved stats, search width, contact artwork, about spacing and community links; added newsletter framing; and refined button contrast, carousel controls and pagination, and contact-section spacing. |
 | M02 | Temporarily hide sections that do not have content yet. | 30–90 min | Not started | Keep empty or placeholder content out of the launch experience. |
 | M03 | Make text at the bottom of the page readable, including its hover state. | 30–90 min | Not started | Check text/background contrast and hover styling. |
 | M04 | Fix broken buttons so they work or lead somewhere useful. | 1–2 hours | Not started | This refers to broken buttons generally; Contact CTAs and the Contact page button have separate items below. |

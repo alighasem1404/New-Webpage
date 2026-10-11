@@ -31,7 +31,8 @@ if (contactForm) {
 }
 
 document.querySelectorAll('[data-inquiry]').forEach((topicLink) => {
-  topicLink.addEventListener('click', () => {
+  topicLink.addEventListener('click', (event) => {
+    event.preventDefault();
     const topicMap = {
       'backer-support': 'Book or campaign support',
       publishing: 'Publishing and partnerships',

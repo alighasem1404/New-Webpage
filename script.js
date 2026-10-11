@@ -99,10 +99,17 @@ function showPdfError() {
   loadingStatus.textContent = 'The sample could not be loaded. Please try again.';
 }
 
-function updateControls(pageIndex) {
+function getFlipStep(flipInstance) {
+  return flipInstance?.getOrientation() === 'portrait' ? 1 : 2;
+}
+
+function updateControls(pageIndex, flipInstance = pageFlip) {
+  const step = getFlipStep(flipInstance);
   const leftPage = pageIndex + 1;
-  const rightPage = Math.min(pageIndex + 2, pageCount);
-  currentPage.textContent = `${String(leftPage).padStart(2, '0')}–${String(rightPage).padStart(2, '0')}`;
+  const rightPage = Math.min(pageIndex + step, pageCount);
+  currentPage.textContent = step === 1
+    ? String(leftPage).padStart(2, '0')
+    : `${String(leftPage).padStart(2, '0')}–${String(rightPage).padStart(2, '0')}`;
   document.querySelectorAll('.page-dot').forEach((dot, index) => dot.classList.toggle('active', index === pageIndex));
 }
 
@@ -135,12 +142,15 @@ function openFullPreview() {
         flippingTime: 900,
         maxShadowOpacity: 0.3,
         mobileScrollSupport: true,
-        usePortrait: false,
+        usePortrait: true,
       });
       modalPageFlip.loadFromHTML(cloneRenderedPages());
       modalPageFlip.on('flip', (event) => {
-        updateControls(event.data);
+        updateControls(event.data, modalPageFlip);
         ensureSpreadRendered(event.data).catch(showPdfError);
+      });
+      modalPageFlip.on('changeOrientation', () => {
+        updateControls(modalPageFlip.getCurrentPageIndex(), modalPageFlip);
       });
       modalBook.addEventListener('pointerdown', (event) => prefetchTurn(event, modalPageFlip));
     }
@@ -177,9 +187,9 @@ function loadPageFlipLibrary() {
 function initializePdfPreview() {
   if (!pdfPreviewPromise) {
     pdfPreviewPromise = (async () => {
-      const pdfjsLib = await import('./assets/pdfjs/pdf.mjs');
+      const pdfjsLib = await import('./assets/pdfjs/pdf.js');
       await loadPageFlipLibrary();
-      pdfjsLib.GlobalWorkerOptions.workerSrc = './assets/pdfjs/pdf.worker.mjs';
+      pdfjsLib.GlobalWorkerOptions.workerSrc = './assets/pdfjs/pdf.worker.js';
 
       pdfDocument = await pdfjsLib.getDocument(pdfPath).promise;
       pageCount = pdfDocument.numPages;
@@ -202,16 +212,21 @@ function initializePdfPreview() {
         flippingTime: 900,
         maxShadowOpacity: 0.28,
         mobileScrollSupport: false,
-        usePortrait: false,
+        usePortrait: true,
       });
       pageFlip.loadFromHTML(renderedPages);
       pageFlip.on('flip', (event) => {
-        updateControls(event.data);
+        updateControls(event.data, pageFlip);
         ensureSpreadRendered(event.data).catch(showPdfError);
       });
       pageFlip.on('changeState', () => {
         previousButton.disabled = pageFlip.getCurrentPageIndex() === 0;
-        nextButton.disabled = pageFlip.getCurrentPageIndex() >= pageCount - 2;
+        nextButton.disabled = pageFlip.getCurrentPageIndex() >= pageCount - getFlipStep(pageFlip);
+      });
+      pageFlip.on('changeOrientation', () => {
+        updateControls(pageFlip.getCurrentPageIndex(), pageFlip);
+        previousButton.disabled = pageFlip.getCurrentPageIndex() === 0;
+        nextButton.disabled = pageFlip.getCurrentPageIndex() >= pageCount - getFlipStep(pageFlip);
       });
       updateControls(0);
       previousButton.disabled = true;
@@ -232,17 +247,18 @@ function prefetchTurn(event, flipInstance) {
   if (!flipInstance) return;
   const bounds = event.currentTarget.getBoundingClientRect();
   const movingForward = event.clientX >= bounds.left + bounds.width / 2;
-  const nextIndex = flipInstance.getCurrentPageIndex() + (movingForward ? 2 : -2);
+  const step = getFlipStep(flipInstance);
+  const nextIndex = flipInstance.getCurrentPageIndex() + (movingForward ? step : -step);
   if (nextIndex >= 0 && nextIndex < pageCount) {
     ensureSpreadRendered(nextIndex).catch(showPdfError);
   }
 }
 
 previousButton.addEventListener('click', () => {
-  if (pageFlip) flipToPage(pageFlip, pageFlip.getCurrentPageIndex() - 2).catch(showPdfError);
+  if (pageFlip) flipToPage(pageFlip, pageFlip.getCurrentPageIndex() - getFlipStep(pageFlip)).catch(showPdfError);
 });
 nextButton.addEventListener('click', () => {
-  if (pageFlip) flipToPage(pageFlip, pageFlip.getCurrentPageIndex() + 2).catch(showPdfError);
+  if (pageFlip) flipToPage(pageFlip, pageFlip.getCurrentPageIndex() + getFlipStep(pageFlip)).catch(showPdfError);
 });
 openPdfButton.addEventListener('click', async () => {
   openPdfButton.disabled = true;
