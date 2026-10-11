@@ -711,12 +711,73 @@ h6 i,
 }
 
 .footer-links a {
+  position: relative;
+  align-self: flex-start;
   color: #866b5b;
 }
 
+.footer-up {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #815318;
+}
+
+.footer-links a,
+.footer-up {
+  transition: color .18s ease;
+}
+
+.footer-links a::after,
+.footer-up::after {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .2s ease;
+}
+
 .footer-links a:hover,
-.footer-up:hover {
-  color: var(--ink);
+.footer-links a:focus-visible,
+.footer-up:hover,
+.footer-up:focus-visible {
+  color: #755210;
+}
+
+.footer-links a:hover::after,
+.footer-links a:focus-visible::after,
+.footer-up:hover::after,
+.footer-up:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.footer-up span {
+  transition: transform .18s ease;
+}
+
+.footer-up:hover span,
+.footer-up:focus-visible span {
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-links a,
+  .footer-up,
+  .footer-links a::after,
+  .footer-up::after,
+  .footer-up span {
+    transition: none;
+  }
+
+  .footer-up:hover span,
+  .footer-up:focus-visible span {
+    transform: none;
+  }
 }
 
 .footer-bottom {
