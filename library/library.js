@@ -150,7 +150,7 @@ function renderLibrary(books) {
 
 async function loadLibrary() {
   try {
-    const response = await fetch('./data/books.json', { headers: { Accept: 'application/json' } });
+    const response = await fetch('./data/books.json', { cache: 'no-store', headers: { Accept: 'application/json' } });
     if (!response.ok) throw new Error(`Could not load the book data (${response.status}).`);
 
     const data = await response.json();

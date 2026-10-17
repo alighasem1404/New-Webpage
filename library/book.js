@@ -192,7 +192,7 @@ async function loadBookPage() {
   }
 
   try {
-    const response = await fetch('/library/data/books.json', { headers: { Accept: 'application/json' } });
+    const response = await fetch('/library/data/books.json', { cache: 'no-store', headers: { Accept: 'application/json' } });
     if (!response.ok) throw new Error(`Could not load the book data (${response.status}).`);
     const data = await response.json();
     if (data.schemaVersion !== 1 || !Array.isArray(data.books)) throw new Error('The book data has an unsupported format.');
