@@ -1,5 +1,11 @@
 RewriteEngine On
 
+# TEMPORARILY HIDE THE LIBRARY. Remove this rule to restore /library/ and book pages.
+RewriteRule ^library(?:/.*)?$ / [R=302,L]
+
+# TEMPORARILY HIDE THE JOURNAL. Remove this rule to restore /blog/ and its articles.
+RewriteRule ^blog(?:/.*)?$ / [R=302,L]
+
 # Send direct requests for /index.html to the canonical homepage.
 RewriteCond %{THE_REQUEST} \s/+index\.html(?:[\s?]|$) [NC]
 RewriteRule ^index\.html$ https://verseluft.com/ [R=301,L]
