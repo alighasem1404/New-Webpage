@@ -154,6 +154,7 @@ h1, h2 { margin: 0; font: 600 clamp(40px, 5.4vw, 78px)/1.06 'Unbounded', sans-se
 .alt-three-form > button { color: var(--paper); background: var(--orange); }
 .alt-three-form > button:hover { color: var(--paper); background: var(--plum); }
 .alt-three-form .alt-success { color: var(--orange); }
+.kit-newsletter-embed { width: min(100%, 510px); }
 .alt-three-mark { color: var(--orange); }
 .alt-three-mark:before { border-color: color-mix(in srgb, var(--ink) 45%, transparent); }
 .alt-three-mark span { color: color-mix(in srgb, var(--ink) 68%, var(--paper)); }

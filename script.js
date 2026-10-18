@@ -284,14 +284,6 @@ initializePdfPreview().catch(showPdfError);
 const upcomingGroup = document.querySelector('.upcoming-group');
 if (upcomingGroup) upcomingGroup.classList.add('is-enhanced');
 
-document.querySelectorAll('.alt-lead-form').forEach((form) => form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (!form.reportValidity()) return;
-  form.querySelector('button[type="submit"]').disabled = true;
-  form.querySelector('.alt-success').hidden = false;
-  form.reset();
-}));
-
 const blogCards = [...document.querySelectorAll('.blog-card')];
 document.querySelectorAll('[data-blog-filter]').forEach((button) => {
   button.addEventListener('click', () => {
