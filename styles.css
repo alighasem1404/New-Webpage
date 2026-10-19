@@ -1115,3 +1115,125 @@ h6 i,
   color: var(--cream);
   background: var(--ink);
 }
+
+/* Make the values section read as a core part of the studio identity. */
+.about-values {
+  gap: clamp(28px, 3.2vw, 44px);
+  padding-top: 38px;
+}
+
+.about-values > div > span {
+  font-size: 12px;
+}
+
+.about-values h3 {
+  font-size: clamp(22px, 2vw, 25px);
+  line-height: 1.2;
+}
+
+.about-values p {
+  max-width: 280px;
+  margin-top: 11px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@media (max-width: 560px) {
+  .about-values {
+    gap: 28px;
+    margin-top: 58px;
+    padding-top: 30px;
+  }
+
+  .about-values > div {
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(238, 232, 221, .2);
+  }
+
+  .about-values > div:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .about-values > div > span {
+    font-size: 13px;
+  }
+
+  .about-values h3 {
+    font-size: 24px;
+  }
+
+  .about-values p {
+    max-width: 330px;
+    font-size: 16px;
+  }
+}
+/* Keep the desktop footer proportionate to its compact set of links. */
+.site-shell .site-footer {
+  padding: 42px 10% 18px;
+}
+
+.site-shell .site-footer .footer-top {
+  padding-bottom: 32px;
+}
+
+.site-shell .site-footer .footer-links {
+  gap: 36px;
+  margin: 28px 0 34px auto;
+}
+
+.site-shell .site-footer .footer-bottom {
+  padding-top: 14px;
+}
+/* Improve text contrast in the light footer. */
+.site-shell .site-footer .footer-brand .brand-descriptor {
+  color: #80604d;
+}
+
+.site-shell .site-footer .footer-links .footer-label {
+  color: #98532f;
+}
+
+.site-shell .site-footer .footer-links a,
+.site-shell .site-footer .footer-up {
+  color: #5f4637;
+}
+
+.site-shell .site-footer .footer-bottom {
+  color: #6f5545;
+}
+
+.site-shell .site-footer .footer-bottom span:last-child {
+  color: #5f4637;
+}
+/* Final compact footer spacing with slightly larger, clearer type. */
+.site-shell .site-footer {
+  padding: 24px 10% 10px;
+}
+
+.site-shell .site-footer .footer-top {
+  padding-bottom: 20px;
+}
+
+.site-shell .site-footer .footer-brand .brand-descriptor {
+  font-size: 9px;
+}
+
+.site-shell .site-footer .footer-links {
+  gap: 30px;
+  margin: 18px 0 20px auto;
+}
+
+.site-shell .site-footer .footer-label {
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+
+.site-shell .site-footer .footer-links a {
+  font-size: 13px;
+}
+
+.site-shell .site-footer .footer-bottom {
+  padding-top: 10px;
+  font-size: 11px;
+}

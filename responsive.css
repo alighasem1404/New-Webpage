@@ -1148,3 +1148,48 @@ main > section {
 .hero-values-button:hover span {
   color: currentColor;
 }
+
+@media (max-width: 700px) {
+  .site-shell .site-footer {
+    padding: 36px 7% 18px;
+  }
+
+  .site-shell .site-footer .footer-top {
+    padding-bottom: 24px;
+  }
+
+  .site-shell .site-footer .footer-top > p {
+    margin-bottom: 12px;
+    font-size: 19px;
+  }
+
+  .site-shell .site-footer .footer-brand .brand-logo {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+  }
+
+  .site-shell .site-footer .footer-links {
+    gap: 16px;
+    margin: 22px 0 26px;
+  }
+
+  .site-shell .site-footer .footer-links > div {
+    gap: 8px;
+  }
+
+  .site-shell .site-footer .footer-label {
+    margin-bottom: 2px;
+    font-size: 9px;
+  }
+
+  .site-shell .site-footer .footer-links a {
+    font-size: 12px;
+  }
+
+  .site-shell .site-footer .footer-bottom {
+    gap: 5px;
+    padding-top: 14px;
+    font-size: 10px;
+  }
+}
