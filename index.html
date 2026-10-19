@@ -55,8 +55,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261011-footer-hover" />
-<link rel="stylesheet" href="responsive.css?v=20261011-about-buttons" />
+    <link rel="stylesheet" href="styles.css?v=20261019-centered-arrows" />
+<link rel="stylesheet" href="responsive.css?v=20261019-carousel-spacing" />
     <style>
       .upcoming-group:not(.is-enhanced) .upcoming-deck-wrap {
         height: auto !important;
@@ -88,6 +88,7 @@
         display: none !important;
       }
     </style>
+    <link rel="stylesheet" href="/scroll-to-top.css?v=20261019" />
   </head>
   <body>
     <div class="site-shell">
@@ -146,9 +147,9 @@
           <div class="content-proof-grid">
             <div class="flipbook-wrap">
               <div class="flipbook" aria-label="Interactive sample of a Verseluft D&amp;D supplement"><div class="pdf-book" id="pdf-book"></div><div class="pdf-loading" id="pdf-loading" role="status" aria-live="polite"><strong>Inside a Verseluft book</strong><p id="pdf-loading-message">Loading sample pages…</p></div></div>
-              <div class="flip-controls" id="flip-controls" hidden><button class="flip-button" id="flip-prev" type="button" aria-label="Previous spread">←</button><div class="page-dots" aria-label="Spread navigation" id="page-dots"></div><span class="page-count"><strong id="current-page">01–02</strong> / <span id="total-pages">--</span></span><button class="flip-button" id="flip-next" type="button" aria-label="Next spread">→</button></div>
+              <div class="flip-controls" id="flip-controls" hidden><button class="flip-button" id="flip-prev" type="button" aria-label="Previous spread"><span aria-hidden="true">←</span></button><div class="page-dots" aria-label="Spread navigation" id="page-dots"></div><span class="page-count"><strong id="current-page">01–02</strong> / <span id="total-pages">--</span></span><button class="flip-button" id="flip-next" type="button" aria-label="Next spread"><span aria-hidden="true">→</span></button></div>
               <p class="flip-hint" id="flip-hint" hidden>Use the arrows or click the dots to turn the pages</p>
-              <button class="preview-open" id="open-pdf" type="button">Open full-screen preview ↗</button>
+              <button class="preview-open" id="open-pdf" type="button">Open full-screen preview</button>
             </div>
 
             <div class="testimonial">
@@ -194,17 +195,17 @@
           </div>
 
           <div class="projects-group">
-            <div class="group-label"><span>01</span><h3>Live on Kickstarter</h3><i></i></div>
+            <div class="group-label"><h3>Live on Kickstarter</h3><i></i></div>
             <div class="project-grid live-projects" id="live-projects-grid" aria-live="polite" aria-busy="true"></div>
           </div>
 
           <div class="projects-group upcoming-group" id="upcoming-projects-group">
-            <div class="group-label"><span>02</span><h3>Upcoming</h3><i></i><a href="#projects">Explore upcoming books <b>↗</b></a></div>
+            <div class="group-label"><h3>Upcoming</h3><i></i><a href="#projects">Explore upcoming books <b>↗</b></a></div>
             <div class="upcoming-deck-wrap">
               <div class="upcoming-timer" aria-label="Time until the next upcoming project"><span id="upcoming-timer-bar"></span></div>
-              <button class="upcoming-nav upcoming-prev" id="upcoming-prev" type="button" aria-label="Previous upcoming project">←</button>
+              <button class="upcoming-nav upcoming-prev" id="upcoming-prev" type="button" aria-label="Previous upcoming project"><span aria-hidden="true">←</span></button>
               <div class="upcoming-deck" id="upcoming-deck" aria-live="polite" aria-busy="true"></div>
-              <button class="upcoming-nav upcoming-next" id="upcoming-next" type="button" aria-label="Next upcoming project">→</button>
+              <button class="upcoming-nav upcoming-next" id="upcoming-next" type="button" aria-label="Next upcoming project"><span aria-hidden="true">→</span></button>
             </div>
             <div class="upcoming-deck-meta"><span id="upcoming-current">1</span><span aria-hidden="true">/</span><span id="upcoming-total">4</span></div>
           </div>
@@ -234,5 +235,6 @@
     </div>
     <script src="/projects/projects.js?v=20261011-page-count" defer></script>
     <script type="module" src="script.js?v=20261011-pdf-fix"></script>
-  </body>
+    <script src="/scroll-to-top.js?v=20261019" defer></script>
+</body>
 </html>

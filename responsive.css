@@ -647,12 +647,13 @@ main > section {
   .upcoming-group .upcoming-deck-wrap .upcoming-nav,
   .projects-upcoming .upcoming-deck-wrap .upcoming-nav {
     top: 30%;
-    left: 0;
+    left: 8px;
+    border-radius: 4px;
   }
 
   .upcoming-group .upcoming-deck-wrap .upcoming-next,
   .projects-upcoming .upcoming-deck-wrap .upcoming-next {
-    right: 0;
+    right: 8px;
     left: auto;
   }
 

@@ -276,6 +276,38 @@ h6 i,
   background: var(--ink);
 }
 
+.flip-button,
+.upcoming-nav {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.flip-button {
+  position: relative;
+}
+
+.flip-button > span,
+.upcoming-nav > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 1em;
+  height: 1em;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
 .about-action-creators:hover {
   border-color: var(--orange);
   color: var(--cream);
