@@ -314,6 +314,11 @@ h6 i,
   background: var(--orange);
 }
 
+.about-action-creators[hidden],
+#upcoming-projects-group[hidden] {
+  display: none !important;
+}
+
 /* Let the hero grow with its copy and keep it readable on smaller screens. */
 .hero-carousel-hero {
   position: relative;
