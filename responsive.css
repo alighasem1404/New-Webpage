@@ -1137,6 +1137,8 @@ main > section {
 .hero-values-button span {
   color: var(--orange);
   font-size: 16px;
+  font-weight: 800;
+  -webkit-text-stroke: 0.55px currentColor;
 }
 
 .hero-values-button:hover {
