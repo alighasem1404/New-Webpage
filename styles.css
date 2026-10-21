@@ -1237,3 +1237,31 @@ h6 i,
   padding-top: 10px;
   font-size: 11px;
 }
+
+.flip-button > span svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.project-arrow {
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.project-arrow svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
