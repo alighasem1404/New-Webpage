@@ -212,7 +212,7 @@ async function loadBookPage() {
 initializeFireflies();
 loadBookPage();
 
-const bookPdfPath = '../assets/- merc demo - The Homebrewery.pdf';
+const bookPdfPath = '../assets/Order of Mercenary - The Homebrewery 247-262.pdf';
 const bookPdfElement = document.querySelector('#book-pdf-book');
 const bookPdfLoading = document.querySelector('#book-pdf-loading');
 const bookPdfCurrent = document.querySelector('#book-pdf-current');

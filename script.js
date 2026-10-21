@@ -5,12 +5,11 @@ document.querySelectorAll('.main-nav a').forEach((link) => {
   });
 });
 
-const pdfPath = 'assets/- merc demo - The Homebrewery.pdf';
+const pdfPath = 'assets/Order of Mercenary - The Homebrewery 247-262.pdf';
 const bookElement = document.querySelector('#pdf-book');
 const loadingMessage = document.querySelector('#pdf-loading');
 const loadingStatus = document.querySelector('#pdf-loading-message');
 const flipControls = document.querySelector('#flip-controls');
-const flipHint = document.querySelector('#flip-hint');
 const pageDots = document.querySelector('#page-dots');
 const currentPage = document.querySelector('#current-page');
 const totalPages = document.querySelector('#total-pages');
@@ -110,7 +109,12 @@ function updateControls(pageIndex, flipInstance = pageFlip) {
   currentPage.textContent = step === 1
     ? String(leftPage).padStart(2, '0')
     : `${String(leftPage).padStart(2, '0')}–${String(rightPage).padStart(2, '0')}`;
-  document.querySelectorAll('.page-dot').forEach((dot, index) => dot.classList.toggle('active', index === pageIndex));
+  document.querySelectorAll('.page-dot').forEach((dot, index) => {
+    const isCurrent = index === pageIndex;
+    dot.classList.toggle('active', isCurrent);
+    if (isCurrent) dot.setAttribute('aria-current', 'page');
+    else dot.removeAttribute('aria-current');
+  });
 }
 
 function cloneRenderedPages() {
@@ -232,7 +236,6 @@ function initializePdfPreview() {
       previousButton.disabled = true;
       nextButton.disabled = pageCount < 3;
       flipControls.hidden = false;
-      flipHint.hidden = false;
       loadingMessage.hidden = true;
       bookElement.addEventListener('pointerdown', (event) => prefetchTurn(event, pageFlip));
     })().catch((error) => {
