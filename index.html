@@ -55,7 +55,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261019-compact-footer-type" />
+    <link rel="stylesheet" href="styles.css?v=20261021-testimonial-size-project-grid" />
 <link rel="stylesheet" href="responsive.css?v=20261019-compact-footer-type" />
     <style>
       .upcoming-group:not(.is-enhanced) .upcoming-deck-wrap {
@@ -152,10 +152,21 @@
               <button class="preview-open" id="open-pdf" type="button">Open full-screen preview</button>
             </div>
 
-            <div class="testimonial">
-              <div class="testimonial-top"><span class="quote-mark">“</span></div>
-              <blockquote>It feels like opening a beautifully made box of possibilities. There’s always something here that makes our table lean in a little closer.</blockquote>
-              <div class="quote-author"><span class="author-avatar">JM</span><span><strong>Jamie M.</strong><small>Backer &amp; game master</small></span></div>
+            <div class="testimonial" id="testimonial-carousel" role="region" aria-roledescription="carousel" aria-label="Backer comments">
+              <div class="testimonial-top">
+                <span class="quote-mark" aria-hidden="true">“</span>
+              </div>
+              <div class="testimonial-progress" aria-hidden="true"><span id="testimonial-progress-fill"></span></div>
+              <blockquote id="testimonial-quote" aria-live="off">Just started looking at this, its soooo good. This is great work.
+
+We need a part 2 with stat blocks for the members of gangs, this is great content.</blockquote>
+              <div class="testimonial-footer">
+                <div class="quote-author"><span class="author-avatar" id="testimonial-avatar" aria-hidden="true">SK</span><span><strong id="testimonial-name">Sqoody7Kick</strong><small id="testimonial-role">Order of Criminals</small></span></div>
+                <div class="testimonial-navigation" role="group" aria-label="Comment navigation">
+                  <button type="button" id="testimonial-prev" aria-label="Previous comment"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5m7 7-7-7 7-7" /></svg></button>
+                  <button type="button" id="testimonial-next" aria-label="Next comment"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7" /></svg></button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -235,7 +246,7 @@
       </footer>
     </div>
     <script src="/projects/projects.js?v=20261011-page-count" defer></script>
-    <script type="module" src="script.js?v=20261011-pdf-fix"></script>
+    <script type="module" src="script.js?v=20261021-testimonial-controls-timer"></script>
     <script src="/scroll-to-top.js?v=20261019" defer></script>
 </body>
 </html>

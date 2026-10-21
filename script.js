@@ -349,3 +349,144 @@ function buildHeroCarousel() {
 }
 
 buildHeroCarousel();
+
+const testimonialCarousel = document.querySelector('#testimonial-carousel');
+if (testimonialCarousel) {
+  const testimonialQuote = document.querySelector('#testimonial-quote');
+  const testimonialName = document.querySelector('#testimonial-name');
+  const testimonialAvatar = document.querySelector('#testimonial-avatar');
+  const testimonialRole = document.querySelector('#testimonial-role');
+  const testimonialPrev = document.querySelector('#testimonial-prev');
+  const testimonialNext = document.querySelector('#testimonial-next');
+  const testimonialProgressFill = document.querySelector('#testimonial-progress-fill');
+  const testimonials = [
+    {
+      name: 'Sqoody7Kick',
+      initials: 'SK',
+      role: 'Order of Criminals',
+      quote: 'Just started looking at this, its soooo good. This is great work.\n\nWe need a part 2 with stat blocks for the members of gangs, this is great content.',
+    },
+    {
+      name: 'Jeff Sorenson',
+      initials: 'JS',
+      role: 'Arcane Bookshelf',
+      quote: "I am excited for this. What a great way to add some extra feeling of depth to a world, with options for how deep to go with it.\n\nAs an aside, this is the 100th project I've backed on Kickstarter! Amazing it's been so many. Maybe I've got a problem...but it's not my fault people like you keep creating awesome things like this that I want to hoard for my world-building!",
+    },
+    {
+      name: 'DrivingMeBonkas',
+      initials: 'DB',
+      role: "Brothel's Tales",
+      quote: "I am so hyped for this project, it looks amazing. I've always thought this was an underutilised setting and it looks like you'll do a great job of doing so respectfully 😊. I am very much looking forward to seeing where you take this.",
+    },
+    {
+      name: 'Yoshi',
+      initials: 'Y',
+      role: 'Mystic Grounds',
+      quote: "I'd also like to sincerely thank the team. I just read my Mystic Ground and was genuinely giddy seeing a homebrew location come to life in flesh and blood, and especially with balancing done by professionals.\n\nThank you so much for breathing so much life into my location!",
+    },
+    {
+      name: 'Christopher Richards',
+      initials: 'CR',
+      role: 'Order and Guilt',
+      quote: "I have spent most of today looking at the final PDFs, they are great. I wasn't sure about ordering the print versions but I'm definitely going to.",
+    },
+    {
+      name: 'Rodney Bell',
+      initials: 'RB',
+      role: 'Order and Guild 2',
+      quote: "I was a late Backer but this is the kind of thing that can transform an adventure /campaign into an in depth experience that makes more than memories around the table; it makes LEGENDS! Bravo for the effort and brilliant ideas! Rock on and keep CREATING!!!!",
+    },
+  ];
+  let testimonialIndex = 0;
+  const rotationDuration = 5000;
+  let rotateTimer;
+  let transitionTimer;
+  let remainingTime = rotationDuration;
+  let deadline = 0;
+  let isHovered = false;
+  let isFocused = false;
+
+  const isPaused = () => isHovered || isFocused || document.hidden;
+
+  const resetProgress = () => {
+    testimonialProgressFill.style.animation = 'none';
+    testimonialProgressFill.offsetHeight;
+    testimonialProgressFill.style.animationDuration = `${remainingTime}ms`;
+    testimonialProgressFill.style.animationPlayState = isPaused() ? 'paused' : 'running';
+    testimonialProgressFill.style.animationName = 'testimonial-countdown';
+  };
+
+  const clearRotation = () => {
+    window.clearTimeout(rotateTimer);
+    rotateTimer = undefined;
+  };
+
+  const scheduleRotation = () => {
+    if (isPaused() || rotateTimer) return;
+    deadline = Date.now() + remainingTime;
+    rotateTimer = window.setTimeout(() => {
+      rotateTimer = undefined;
+      remainingTime = rotationDuration;
+      stepTestimonial(1);
+    }, remainingTime);
+  };
+
+  const pauseRotation = () => {
+    if (!rotateTimer) return;
+    remainingTime = Math.max(0, deadline - Date.now());
+    clearRotation();
+    testimonialProgressFill.style.animationPlayState = 'paused';
+  };
+
+  const updatePauseState = () => {
+    if (isPaused()) pauseRotation();
+    else scheduleRotation();
+    testimonialProgressFill.style.animationPlayState = isPaused() ? 'paused' : 'running';
+  };
+
+  const stepTestimonial = (direction) => {
+    clearRotation();
+    remainingTime = rotationDuration;
+    testimonialIndex = (testimonialIndex + direction + testimonials.length) % testimonials.length;
+    window.clearTimeout(transitionTimer);
+    testimonialCarousel.classList.add('is-changing');
+    transitionTimer = window.setTimeout(() => {
+      const testimonial = testimonials[testimonialIndex];
+      testimonialQuote.textContent = testimonial.quote;
+      testimonialQuote.classList.toggle('is-long', testimonial.quote.length > 220);
+      testimonialName.textContent = testimonial.name;
+      testimonialAvatar.textContent = testimonial.initials;
+      testimonialRole.textContent = testimonial.role;
+      testimonialRole.hidden = !testimonial.role;
+      testimonialCarousel.classList.remove('is-changing');
+      resetProgress();
+      scheduleRotation();
+    }, 180);
+  };
+
+  testimonialPrev.addEventListener('click', () => stepTestimonial(-1));
+  testimonialNext.addEventListener('click', () => stepTestimonial(1));
+  testimonialCarousel.addEventListener('pointerenter', () => {
+    isHovered = true;
+    updatePauseState();
+  });
+  testimonialCarousel.addEventListener('pointerleave', () => {
+    isHovered = false;
+    updatePauseState();
+  });
+  testimonialCarousel.addEventListener('focusin', () => {
+    isFocused = true;
+    updatePauseState();
+  });
+  testimonialCarousel.addEventListener('focusout', (event) => {
+    if (!testimonialCarousel.contains(event.relatedTarget)) {
+      isFocused = false;
+      updatePauseState();
+    }
+  });
+  document.addEventListener('visibilitychange', () => {
+    updatePauseState();
+  });
+  resetProgress();
+  scheduleRotation();
+}
