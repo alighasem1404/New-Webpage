@@ -387,7 +387,7 @@ if (testimonialCarousel) {
     {
       name: 'Christopher Richards',
       initials: 'CR',
-      role: 'Order and Guilt',
+      role: 'Order and Guild',
       quote: "I have spent most of today looking at the final PDFs, they are great. I wasn't sure about ordering the print versions but I'm definitely going to.",
     },
     {
@@ -404,9 +404,9 @@ if (testimonialCarousel) {
   let remainingTime = rotationDuration;
   let deadline = 0;
   let isHovered = false;
-  let isFocused = false;
+  const testimonialNavigation = testimonialCarousel.querySelector('.testimonial-navigation');
 
-  const isPaused = () => isHovered || isFocused || document.hidden;
+  const isPaused = () => isHovered || document.hidden;
 
   const resetProgress = () => {
     testimonialProgressFill.style.animation = 'none';
@@ -466,23 +466,21 @@ if (testimonialCarousel) {
 
   testimonialPrev.addEventListener('click', () => stepTestimonial(-1));
   testimonialNext.addEventListener('click', () => stepTestimonial(1));
-  testimonialCarousel.addEventListener('pointerenter', () => {
-    isHovered = true;
+  testimonialCarousel.addEventListener('pointerenter', (event) => {
+    isHovered = !event.target.closest('.testimonial-navigation');
     updatePauseState();
   });
   testimonialCarousel.addEventListener('pointerleave', () => {
     isHovered = false;
     updatePauseState();
   });
-  testimonialCarousel.addEventListener('focusin', () => {
-    isFocused = true;
+  testimonialNavigation.addEventListener('pointerenter', () => {
+    isHovered = false;
     updatePauseState();
   });
-  testimonialCarousel.addEventListener('focusout', (event) => {
-    if (!testimonialCarousel.contains(event.relatedTarget)) {
-      isFocused = false;
-      updatePauseState();
-    }
+  testimonialNavigation.addEventListener('pointerleave', () => {
+    isHovered = testimonialCarousel.matches(':hover');
+    updatePauseState();
   });
   document.addEventListener('visibilitychange', () => {
     updatePauseState();
