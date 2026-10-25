@@ -1,0 +1,4429 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "D&D Adventures & Supplements (2014 & 2024) | Verseluft",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "class": "hero-carousel-stage",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-carousel-row hero-carousel-row-one",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Home",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Get updates ↓",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "Go to library ↗",
+        "href": "https://www.drivethrurpg.com/en/publisher/30061/verseluft",
+        "url": "https://www.drivethrurpg.com/en/publisher/30061/verseluft"
+      },
+      {
+        "text": "Discord",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Newsletter",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+        "url": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399"
+      },
+      {
+        "text": "Built with Kit",
+        "href": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic",
+        "url": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "flip-prev",
+        "text": ""
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 3,
+    "catalogCount": 0,
+    "previewLoaded": true,
+    "newsletter": true
+  },
+  {
+    "route": "/about/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "About Verseluft | D&D Adventures & Supplements",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Explore our projects ↗",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/about/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "/#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "#principles",
+        "url": "http://127.0.0.1:8765/about/#principles"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/about/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/about/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/projects/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Projects | Verseluft D&D Adventures",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "ARTICLE",
+        "class": "project-card upcoming-card deck-1",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "DIV",
+        "class": "project-art",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "project-banner",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "project-card-body",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "SPAN",
+        "class": "project-status upcoming",
+        "text": "◌ Coming soon"
+      },
+      {
+        "tag": "H3",
+        "class": "",
+        "text": "Mercenary Organizations"
+      },
+      {
+        "tag": "SPAN",
+        "class": "notify-label",
+        "text": "Coming soon"
+      },
+      {
+        "tag": "ARTICLE",
+        "class": "project-card upcoming-card deck-2",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "DIV",
+        "class": "project-art",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "project-banner",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "project-card-body",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "SPAN",
+        "class": "project-status upcoming",
+        "text": "◌ Coming soon"
+      },
+      {
+        "tag": "H3",
+        "class": "",
+        "text": "The Entertainers"
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "See current projects ↓",
+        "href": "#current",
+        "url": "http://127.0.0.1:8765/projects/#current"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+        "url": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399"
+      },
+      {
+        "text": "Get project updates ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "Start a conversation ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/projects/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/projects/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/projects/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 3,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/contact/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Contact Verseluft | Questions, Support & Partnerships",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "↗\n                  Book or campaign supportQuestions about a pledge, delivery, or one of our books",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "✳\n                  Publishing & partnershipsIdeas for a project, collaboration, or creator enquiry",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "✉\n                  Something elsePress, feedback, or a general note for the studio",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/contact/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "/#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/contact/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/contact/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "",
+        "text": "Prepare your message ↗"
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/blog/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Blog | Verseluft Journal",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↗",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Read the article ↗",
+        "href": "/blog/article.html?slug=worldbuilding-playable",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=worldbuilding-playable"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=quiet-scenes",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=supplement-process",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=supplement-process"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=upcoming-books",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=upcoming-books"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=towns-players-change",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=towns-players-change"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=adventure-hooks",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=adventure-hooks"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=library-update",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=library-update"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/blog/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/blog/article.html?slug=quiet-scenes",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "5 ways to make quiet D&D scenes matter | Verseluft Journal",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↗",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "← Back to all notes",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "← All journal notes",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "The useful question",
+        "href": "#opening",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#opening"
+      },
+      {
+        "text": "Make room for play",
+        "href": "#practice",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#practice"
+      },
+      {
+        "text": "A table-ready checklist",
+        "href": "#checklist",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#checklist"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=worldbuilding-playable",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=worldbuilding-playable"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=supplement-process",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=supplement-process"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=upcoming-books",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=upcoming-books"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/library/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "The Library | D&D Adventures & Books | Verseluft",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↓",
+        "href": "#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Find a book ↓",
+        "href": "#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=the-arcane-bookshelf",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=tal-doluth",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=tal-doluth"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=the-queen-of-atlantis",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-queen-of-atlantis"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=golden-dungeons",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=golden-dungeons"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=beyond-the-gates",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=beyond-the-gates"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=azu-shores",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=azu-shores"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=ashbourne",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=ashbourne"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=buccaneers-back-alley",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=buccaneers-back-alley"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=village-chronicles",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=village-chronicles"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/library/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 13,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/library/book.html?slug=the-arcane-bookshelf",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "The Arcane Bookshelf | Verseluft Library",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↓",
+        "href": "/library/#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Buy this book ↗",
+        "href": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg",
+        "url": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg"
+      },
+      {
+        "text": "More titles ↗",
+        "href": "/library/#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Questions about this book? ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "book-pdf-prev",
+        "text": "←"
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": true,
+    "newsletter": false
+  },
+  {
+    "route": "/dashboard/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Studio Dashboard | Verseluft",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftSTUDIO DESK",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Open live site ↗",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [
+      "visitor-fill"
+    ],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/animation-test/",
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Motion Study | Verseluft",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "class": "intro-backdrop",
+        "text": "✳"
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-haze haze-one",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-haze haze-two",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-constellation",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "backdrop-light",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "aurora-layer aurora-two",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "map-contours",
+        "text": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftMotion study · 002",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the site ↗",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Explore the backgrounds ↓",
+        "href": "#backdrops",
+        "url": "http://127.0.0.1:8765/animation-test/#backdrops"
+      },
+      {
+        "text": "Scroll to explore",
+        "href": "#backdrops",
+        "url": "http://127.0.0.1:8765/animation-test/#backdrops"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "D&D Adventures & Supplements (2014 & 2024) | Verseluft",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "class": "hero-carousel-stage",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-carousel-row hero-carousel-row-one",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Home",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Get updates ↓",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "Go to library ↗",
+        "href": "https://www.drivethrurpg.com/en/publisher/30061/verseluft",
+        "url": "https://www.drivethrurpg.com/en/publisher/30061/verseluft"
+      },
+      {
+        "text": "Discord",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Newsletter",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+        "url": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399"
+      },
+      {
+        "text": "Built with Kit",
+        "href": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic",
+        "url": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "flip-prev",
+        "text": ""
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 3,
+    "catalogCount": 0,
+    "previewLoaded": true,
+    "newsletter": true
+  },
+  {
+    "route": "/about/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "About Verseluft | D&D Adventures & Supplements",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Explore our projects ↗",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/about/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "/#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "#principles",
+        "url": "http://127.0.0.1:8765/about/#principles"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/about/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/about/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/projects/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Projects | Verseluft D&D Adventures",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "ARTICLE",
+        "class": "project-card upcoming-card deck-1",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "DIV",
+        "class": "project-art",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "project-banner",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "project-card-body",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "SPAN",
+        "class": "project-status upcoming",
+        "text": "◌ Coming soon"
+      },
+      {
+        "tag": "H3",
+        "class": "",
+        "text": "Mercenary Organizations"
+      },
+      {
+        "tag": "P",
+        "class": "",
+        "text": "A faction guide for Dungeon Masters. Build rival mercenary companies and put the"
+      },
+      {
+        "tag": "SPAN",
+        "class": "notify-label",
+        "text": "Coming soon"
+      },
+      {
+        "tag": "ARTICLE",
+        "class": "project-card upcoming-card deck-2",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "DIV",
+        "class": "project-art",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "project-banner",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "project-card-body",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "SPAN",
+        "class": "project-status upcoming",
+        "text": "◌ Coming soon"
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "See current projects ↓",
+        "href": "#current",
+        "url": "http://127.0.0.1:8765/projects/#current"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+        "url": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399"
+      },
+      {
+        "text": "Get project updates ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "Start a conversation ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/projects/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/projects/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/projects/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 3,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/contact/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Contact Verseluft | Questions, Support & Partnerships",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "↗\n                  Book or campaign supportQuestions about a pledge, delivery, or one of our books",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "✳\n                  Publishing & partnershipsIdeas for a project, collaboration, or creator enquiry",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "✉\n                  Something elsePress, feedback, or a general note for the studio",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/contact/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "/#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/contact/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/contact/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "",
+        "text": "Prepare your message ↗"
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/blog/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Blog | Verseluft Journal",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↗",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Read the article ↗",
+        "href": "/blog/article.html?slug=worldbuilding-playable",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=worldbuilding-playable"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=quiet-scenes",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=supplement-process",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=supplement-process"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=upcoming-books",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=upcoming-books"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=towns-players-change",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=towns-players-change"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=adventure-hooks",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=adventure-hooks"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=library-update",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=library-update"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/blog/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/blog/article.html?slug=quiet-scenes",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "5 ways to make quiet D&D scenes matter | Verseluft Journal",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↗",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "← Back to all notes",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "← All journal notes",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "The useful question",
+        "href": "#opening",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#opening"
+      },
+      {
+        "text": "Make room for play",
+        "href": "#practice",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#practice"
+      },
+      {
+        "text": "A table-ready checklist",
+        "href": "#checklist",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#checklist"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=worldbuilding-playable",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=worldbuilding-playable"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=supplement-process",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=supplement-process"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=upcoming-books",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=upcoming-books"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/library/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "The Library | D&D Adventures & Books | Verseluft",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↓",
+        "href": "#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Find a book ↓",
+        "href": "#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=the-arcane-bookshelf",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=tal-doluth",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=tal-doluth"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=the-queen-of-atlantis",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-queen-of-atlantis"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=golden-dungeons",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=golden-dungeons"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=beyond-the-gates",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=beyond-the-gates"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=azu-shores",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=azu-shores"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=ashbourne",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=ashbourne"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=buccaneers-back-alley",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=buccaneers-back-alley"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=village-chronicles",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=village-chronicles"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/library/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 13,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/library/book.html?slug=the-arcane-bookshelf",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "The Arcane Bookshelf | Verseluft Library",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↓",
+        "href": "/library/#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Buy this book ↗",
+        "href": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg",
+        "url": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg"
+      },
+      {
+        "text": "More titles ↗",
+        "href": "/library/#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Questions about this book? ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "book-pdf-prev",
+        "text": "←"
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": true,
+    "newsletter": false
+  },
+  {
+    "route": "/dashboard/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Studio Dashboard | Verseluft",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftSTUDIO DESK",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Open live site ↗",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [
+      "visitor-fill"
+    ],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/animation-test/",
+    "width": 768,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Motion Study | Verseluft",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "class": "intro-backdrop",
+        "text": "✳"
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-haze haze-one",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-haze haze-two",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-constellation",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-sigil",
+        "text": "✳"
+      },
+      {
+        "tag": "BUTTON",
+        "class": "scene-choice",
+        "text": "Ink bloomOrganic clouds"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "text": "Ink bloomOrganic clouds"
+      },
+      {
+        "tag": "STRONG",
+        "class": "",
+        "text": "Ink bloom"
+      },
+      {
+        "tag": "SMALL",
+        "class": "",
+        "text": "Organic clouds"
+      },
+      {
+        "tag": "BUTTON",
+        "class": "scene-choice",
+        "text": "Lantern driftFloating glows"
+      },
+      {
+        "tag": "SPAN",
+        "class": "choice-mark mark-lantern",
+        "text": ""
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "text": "Lantern driftFloating glows"
+      },
+      {
+        "tag": "STRONG",
+        "class": "",
+        "text": "Lantern drift"
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftMotion study · 002",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the site ↗",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Explore the backgrounds ↓",
+        "href": "#backdrops",
+        "url": "http://127.0.0.1:8765/animation-test/#backdrops"
+      },
+      {
+        "text": "Scroll to explore",
+        "href": "#backdrops",
+        "url": "http://127.0.0.1:8765/animation-test/#backdrops"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "D&D Adventures & Supplements (2014 & 2024) | Verseluft",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "class": "hero-carousel-stage",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-carousel-row hero-carousel-row-one",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "",
+        "text": ""
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Home",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Get updates ↓",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "Go to library ↗",
+        "href": "https://www.drivethrurpg.com/en/publisher/30061/verseluft",
+        "url": "https://www.drivethrurpg.com/en/publisher/30061/verseluft"
+      },
+      {
+        "text": "Discord",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Newsletter",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+        "url": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399"
+      },
+      {
+        "text": "Built with Kit",
+        "href": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic",
+        "url": "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "flip-prev",
+        "text": ""
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 3,
+    "catalogCount": 0,
+    "previewLoaded": true,
+    "newsletter": true
+  },
+  {
+    "route": "/about/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "About Verseluft | D&D Adventures & Supplements",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Explore our projects ↗",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/about/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "/#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "#principles",
+        "url": "http://127.0.0.1:8765/about/#principles"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/about/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/about/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/projects/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Projects | Verseluft D&D Adventures",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "ARTICLE",
+        "class": "project-card upcoming-card deck-1",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "DIV",
+        "class": "project-art",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "project-banner",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "project-card-body",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "text": "◌ Coming soonMercenary OrganizationsA faction guide for Dungeon Masters. Build r"
+      },
+      {
+        "tag": "SPAN",
+        "class": "project-status upcoming",
+        "text": "◌ Coming soon"
+      },
+      {
+        "tag": "H3",
+        "class": "",
+        "text": "Mercenary Organizations"
+      },
+      {
+        "tag": "P",
+        "class": "",
+        "text": "A faction guide for Dungeon Masters. Build rival mercenary companies and put the"
+      },
+      {
+        "tag": "SPAN",
+        "class": "notify-label",
+        "text": "Coming soon"
+      },
+      {
+        "tag": "ARTICLE",
+        "class": "project-card upcoming-card deck-2",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "DIV",
+        "class": "project-art",
+        "text": ""
+      },
+      {
+        "tag": "IMG",
+        "class": "project-banner",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "project-card-body",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "DIV",
+        "class": "",
+        "text": "◌ Coming soonThe EntertainersPerformer NPCs and entertainment traditions for D&D"
+      },
+      {
+        "tag": "SPAN",
+        "class": "project-status upcoming",
+        "text": "◌ Coming soon"
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "See current projects ↓",
+        "href": "#current",
+        "url": "http://127.0.0.1:8765/projects/#current"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+        "url": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34"
+      },
+      {
+        "text": "",
+        "href": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+        "url": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399"
+      },
+      {
+        "text": "Get project updates ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "Start a conversation ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/projects/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/projects/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/projects/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 3,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/contact/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Contact Verseluft | Questions, Support & Partnerships",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "↗\n                  Book or campaign supportQuestions about a pledge, delivery, or one of our books",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "✳\n                  Publishing & partnershipsIdeas for a project, collaboration, or creator enquiry",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "✉\n                  Something elsePress, feedback, or a general note for the studio",
+        "href": "#message-form",
+        "url": "http://127.0.0.1:8765/contact/#message-form"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/contact/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Get updates",
+        "href": "/#updates",
+        "url": "http://127.0.0.1:8765/#updates"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/contact/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/contact/#"
+      },
+      {
+        "text": "Contact ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "",
+        "text": "Prepare your message ↗"
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/blog/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Blog | Verseluft Journal",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↗",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Read the article ↗",
+        "href": "/blog/article.html?slug=worldbuilding-playable",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=worldbuilding-playable"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=quiet-scenes",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=supplement-process",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=supplement-process"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=upcoming-books",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=upcoming-books"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=towns-players-change",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=towns-players-change"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=adventure-hooks",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=adventure-hooks"
+      },
+      {
+        "text": "Read more ↗",
+        "href": "/blog/article.html?slug=library-update",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=library-update"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/blog/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/blog/article.html?slug=quiet-scenes",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "5 ways to make quiet D&D scenes matter | Verseluft Journal",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↗",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "← Back to all notes",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "← All journal notes",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "The useful question",
+        "href": "#opening",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#opening"
+      },
+      {
+        "text": "Make room for play",
+        "href": "#practice",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#practice"
+      },
+      {
+        "text": "A table-ready checklist",
+        "href": "#checklist",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#checklist"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=worldbuilding-playable",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=worldbuilding-playable"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=supplement-process",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=supplement-process"
+      },
+      {
+        "text": "Read the note ↗",
+        "href": "/blog/article.html?slug=upcoming-books",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=upcoming-books"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/blog/article.html?slug=quiet-scenes#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/library/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "The Library | D&D Adventures & Books | Verseluft",
+    "overflow": false,
+    "overflowing": [],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↓",
+        "href": "#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Find a book ↓",
+        "href": "#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=the-arcane-bookshelf",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=tal-doluth",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=tal-doluth"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=the-queen-of-atlantis",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-queen-of-atlantis"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=golden-dungeons",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=golden-dungeons"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=beyond-the-gates",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=beyond-the-gates"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=azu-shores",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=azu-shores"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=ashbourne",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=ashbourne"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=buccaneers-back-alley",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=buccaneers-back-alley"
+      },
+      {
+        "text": "View book ↗",
+        "href": "/library/book.html?slug=village-chronicles",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=village-chronicles"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/library/#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 13,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/library/book.html?slug=the-arcane-bookshelf",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "The Arcane Bookshelf | Verseluft Library",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "class": "book-description-copy",
+        "text": "A closer look\n              Inside The Arcane Bookshelf.\n              This is p"
+      },
+      {
+        "tag": "P",
+        "class": "library-kicker",
+        "text": "A closer look"
+      },
+      {
+        "tag": "H2",
+        "class": "",
+        "text": "Inside The Arcane Bookshelf."
+      },
+      {
+        "tag": "P",
+        "class": "",
+        "text": "This is placeholder copy for the book description. We can use this space to intr"
+      },
+      {
+        "tag": "DIV",
+        "class": "book-pdf-preview",
+        "text": "Sample pagesStep inside the book.01–02 / 16\n              \n             \n       "
+      },
+      {
+        "tag": "DIV",
+        "class": "book-pdf-heading",
+        "text": "Sample pagesStep inside the book.01–02 / 16"
+      },
+      {
+        "tag": "DIV",
+        "class": "book-pdf-frame",
+        "text": "Loading sample pages…Exit full screen ↙"
+      },
+      {
+        "tag": "DIV",
+        "class": "book-pdf-book stf__parent",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "stf__wrapper --landscape",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "stf__block",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "book-pdf-page stf__item --soft --simple --right",
+        "text": ""
+      },
+      {
+        "tag": "CANVAS",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "book-pdf-controls",
+        "text": "←→Full screen ↗"
+      },
+      {
+        "tag": "SPAN",
+        "class": "book-pdf-control-spacer",
+        "text": ""
+      },
+      {
+        "tag": "BUTTON",
+        "class": "",
+        "text": "→"
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/",
+        "url": "http://127.0.0.1:8765/blog/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Browse books ↓",
+        "href": "/library/#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Home",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Library",
+        "href": "/library/",
+        "url": "http://127.0.0.1:8765/library/"
+      },
+      {
+        "text": "Buy this book ↗",
+        "href": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg",
+        "url": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg"
+      },
+      {
+        "text": "More titles ↗",
+        "href": "/library/#catalog",
+        "url": "http://127.0.0.1:8765/library/#catalog"
+      },
+      {
+        "text": "Questions about this book? ↗",
+        "href": "/contact/",
+        "url": "http://127.0.0.1:8765/contact/"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=criminals",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=criminals"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=merchant-organization-guide"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=witchy-grounds"
+      },
+      {
+        "text": "",
+        "href": "/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "View title ↗",
+        "href": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=into-the-dwarf-fortress"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the top ↑",
+        "href": "#top",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#top"
+      },
+      {
+        "text": "Projects",
+        "href": "/#projects",
+        "url": "http://127.0.0.1:8765/#projects"
+      },
+      {
+        "text": "About us",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Our values",
+        "href": "/#values",
+        "url": "http://127.0.0.1:8765/#values"
+      },
+      {
+        "text": "Contact",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      },
+      {
+        "text": "Kickstarter ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#"
+      },
+      {
+        "text": "Instagram ↗",
+        "href": "#",
+        "url": "http://127.0.0.1:8765/library/book.html?slug=the-arcane-bookshelf#"
+      },
+      {
+        "text": "Get in touch ↗",
+        "href": "https://discord.gg/ByZrKpwUwh",
+        "url": "https://discord.gg/ByZrKpwUwh"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [
+      {
+        "id": "book-pdf-prev",
+        "text": "←"
+      }
+    ],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": true,
+    "newsletter": false
+  },
+  {
+    "route": "/dashboard/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Studio Dashboard | Verseluft",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "TABLE",
+        "class": "content-table",
+        "text": "CONTENTTYPESTATUSLAST UPDATEDD&D worldbuilding: what makes a setting playable?Be"
+      },
+      {
+        "tag": "THEAD",
+        "class": "",
+        "text": "CONTENTTYPESTATUSLAST UPDATED"
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "text": "CONTENTTYPESTATUSLAST UPDATED"
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "text": "STATUS"
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "text": "LAST UPDATED"
+      },
+      {
+        "tag": "TH",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "TBODY",
+        "class": "",
+        "text": "D&D worldbuilding: what makes a setting playable?Behind the scenesJournalPublish"
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "text": "D&D worldbuilding: what makes a setting playable?Behind the scenesJournalPublish"
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "text": "Published"
+      },
+      {
+        "tag": "SPAN",
+        "class": "status-pill status-published",
+        "text": "Published"
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "text": "Sep 14, 2026"
+      },
+      {
+        "tag": "TD",
+        "class": "",
+        "text": "✎"
+      },
+      {
+        "tag": "DIV",
+        "class": "row-actions",
+        "text": "✎"
+      },
+      {
+        "tag": "BUTTON",
+        "class": "row-action",
+        "text": "✎"
+      },
+      {
+        "tag": "TR",
+        "class": "",
+        "text": "5 ways to make quiet D&D scenes matterDM adviceJournalPublishedSep 10, 2026✎"
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftSTUDIO DESK",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Open live site ↗",
+        "href": "/",
+        "url": "http://127.0.0.1:8765/"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [
+      "visitor-fill"
+    ],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  },
+  {
+    "route": "/animation-test/",
+    "width": 375,
+    "errors": [],
+    "failed": [],
+    "badResponses": [],
+    "title": "Motion Study | Verseluft",
+    "overflow": false,
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "class": "intro-backdrop",
+        "text": "✳"
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-haze haze-one",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-haze haze-two",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-constellation",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "hero-sigil",
+        "text": "✳"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "text": "✳"
+      },
+      {
+        "tag": "BUTTON",
+        "class": "scene-choice",
+        "text": "Living mapDrifting contours"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "text": "Living mapDrifting contours"
+      },
+      {
+        "tag": "STRONG",
+        "class": "",
+        "text": "Living map"
+      },
+      {
+        "tag": "SMALL",
+        "class": "",
+        "text": "Drifting contours"
+      },
+      {
+        "tag": "BUTTON",
+        "class": "scene-choice",
+        "text": "Moonlit tideLiquid reflections"
+      },
+      {
+        "tag": "SPAN",
+        "class": "choice-mark mark-moon",
+        "text": ""
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "text": "Moonlit tideLiquid reflections"
+      }
+    ],
+    "links": [
+      {
+        "text": "VerseluftMotion study · 002",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Back to the site ↗",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      },
+      {
+        "text": "Explore the backgrounds ↓",
+        "href": "#backdrops",
+        "url": "http://127.0.0.1:8765/animation-test/#backdrops"
+      },
+      {
+        "text": "Scroll to explore",
+        "href": "#backdrops",
+        "url": "http://127.0.0.1:8765/animation-test/#backdrops"
+      },
+      {
+        "text": "VerseluftTabletop RPG publishing",
+        "href": "../",
+        "url": "http://127.0.0.1:8765/"
+      }
+    ],
+    "brokenImages": [],
+    "disabledButtons": [],
+    "missingLabels": [],
+    "duplicateIds": [],
+    "invalidFragments": [],
+    "projectCount": 0,
+    "catalogCount": 0,
+    "previewLoaded": false,
+    "newsletter": false
+  }
+]

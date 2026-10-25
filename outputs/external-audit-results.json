@@ -1,0 +1,136 @@
+[
+  {
+    "url": "https://www.drivethrurpg.com/",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/513235/complete-town-3-azure-shores",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/513235/complete-town-3-azure-shores",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://verseluft.kit.com/40d9c960b5/index.js",
+    "status": 200,
+    "finalUrl": "https://verseluft.kit.com/40d9c960b5/index.js"
+  },
+  {
+    "url": "https://discord.gg/ByZrKpwUwh",
+    "status": 200,
+    "finalUrl": "https://discord.com/invite/ByZrKpwUwh",
+    "title": "Verseluft Tavern"
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/524907/complete-town-5-tal-doluth",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/524907/complete-town-5-tal-doluth",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/513315/15-ways-to-die-underground",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/513315/15-ways-to-die-underground",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/525505/queen-of-atlantis-an-adventure-series",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/525505/queen-of-atlantis-an-adventure-series",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/513308/complete-town-4-ashbourne",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/513308/complete-town-4-ashbourne",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/545697/golden-dungeons-adventure",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/545697/golden-dungeons-adventure",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/546464/order-of-criminals-bundle",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/546464/order-of-criminals-bundle",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/product/582088/complete-town-9-village-chronicles",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/product/582088/complete-town-9-village-chronicles",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.drivethrurpg.com/en/publisher/30061/verseluft",
+    "status": 403,
+    "finalUrl": "https://www.drivethrurpg.com/en/publisher/30061/verseluft",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+    "status": 403,
+    "finalUrl": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+    "status": 403,
+    "finalUrl": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+    "status": 403,
+    "finalUrl": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+    "title": "Just a moment..."
+  },
+  {
+    "url": "https://discord.com/api/v10/invites/ByZrKpwUwh?with_counts=true",
+    "status": 200,
+    "finalUrl": "https://discord.com/api/v10/invites/ByZrKpwUwh?with_counts=true",
+    "inviteValid": true,
+    "serverName": "Verseluft Tavern"
+  },
+  {
+    "url": "https://verseluft.com/contact/",
+    "status": 200,
+    "finalUrl": "https://verseluft.com/contact/",
+    "title": "Contact Verseluft | Questions, Support &amp; Partnerships"
+  },
+  {
+    "url": "https://verseluft.com/",
+    "status": 200,
+    "finalUrl": "https://verseluft.com/",
+    "title": "D&amp;D Adventures &amp; Supplements (2014 &amp; 2024) | Verseluft",
+    "hasLocalHero": true,
+    "hasOldHero": false
+  },
+  {
+    "url": "https://verseluft.com/projects/",
+    "status": 200,
+    "finalUrl": "https://verseluft.com/projects/",
+    "title": "Projects | Verseluft D&amp;D Adventures"
+  },
+  {
+    "url": "https://verseluft.com/dashboard/",
+    "status": 403,
+    "finalUrl": "https://verseluft.com/dashboard/",
+    "title": " 403 Forbidden\r\n"
+  },
+  {
+    "url": "https://verseluft.com/library/",
+    "status": 200,
+    "finalUrl": "https://verseluft.com/",
+    "title": "D&amp;D Adventures &amp; Supplements (2014 &amp; 2024) | Verseluft"
+  }
+]

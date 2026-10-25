@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Home PDF next and previous",
+    "status": "passed"
+  },
+  {
+    "name": "Home PDF dots",
+    "status": "passed"
+  },
+  {
+    "name": "Home PDF modal close and page synchronization",
+    "status": "passed"
+  },
+  {
+    "name": "Home PDF modal keyboard focus enters dialog",
+    "status": "failed",
+    "detail": "{\"id\":\"open-pdf\",\"inDialog\":false}"
+  },
+  {
+    "name": "Testimonial controls",
+    "status": "passed"
+  },
+  {
+    "name": "Newsletter loads with a working email field (no submission)",
+    "status": "passed"
+  },
+  {
+    "name": "Scroll to top button",
+    "status": "passed"
+  },
+  {
+    "name": "Project campaign arrows map to source data",
+    "status": "passed"
+  },
+  {
+    "name": "Upcoming carousel next, previous and wrap",
+    "status": "passed"
+  },
+  {
+    "name": "Get project updates leads to newsletter",
+    "status": "failed",
+    "detail": "Actual destination: /contact/"
+  },
+  {
+    "name": "Contact topics choose the corresponding subject",
+    "status": "passed"
+  },
+  {
+    "name": "Contact topics navigate to the message form",
+    "status": "failed",
+    "detail": "{\"hash\":\"\",\"top\":1102.15625,\"height\":812}"
+  },
+  {
+    "name": "Library search, no-results and category filters",
+    "status": "passed"
+  },
+  {
+    "name": "All 13 View book links identify the correct book",
+    "status": "passed"
+  },
+  {
+    "name": "All 13 book pages load their own title, cover, and purchase link",
+    "status": "passed"
+  },
+  {
+    "name": "Library PDF next/previous",
+    "status": "passed"
+  },
+  {
+    "name": "Library PDF Exit full screen leaves browser fullscreen",
+    "status": "failed",
+    "detail": "{\"fullscreen\":true,\"exitHidden\":true,\"overflow\":\"\"}\n\ntrue !== false\n"
+  },
+  {
+    "name": "Unknown book slug shows not-found state",
+    "status": "failed",
+    "detail": "Expected values to be strictly equal:\n\ntrue !== false\n"
+  },
+  {
+    "name": "Journal carousel and filters",
+    "status": "passed"
+  },
+  {
+    "name": "Unknown article slug shows not-found state",
+    "status": "failed",
+    "detail": "Actual article: D&D worldbuilding: what makes a setting playable?"
+  },
+  {
+    "name": "Dashboard search and content filters",
+    "status": "passed"
+  },
+  {
+    "name": "Dashboard local project save updates public preview only",
+    "status": "passed"
+  },
+  {
+    "name": "Motion study scene controls",
+    "status": "passed"
+  }
+]

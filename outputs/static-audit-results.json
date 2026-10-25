@@ -1,0 +1,122 @@
+{
+  "referencesChecked": 305,
+  "missing": [],
+  "placeholders": [
+    {
+      "source": "index.html",
+      "line": 189,
+      "tag": "<a href=\"#\" class=\"about-action-button about-action-creators\" hidden>"
+    },
+    {
+      "source": "index.html",
+      "line": 244,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "index.html",
+      "line": 244,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "about/index.html",
+      "line": 129,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "about/index.html",
+      "line": 129,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "blog/article.html",
+      "line": 43,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "blog/article.html",
+      "line": 43,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "blog/index.html",
+      "line": 52,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "blog/index.html",
+      "line": 52,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "contact/index.html",
+      "line": 130,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "contact/index.html",
+      "line": 130,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "library/book.html",
+      "line": 135,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "library/book.html",
+      "line": 135,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "library/index.html",
+      "line": 105,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "library/index.html",
+      "line": 105,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "projects/index.html",
+      "line": 59,
+      "tag": "<a href=\"#\">"
+    },
+    {
+      "source": "projects/index.html",
+      "line": 59,
+      "tag": "<a href=\"#\">"
+    }
+  ],
+  "external": [
+    "https://discord.gg/ByZrKpwUwh",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Unbounded:wght@500;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Unbounded:wght@500;600;700&display=swap",
+    "https://fonts.gstatic.com",
+    "https://verseluft.com/",
+    "https://verseluft.com/about/",
+    "https://verseluft.com/blog/",
+    "https://verseluft.com/blog/article.html",
+    "https://verseluft.com/contact/",
+    "https://verseluft.com/library/",
+    "https://verseluft.com/library/book.html",
+    "https://verseluft.com/projects/",
+    "https://verseluft.kit.com/40d9c960b5/index.js",
+    "https://www.drivethrurpg.com/",
+    "https://www.drivethrurpg.com/en/product/513235/complete-town-3-azure-shores",
+    "https://www.drivethrurpg.com/en/product/513308/complete-town-4-ashbourne",
+    "https://www.drivethrurpg.com/en/product/513315/15-ways-to-die-underground",
+    "https://www.drivethrurpg.com/en/product/524907/complete-town-5-tal-doluth",
+    "https://www.drivethrurpg.com/en/product/525505/queen-of-atlantis-an-adventure-series",
+    "https://www.drivethrurpg.com/en/product/545697/golden-dungeons-adventure",
+    "https://www.drivethrurpg.com/en/product/546464/order-of-criminals-bundle",
+    "https://www.drivethrurpg.com/en/product/551303/arcane-bookshelf-100-in-game-books-for-ttrpg",
+    "https://www.drivethrurpg.com/en/product/582088/complete-town-9-village-chronicles",
+    "https://www.drivethrurpg.com/en/publisher/30061/verseluft",
+    "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34",
+    "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34",
+    "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes?ref=nav_search&category_id=399"
+  ]
+}
