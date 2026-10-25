@@ -1627,3 +1627,8 @@ h6 i,
 body:has(#pdf-modal.is-open) > .scroll-to-top {
   display: none;
 }
+
+/* Keep unfinished footer destinations hidden until they are ready. */
+.site-footer [hidden] {
+  display: none !important;
+}
