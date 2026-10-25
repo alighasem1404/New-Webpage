@@ -36,8 +36,7 @@
     const action = link
       ? `<a class="project-arrow" href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer" aria-label="View ${title} campaign"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" /></svg></a>`
       : '';
-    const percent = Math.min(100, Math.max(0, Number(project.progressWidth) || 0));
-    return `<article class="project-card${index === 0 ? ' project-card-large' : ''}" data-project-id="${escapeHtml(project.id)}"><div class="project-art"><img class="project-banner" src="${image}" alt="${alt}" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><h3>${title}</h3><p>${description}</p></div><div class="project-meta"><span><strong>${number(project.fundingPercent)}%</strong> funded</span><span><strong>${number(project.daysRemaining)} days</strong> to go</span><span><strong>${backers(project.backers)}</strong> backers</span></div><div class="live-bottom-row"><div class="funding-bar"><span style="width:${percent}%"></span></div>${action}</div></div></article>`;
+    return `<article class="project-card${index === 0 ? ' project-card-large' : ''}" data-project-id="${escapeHtml(project.id)}"><div class="project-art"><img class="project-banner" src="${image}" alt="${alt}" width="1672" height="941" loading="lazy" decoding="async" /></div><div class="project-card-body"><div><h3>${title}</h3><p>${description}</p></div><div class="project-meta"><span><strong>${number(project.fundingPercent)}%</strong> funded</span><span><strong>${number(project.daysRemaining)} days</strong> to go</span><span><strong>${backers(project.backers)}</strong> backers</span></div><div class="live-bottom-row">${action}</div></div></article>`;
   };
 
   let upcomingCards = [];

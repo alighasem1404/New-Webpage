@@ -1553,6 +1553,29 @@ h6 i,
 }
 
 /* Improve readability in the live project cards. */
+.projects-section .live-projects .project-card-body {
+  grid-template-rows: minmax(0, 1fr) auto;
+  padding-bottom: 40px;
+}
+
+.projects-section .live-projects .project-card-body > div:first-child {
+  grid-column: 1 / -1;
+}
+
+.projects-section .live-projects .project-meta {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+  margin-top: 0;
+}
+
+.projects-section .live-projects .live-bottom-row {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-content: flex-end;
+}
+
 .projects-section .live-projects .project-card-body h3 {
   font-size: 22px;
   line-height: 1.35;
