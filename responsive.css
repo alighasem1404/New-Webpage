@@ -746,22 +746,22 @@ main > section {
   }
 
   .library-page .catalog-filter {
-    min-height: 40px;
-    padding: 0 11px;
-    font-size: 10px;
+    min-height: var(--library-control-height);
+    padding: 10px;
+    font-size: var(--library-text-small);
   }
 
   .library-page .catalog-filter span {
-    font-size: 10px;
+    font-size: inherit;
   }
 
   .library-page .book-details-button {
-    font-size: 10px;
+    font-size: var(--library-text-small);
   }
 
   .library-page .catalog-footnote {
-    font-size: 11px;
-    line-height: 1.7;
+    font-size: var(--library-text-small);
+    line-height: 1.6;
   }
 }
 

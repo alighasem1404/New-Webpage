@@ -57,14 +57,17 @@ function createTextElement(tagName, className, text) {
 }
 
 function createBookCard(book, index, total) {
+  const bookUrl = `/library/book.html?slug=${encodeURIComponent(book.slug)}`;
   const card = document.createElement('article');
   card.className = 'book-card';
   card.dataset.bookId = book.id;
   card.dataset.slug = book.slug;
   card.dataset.category = book.category;
 
-  const coverWrap = document.createElement('div');
+  const coverWrap = document.createElement('a');
   coverWrap.className = 'book-cover-wrap';
+  coverWrap.href = bookUrl;
+  coverWrap.setAttribute('aria-label', `View book: ${book.title}`);
 
   const cover = document.createElement('img');
   cover.src = book.coverImage;
@@ -78,19 +81,22 @@ function createBookCard(book, index, total) {
 
   const copy = document.createElement('div');
   copy.className = 'book-card-copy';
-  copy.append(createTextElement('h3', '', book.title));
+  const title = document.createElement('h3');
+  const titleLink = createTextElement('a', 'book-title-link', book.title);
+  titleLink.href = bookUrl;
+  title.append(titleLink);
+  copy.append(title);
   copy.append(createTextElement('p', 'book-card-type', book.categoryLabel));
   copy.append(createTextElement('p', '', book.shortDescription));
 
   const detailsButton = document.createElement('a');
   detailsButton.className = 'book-details-button';
-  detailsButton.href = `/library/book.html?slug=${encodeURIComponent(book.slug)}`;
+  detailsButton.href = bookUrl;
   detailsButton.setAttribute('aria-label', `View book: ${book.title}`);
   detailsButton.append(document.createTextNode('View book '));
   const arrow = createTextElement('span', '', '↗');
   arrow.setAttribute('aria-hidden', 'true');
   detailsButton.append(arrow);
-  detailsButton.addEventListener('click', () => openBookDetails(book));
   copy.append(detailsButton);
 
   card.append(coverWrap, copy);
