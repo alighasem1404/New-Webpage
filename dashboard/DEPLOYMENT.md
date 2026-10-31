@@ -10,3 +10,7 @@ Project changes are written by `dashboard/api/projects.php` to `projects/data/pr
 6. Sign in, edit a project, save it, then check both `/` and `/projects/`. If cPanel's PHP handler does not populate `REMOTE_USER`, do not weaken the PHP check; ask the host to pass the authenticated user to PHP or use an equivalent server-side authenticated handler.
 
 The `projects/data/projects.json` file is intentionally public because the public site needs to read it. Do not put passwords, private notes, or unpublished secrets in project descriptions or this file.
+
+Automatic campaign numbers use a separate public cache, so dashboard saves do not
+overwrite a successful refresh. See [Campaign sync setup](../projects/CAMPAIGN-SYNC.md)
+for the cPanel schedule and local preview commands.

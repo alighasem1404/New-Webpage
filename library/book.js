@@ -31,8 +31,6 @@ function showBookNotFound(message = 'We could not find that title in the library
   document.querySelector('.book-detail-note').hidden = true;
   document.querySelector('.book-description-section').hidden = true;
   document.querySelector('#related-books-section').hidden = true;
-  document.querySelector('#motion-test-tool').hidden = true;
-  document.querySelector('#motion-test-reopen').hidden = true;
   document.querySelector('.book-price').hidden = true;
   document.querySelector('#book-store-link').hidden = true;
   document.querySelector('.book-back-link').textContent = 'Return to the library';
@@ -102,27 +100,6 @@ function renderRelatedBooks(book, books) {
   document.querySelector('#related-books-grid').replaceChildren(...selected.map(createRelatedCard));
 }
 
-function initializeMotionTestTool() {
-  const tool = document.querySelector('#motion-test-tool');
-  tool.hidden = false;
-  const hero = document.querySelector('.book-detail-hero');
-  const options = [...tool.querySelectorAll('[data-motion-option]')];
-  const status = document.querySelector('#motion-test-status');
-  const labels = { aura: 'Aura', float: 'Float', sweep: 'Light sweep', stars: 'Star drift', tilt: 'Cover tilt' };
-
-  options.forEach((button) => {
-    button.addEventListener('click', () => {
-      const motion = button.dataset.motionOption;
-      hero.dataset.motion = motion;
-      options.forEach((option) => option.setAttribute('aria-pressed', String(option === button)));
-      status.textContent = `Previewing: ${labels[motion]}`;
-    });
-  });
-  const reopen = document.querySelector('#motion-test-reopen');
-  document.querySelector('#motion-test-close').addEventListener('click', () => { tool.hidden = true; reopen.hidden = false; });
-  reopen.addEventListener('click', () => { tool.hidden = false; reopen.hidden = true; });
-}
-
 function renderBook(book, books) {
   const publishedBooks = books
     .filter((item) => item.status === 'published')
@@ -160,7 +137,12 @@ function renderBook(book, books) {
     return chip;
   }));
   renderRelatedBooks(book, books);
-  initializeMotionTestTool();
+  document.querySelector('#book-story-description').textContent = book.description || book.shortDescription;
+  // Show only a sample explicitly associated with this title.
+  if (book.samplePdf) {
+    bookPdfPreview.hidden = false;
+    initializeBookPdfPreview(book.samplePdf);
+  }
   setBookMeta(book);
 }
 
@@ -212,7 +194,7 @@ async function loadBookPage() {
 initializeFireflies();
 loadBookPage();
 
-const bookPdfPath = '../assets/Order of Mercenary - The Homebrewery 247-262.pdf';
+
 const bookPdfElement = document.querySelector('#book-pdf-book');
 const bookPdfLoading = document.querySelector('#book-pdf-loading');
 const bookPdfCurrent = document.querySelector('#book-pdf-current');
@@ -221,6 +203,7 @@ const bookPdfPrevious = document.querySelector('#book-pdf-prev');
 const bookPdfNext = document.querySelector('#book-pdf-next');
 const bookPdfFullscreen = document.querySelector('#book-pdf-fullscreen');
 const bookPdfFrame = document.querySelector('.book-pdf-frame');
+const bookPdfPreview = document.querySelector('.book-pdf-preview');
 const bookPdfExit = document.querySelector('#book-pdf-exit');
 let bookPdfDocument;
 let bookPdfFlip;
@@ -258,13 +241,20 @@ async function renderBookPdfSpread(index) {
 }
 
 function updateBookPdfControls(index) {
-  const right = Math.min(index + 2, bookPdfPageCount);
-  bookPdfCurrent.textContent = `${String(index + 1).padStart(2, '0')}–${String(right).padStart(2, '0')}`;
+  const step = bookPdfFlip?.getOrientation() === 'portrait' ? 1 : 2;
+  const right = Math.min(index + step, bookPdfPageCount);
+  bookPdfCurrent.textContent = step === 1 ? String(index + 1).padStart(2, '0') : `${String(index + 1).padStart(2, '0')}–${String(right).padStart(2, '0')}`;
   bookPdfPrevious.disabled = index <= 0;
-  bookPdfNext.disabled = index >= bookPdfPageCount - 2;
+  bookPdfNext.disabled = index >= bookPdfPageCount - step;
 }
 
-async function initializeBookPdfPreview() {
+function showBookPdfError(error) {
+  console.error('Unable to load the sample PDF:', error);
+  bookPdfLoading.hidden = false;
+  bookPdfLoading.textContent = 'The sample preview is unavailable right now.';
+}
+
+async function initializeBookPdfPreview(bookPdfPath) {
   if (!bookPdfElement || !bookPdfLoading) return;
   try {
     const pdfjsLib = await import('../assets/pdfjs/pdf.js');
@@ -283,34 +273,79 @@ async function initializeBookPdfPreview() {
     bookPdfTotal.textContent = String(bookPdfPageCount).padStart(2, '0');
     bookPdfPages = Array.from({ length: bookPdfPageCount }, (_, index) => createBookPdfShell(index + 1));
     await renderBookPdfSpread(0);
-    bookPdfFlip = new window.St.PageFlip(bookPdfElement, { width: 420, height: 560, size: 'stretch', minWidth: 240, maxWidth: 760, minHeight: 320, maxHeight: 680, showCover: false, autoSize: false, drawShadow: true, flippingTime: 800, maxShadowOpacity: .25, mobileScrollSupport: false, usePortrait: false });
+    bookPdfFlip = new window.St.PageFlip(bookPdfElement, { width: 420, height: 560, size: 'stretch', minWidth: 240, maxWidth: 760, minHeight: 320, maxHeight: 900, showCover: false, autoSize: false, drawShadow: true, flippingTime: 800, maxShadowOpacity: .25, mobileScrollSupport: false, usePortrait: true });
     bookPdfFlip.loadFromHTML(bookPdfPages);
-    bookPdfFlip.on('flip', (event) => { updateBookPdfControls(event.data); renderBookPdfSpread(event.data).catch(() => {}); });
-    bookPdfPrevious.addEventListener('click', () => { const index = bookPdfFlip.getCurrentPageIndex() - 2; renderBookPdfSpread(index).then(() => bookPdfFlip.flip(index)); });
-    bookPdfNext.addEventListener('click', () => { const index = bookPdfFlip.getCurrentPageIndex() + 2; renderBookPdfSpread(index).then(() => bookPdfFlip.flip(index)); });
+    bookPdfFlip.on('flip', (event) => { updateBookPdfControls(event.data); renderBookPdfSpread(event.data).catch(showBookPdfError); });
+    bookPdfFlip.on('changeOrientation', () => {
+      const index = bookPdfFlip.getCurrentPageIndex();
+      updateBookPdfControls(index);
+      renderBookPdfSpread(index).catch(showBookPdfError);
+    });
+    const turnBookPdf = (direction) => {
+      const step = bookPdfFlip.getOrientation() === 'portrait' ? 1 : 2;
+      const index = Math.max(0, Math.min(bookPdfPageCount - 1, bookPdfFlip.getCurrentPageIndex() + direction * step));
+      renderBookPdfSpread(index).then(() => bookPdfFlip.flip(index)).catch(showBookPdfError);
+    };
+    bookPdfPrevious.addEventListener('click', () => turnBookPdf(-1));
+    bookPdfNext.addEventListener('click', () => turnBookPdf(1));
+    let overflowBeforeFullscreen = '';
+    let fallbackFullscreen = false;
     const setBookPdfFullscreen = (active) => {
-      bookPdfFrame.classList.toggle('is-fullscreen', active);
+      const wasActive = bookPdfPreview.classList.contains('is-fullscreen');
+      if (active && !wasActive) overflowBeforeFullscreen = document.body.style.overflow;
+      bookPdfPreview.classList.toggle('is-fullscreen', active);
+      bookPdfPreview.setAttribute('role', active ? 'dialog' : 'region');
+      if (active) bookPdfPreview.setAttribute('aria-modal', 'true');
+      else bookPdfPreview.removeAttribute('aria-modal');
       bookPdfExit.hidden = !active;
-      document.body.style.overflow = active ? 'hidden' : '';
-      bookPdfFullscreen.innerHTML = active ? 'Exit full screen <span aria-hidden="true">↙</span>' : 'Full screen <span aria-hidden="true">↗</span>';
+      bookPdfFullscreen.hidden = active;
+      document.body.style.overflow = active ? 'hidden' : overflowBeforeFullscreen;
+      if (active) bookPdfExit.focus({ preventScroll: true });
+      else if (wasActive) bookPdfFullscreen.focus({ preventScroll: true });
+      requestAnimationFrame(() => bookPdfFlip.update());
     };
     bookPdfFullscreen.addEventListener('click', async () => {
-      if (document.fullscreenElement && document.exitFullscreen) {
-        await document.exitFullscreen();
-      } else if (bookPdfFrame.requestFullscreen) {
-        await bookPdfFrame.requestFullscreen();
-      } else {
-        setBookPdfFullscreen(!bookPdfFrame.classList.contains('is-fullscreen'));
+      try {
+        if (!bookPdfPreview.requestFullscreen) throw new Error('Native full screen is unavailable.');
+        await bookPdfPreview.requestFullscreen();
+        fallbackFullscreen = false;
+      } catch {
+        fallbackFullscreen = true;
+      }
+      setBookPdfFullscreen(true);
+    });
+    const closeBookPdfFullscreen = async () => {
+      if (document.fullscreenElement === bookPdfPreview) await document.exitFullscreen();
+      fallbackFullscreen = false;
+      setBookPdfFullscreen(false);
+    };
+    bookPdfExit.addEventListener('click', closeBookPdfFullscreen);
+    document.addEventListener('fullscreenchange', () => {
+      if (document.fullscreenElement === bookPdfPreview) setBookPdfFullscreen(true);
+      else if (!fallbackFullscreen && bookPdfPreview.classList.contains('is-fullscreen')) setBookPdfFullscreen(false);
+    });
+    document.addEventListener('keydown', (event) => {
+      if (!bookPdfPreview.classList.contains('is-fullscreen')) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeBookPdfFullscreen();
+      } else if (event.key === 'Tab') {
+        const buttons = [...bookPdfPreview.querySelectorAll('button:not([disabled]):not([hidden])')];
+        const first = buttons[0];
+        const last = buttons[buttons.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && (document.activeElement === last || !bookPdfPreview.contains(document.activeElement))) { event.preventDefault(); first.focus(); }
       }
     });
-    bookPdfExit.addEventListener('click', () => setBookPdfFullscreen(false));
-    document.addEventListener('fullscreenchange', () => setBookPdfFullscreen(Boolean(document.fullscreenElement)));
+    let resizeFrame;
+    new ResizeObserver(() => {
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => bookPdfFlip.update());
+    }).observe(bookPdfFrame);
     updateBookPdfControls(0);
+    bookPdfFullscreen.disabled = false;
     bookPdfLoading.hidden = true;
   } catch (error) {
-    console.error('Unable to load the sample PDF:', error);
-    bookPdfLoading.textContent = 'The sample preview is unavailable right now.';
+    showBookPdfError(error);
   }
 }
-
-initializeBookPdfPreview();

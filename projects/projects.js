@@ -21,6 +21,55 @@
     const count = Number(value) || 0;
     return count >= 1000 ? `${(count / 1000).toFixed(1).replace(/\.0$/, '')}k` : number(count);
   };
+  let activeLiveProjects = [];
+  let campaignSnapshots = [];
+  let refreshingStats = false;
+  let lastStatsCheck = 0;
+
+  function applyCampaignStats() {
+    if (!liveGrid || !window.VerseluftCampaignStats) return;
+    liveGrid.querySelectorAll('.project-card').forEach((card) => {
+      const project = activeLiveProjects.find((item) => item.id === card.dataset.projectId);
+      if (!project) return;
+      const stats = window.VerseluftCampaignStats.metrics(project, campaignSnapshots);
+      if (!stats) return;
+      const meta = card.querySelector('.project-meta');
+      const fields = meta?.querySelectorAll(':scope > span');
+      if (!fields || fields.length !== 3) return;
+      fields[0].innerHTML = `<strong>${number(stats.fundingPercent)}%</strong> funded`;
+      const remaining = stats.daysRemaining || stats.hoursRemaining || stats.minutesRemaining;
+      const unit = stats.daysRemaining ? 'day' : stats.hoursRemaining ? 'hour' : 'minute';
+      fields[1].innerHTML = stats.ended
+        ? '<strong>Ended</strong> campaign'
+        : `<strong>${number(remaining)} ${unit}${remaining === 1 ? '' : 's'}</strong> to go`;
+      fields[2].innerHTML = `<strong>${backers(stats.backers)}</strong> backers`;
+      meta.title = `Campaign figures checked ${new Date(stats.updatedAt).toLocaleString()}`;
+    });
+  }
+
+  async function refreshCampaignStats() {
+    if (isFilePreview || !liveGrid || refreshingStats) return;
+    refreshingStats = true;
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 10000);
+    try {
+      const response = await fetch('/projects/data/campaign-stats.json', {
+        cache: 'no-store', signal: controller.signal,
+      });
+      if (!response.ok) return;
+      const data = await response.json();
+      if (data?.schemaVersion !== 1 || !Array.isArray(data.campaigns)) return;
+      campaignSnapshots = data.campaigns;
+      lastStatsCheck = Date.now();
+      applyCampaignStats();
+    } catch (error) {
+      console.warn('Campaign refresh unavailable; keeping the last displayed figures.', error);
+    } finally {
+      window.clearTimeout(timeout);
+      refreshingStats = false;
+    }
+  }
+
   const cardMarkup = (project, section, index) => {
     const title = escapeHtml(project.title);
     const image = escapeHtml(project.image);
@@ -97,10 +146,12 @@
         }
       }
       const live = data.projects.filter((project) => project.section === 'live');
+      activeLiveProjects = live;
       const upcoming = data.projects.filter((project) => project.section === 'upcoming');
       if (liveGrid) {
         liveGrid.innerHTML = live.map((project, index) => cardMarkup(project, 'live', index)).join('');
         liveGrid.setAttribute('aria-busy', 'false');
+        refreshCampaignStats();
       }
       if (deck) {
         const firstNav = deck.querySelector('.upcoming-nav');
@@ -139,6 +190,18 @@
       }
       if (deck) deck.setAttribute('aria-busy', 'false');
     });
+
+  if (!isFilePreview && liveGrid) {
+    window.setInterval(() => {
+      if (!document.hidden) refreshCampaignStats();
+    }, 5 * 60 * 1000);
+    window.setInterval(applyCampaignStats, 60 * 1000);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) return;
+      applyCampaignStats();
+      if (Date.now() - lastStatsCheck >= 5 * 60 * 1000) refreshCampaignStats();
+    });
+  }
 
   if (isLocalPreview) {
     window.addEventListener('storage', (event) => {

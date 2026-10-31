@@ -18,9 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css?v=20261025-footer-placeholders-hidden" />
     <link rel="stylesheet" href="/library/library.css?v=20260913" />
-    <link rel="stylesheet" href="/library/book.css?v=20261003" />
+    <link rel="stylesheet" href="/library/book.css?v=20261031-cleanup" />
 <link rel="stylesheet" href="/responsive.css?v=20261011-carousel-pdf" />
-    <script src="/library/book.js?v=20261014-store-url-cachefix" defer></script>
+    <script src="/library/book.js?v=20261031-cleanup" defer></script>
     <link rel="stylesheet" href="/scroll-to-top.css?v=20261019" />
   </head>
   <body class="library-page library-book-detail-page">
@@ -84,28 +84,15 @@
             <div class="book-description-copy">
               <p class="library-kicker"><span aria-hidden="true"></span> A closer look</p>
               <h2 id="book-story-title">Inside <i id="book-story-book-title">this title.</i></h2>
-              <p>This is placeholder copy for the book description. We can use this space to introduce the setting, show what’s inside, and explain how it can be used at the table.</p>
-              <span class="book-placeholder-label">PLACEHOLDER TEXT · TO BE REPLACED</span>
+              <p id="book-story-description"></p>
             </div>
-            <div class="book-pdf-preview" aria-label="Sample PDF preview">
-              <div class="book-pdf-heading"><div><p class="library-kicker"><span aria-hidden="true"></span> Sample pages</p><h3>Step inside the book.</h3></div><span class="book-pdf-count"><strong id="book-pdf-current">01–02</strong> / <span id="book-pdf-total">--</span></span></div>
-              <div class="book-pdf-frame"><div class="book-pdf-book" id="book-pdf-book"></div><div class="book-pdf-loading" id="book-pdf-loading" role="status" aria-live="polite">Loading sample pages…</div><button class="book-pdf-exit" id="book-pdf-exit" type="button" hidden>Exit full screen <span aria-hidden="true">↙</span></button></div>
-              <div class="book-pdf-controls"><button type="button" id="book-pdf-prev" aria-label="Previous sample pages">←</button><span class="book-pdf-control-spacer"></span><button type="button" id="book-pdf-next" aria-label="Next sample pages">→</button><button class="book-pdf-fullscreen" type="button" id="book-pdf-fullscreen">Full screen <span aria-hidden="true">↗</span></button></div>
+            <div class="book-pdf-preview" hidden role="region" aria-label="Sample PDF preview">
+              <div class="book-pdf-heading"><div><p class="library-kicker"><span aria-hidden="true"></span> Sample pages</p><h3>Step inside the book.</h3></div><button class="book-pdf-exit" id="book-pdf-exit" type="button" aria-label="Close full-screen preview" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button></div>
+              <div class="book-pdf-frame"><div class="book-pdf-book" id="book-pdf-book"></div><div class="book-pdf-loading" id="book-pdf-loading" role="status" aria-live="polite">Loading sample pages…</div></div>
+              <div class="book-pdf-controls" role="group" aria-label="Sample page navigation"><button type="button" id="book-pdf-prev" aria-label="Previous sample pages" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7" /></svg></button><span class="book-pdf-count" role="status" aria-live="polite"><strong id="book-pdf-current">01–02</strong> / <span id="book-pdf-total">--</span></span><button type="button" id="book-pdf-next" aria-label="Next sample pages" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg></button></div>
+              <button class="book-pdf-fullscreen" type="button" id="book-pdf-fullscreen" disabled>Open full-screen preview <span aria-hidden="true">↗</span></button>
             </div>
-            <div class="book-description-copy book-description-copy-secondary">
-              <p class="library-kicker"><span aria-hidden="true"></span> Keep exploring</p>
-              <h3>Room for your next session.</h3>
-              <p>Use this sample as a starting point, then add the final book description, contents, and table-ready details here.</p>
-            </div>
-            <div class="book-description-gallery">
-              <div class="book-gallery-heading"><p class="library-kicker"><span aria-hidden="true"></span> From the book</p><h3>A glimpse of the world.</h3></div>
-              <figure class="book-description-image gallery-image-01"><img src="/assets/test%20images/article%20PH1.webp" alt="Placeholder artwork one" width="1672" height="941" loading="lazy" decoding="async" /><figcaption><span>PLACEHOLDER IMAGE</span><span>01</span></figcaption></figure>
-              <figure class="book-description-image gallery-image-02"><img src="/assets/test%20images/article%20PH2.webp" alt="Placeholder artwork two" width="1672" height="941" loading="lazy" decoding="async" /><figcaption><span>PLACEHOLDER IMAGE</span><span>02</span></figcaption></figure>
-              <figure class="book-description-image gallery-image-03"><img src="/assets/test%20images/article%20PH3.webp" alt="Placeholder artwork three" width="1672" height="941" loading="lazy" decoding="async" /><figcaption><span>PLACEHOLDER IMAGE</span><span>03</span></figcaption></figure>
-              <figure class="book-description-image gallery-image-04"><img src="/assets/test%20images/article%20PH4.webp" alt="Placeholder artwork four" width="1672" height="941" loading="lazy" decoding="async" /><figcaption><span>PLACEHOLDER IMAGE</span><span>04</span></figcaption></figure>
-              <figure class="book-description-image gallery-image-05"><img src="/assets/contact-correspondence.png" alt="Placeholder artwork five" width="1536" height="1024" loading="lazy" decoding="async" /><figcaption><span>PLACEHOLDER IMAGE</span><span>05</span></figcaption></figure>
-              <figure class="book-description-image gallery-image-06"><img src="/assets/newsletter-lantern.png" alt="Placeholder artwork six" width="1122" height="1402" loading="lazy" decoding="async" /><figcaption><span>PLACEHOLDER IMAGE</span><span>06</span></figcaption></figure>
-            </div>
+
           </div>
         </section>
 
@@ -138,18 +125,6 @@
       </footer>
     </div>
 
-    <aside class="motion-test-tool" id="motion-test-tool" aria-label="Hero animation preview">
-      <div class="motion-test-heading"><div><span>Live preview</span><strong>Hero animation</strong></div><button type="button" id="motion-test-close" aria-label="Hide animation preview">×</button></div>
-      <div class="motion-test-options" role="group" aria-label="Choose an animation">
-        <button type="button" data-motion-option="aura">Aura</button>
-        <button type="button" data-motion-option="float" aria-pressed="true">Float</button>
-        <button type="button" data-motion-option="sweep">Light sweep</button>
-        <button type="button" data-motion-option="stars">Star drift</button>
-        <button type="button" data-motion-option="tilt">Cover tilt</button>
-      </div>
-      <p class="motion-test-status" id="motion-test-status" aria-live="polite">Previewing: Float</p>
-    </aside>
-    <button class="motion-test-reopen" id="motion-test-reopen" type="button" hidden>Animations</button>
     <script src="/scroll-to-top.js?v=20261019" defer></script>
 </body>
 </html>

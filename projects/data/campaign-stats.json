@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-26T14:02:26Z",
+  "campaigns": [
+    {
+      "sourceUrl": "https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs",
+      "sourceProjectId": 320591640,
+      "fundingPercent": 521,
+      "backers": 97,
+      "deadline": "2026-11-06T15:57:10Z",
+      "state": "live",
+      "updatedAt": "2026-10-26T14:02:21Z"
+    },
+    {
+      "sourceUrl": "https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024",
+      "sourceProjectId": 1682002681,
+      "fundingPercent": 426,
+      "backers": 96,
+      "deadline": "2026-11-05T16:49:22Z",
+      "state": "live",
+      "updatedAt": "2026-10-26T14:02:24Z"
+    },
+    {
+      "sourceUrl": "https://www.kickstarter.com/projects/vaultofmanythings/roll-for-outfit-2-dnd-witchy-clothes",
+      "sourceProjectId": 764636574,
+      "fundingPercent": 285,
+      "backers": 47,
+      "deadline": "2026-11-11T17:14:05Z",
+      "state": "live",
+      "updatedAt": "2026-10-26T14:02:26Z"
+    }
+  ]
+}

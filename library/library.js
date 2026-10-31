@@ -9,6 +9,84 @@ const allFeaturedCount = document.querySelector('#all-featured-count');
 let catalogBooks = [];
 let libraryCards = [];
 let activeLibraryFilter = 'all';
+const libraryViewStorageKey = 'verseluft.library.view';
+let libraryLoaded = false;
+let restoringLibraryScroll = false;
+let libraryRestoreVersion = 0;
+let libraryScrollSaveTimer;
+
+function readLibraryView() {
+  const params = new URLSearchParams(window.location.search);
+  const historyView = history.state?.libraryView;
+  const matchingHistory = historyView?.url === window.location.pathname + window.location.search;
+  let savedView = matchingHistory ? historyView : null;
+
+  // Return links from a book open a fresh listing entry, rather than browser Back.
+  if (!savedView && !params.has('q') && !params.has('category')) {
+    try {
+      const referrer = new URL(document.referrer);
+      if (referrer.origin === window.location.origin && referrer.pathname === '/library/book.html') {
+        savedView = JSON.parse(sessionStorage.getItem(libraryViewStorageKey));
+      }
+    } catch { /* Browsing still works when storage is unavailable. */ }
+  }
+
+  const query = params.has('q') ? params.get('q') : savedView?.query;
+  const category = params.has('category') ? params.get('category') : savedView?.category;
+  return {
+    query: typeof query === 'string' ? query : '',
+    category: libraryFilters.some((button) => button.dataset.libraryFilter === category) ? category : 'all',
+    scrollY: Number.isFinite(savedView?.scrollY) ? Math.max(0, savedView.scrollY) : null,
+  };
+}
+
+function saveLibraryView() {
+  if (!libraryLoaded) return;
+  const url = new URL(window.location.href);
+  const query = librarySearch.value;
+  if (query.trim()) url.searchParams.set('q', query);
+  else url.searchParams.delete('q');
+  if (activeLibraryFilter !== 'all') url.searchParams.set('category', activeLibraryFilter);
+  else url.searchParams.delete('category');
+
+  const view = { query, category: activeLibraryFilter, scrollY: window.scrollY, url: url.pathname + url.search };
+  history.replaceState({ ...history.state, libraryView: view }, '', url);
+  try { sessionStorage.setItem(libraryViewStorageKey, JSON.stringify(view)); }
+  catch { /* URL and history restoration do not depend on storage. */ }
+}
+
+function applyLibraryView(view) {
+  librarySearch.value = view.query;
+  activeLibraryFilter = view.category;
+  libraryFilters.forEach((button) => {
+    const isActive = button.dataset.libraryFilter === activeLibraryFilter;
+    button.classList.toggle('is-active', isActive);
+    button.setAttribute('aria-pressed', String(isActive));
+  });
+}
+
+function cancelLibraryScrollRestore() {
+  libraryRestoreVersion += 1;
+  restoringLibraryScroll = false;
+}
+
+async function restoreLibraryScroll(view) {
+  const version = ++libraryRestoreVersion;
+  restoringLibraryScroll = true;
+  // Wait briefly for heading fonts to settle, without blocking the catalog.
+  await Promise.race([document.fonts.ready, new Promise((resolve) => setTimeout(resolve, 500))]);
+  await new Promise(requestAnimationFrame);
+  if (version !== libraryRestoreVersion) return;
+  const catalogTop = document.querySelector('#catalog').getBoundingClientRect().top + window.scrollY;
+  const top = view.scrollY ?? ((view.query || view.category !== 'all' || window.location.hash === '#catalog') ? catalogTop : 0);
+  window.scrollTo({ top, behavior: 'instant' });
+  restoringLibraryScroll = false;
+  saveLibraryView();
+}
+
+const initialLibraryView = readLibraryView();
+applyLibraryView(initialLibraryView);
+history.scrollRestoration = 'manual';
 
 function normalizeLibraryText(value) {
   return String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -56,7 +134,7 @@ function createTextElement(tagName, className, text) {
   return element;
 }
 
-function createBookCard(book, index, total) {
+function createBookCard(book) {
   const bookUrl = `/library/book.html?slug=${encodeURIComponent(book.slug)}`;
   const card = document.createElement('article');
   card.className = 'book-card';
@@ -77,7 +155,6 @@ function createBookCard(book, index, total) {
   cover.loading = 'lazy';
   cover.decoding = 'async';
   coverWrap.append(cover);
-  coverWrap.append(createTextElement('span', 'book-cover-index', `${String(index + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`));
 
   const copy = document.createElement('div');
   copy.className = 'book-card-copy';
@@ -147,7 +224,7 @@ function renderLibrary(books) {
   catalogBooks = books
     .filter((book) => book.status === 'published' && book.featured)
     .sort((first, second) => first.sortOrder - second.sortOrder);
-  libraryCards = catalogBooks.map((book, index) => createBookCard(book, index, catalogBooks.length));
+  libraryCards = catalogBooks.map(createBookCard);
   catalogGrid.replaceChildren(...libraryCards);
   catalogGrid.setAttribute('aria-busy', 'false');
   allFeaturedCount.textContent = String(catalogBooks.length);
@@ -163,13 +240,9 @@ async function loadLibrary() {
     if (data.schemaVersion !== 1) throw new Error('The book data uses an unsupported schema version.');
     validateBooks(data.books);
     renderLibrary(data.books);
-
-    const initialQuery = new URLSearchParams(window.location.search).get('q');
-    if (initialQuery) {
-      librarySearch.value = initialQuery;
-      updateLibrary();
-      document.querySelector('#catalog').scrollIntoView({ behavior: 'instant', block: 'start' });
-    }
+    libraryLoaded = true;
+    if (libraryRestoreVersion === 0) restoreLibraryScroll(initialLibraryView);
+    else saveLibraryView();
   } catch (error) {
     console.error('Unable to load the library catalog:', error);
     catalogGrid.setAttribute('aria-busy', 'false');
@@ -181,16 +254,46 @@ async function loadLibrary() {
 
 libraryFilters.forEach((button) => {
   button.addEventListener('click', () => {
-    activeLibraryFilter = button.dataset.libraryFilter;
-    libraryFilters.forEach((filterButton) => {
-      const isActive = filterButton === button;
-      filterButton.classList.toggle('is-active', isActive);
-      filterButton.setAttribute('aria-pressed', String(isActive));
-    });
+    cancelLibraryScrollRestore();
+    applyLibraryView({ query: librarySearch.value, category: button.dataset.libraryFilter });
     updateLibrary();
+    saveLibraryView();
   });
 });
 
-librarySearch.addEventListener('input', updateLibrary);
+librarySearch.addEventListener('input', () => {
+  cancelLibraryScrollRestore();
+  updateLibrary();
+  saveLibraryView();
+});
+
+['pointerdown', 'wheel', 'touchstart', 'keydown'].forEach((eventName) => {
+  window.addEventListener(eventName, cancelLibraryScrollRestore, { passive: true });
+});
+window.addEventListener('scroll', () => {
+  if (!libraryLoaded || restoringLibraryScroll) return;
+  clearTimeout(libraryScrollSaveTimer);
+  libraryScrollSaveTimer = setTimeout(() => {
+    libraryScrollSaveTimer = undefined;
+    if (!restoringLibraryScroll) saveLibraryView();
+  }, 300);
+}, { passive: true });
+window.addEventListener('pagehide', () => {
+  clearTimeout(libraryScrollSaveTimer);
+  libraryScrollSaveTimer = undefined;
+  saveLibraryView();
+});
+
+function restoreCurrentLibraryView() {
+  if (!libraryLoaded) return;
+  const view = readLibraryView();
+  applyLibraryView(view);
+  updateLibrary();
+  restoreLibraryScroll(view);
+}
+window.addEventListener('popstate', restoreCurrentLibraryView);
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) restoreCurrentLibraryView();
+});
 
 loadLibrary();
