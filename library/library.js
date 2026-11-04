@@ -89,7 +89,19 @@ applyLibraryView(initialLibraryView);
 history.scrollRestoration = 'manual';
 
 function normalizeLibraryText(value) {
-  return String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return String(value ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/['\u2018\u2019\u02bc`]/g, '')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim();
+}
+
+function matchesLibrarySearch(searchText, query) {
+  const text = normalizeLibraryText(searchText);
+  const words = normalizeLibraryText(query).split(/\s+/).filter(Boolean);
+  return words.every((word) => text.includes(word));
 }
 
 function validateBooks(books) {
@@ -145,6 +157,8 @@ function createBookCard(book) {
   const coverWrap = document.createElement('a');
   coverWrap.className = 'book-cover-wrap';
   coverWrap.href = bookUrl;
+  // The View book link is the card's single stop in the keyboard tab order.
+  coverWrap.tabIndex = -1;
   coverWrap.setAttribute('aria-label', `View book: ${book.title}`);
 
   const cover = document.createElement('img');
@@ -161,6 +175,7 @@ function createBookCard(book) {
   const title = document.createElement('h3');
   const titleLink = createTextElement('a', 'book-title-link', book.title);
   titleLink.href = bookUrl;
+  titleLink.tabIndex = -1;
   title.append(titleLink);
   copy.append(title);
   copy.append(createTextElement('p', 'book-card-type', book.categoryLabel));
@@ -201,12 +216,12 @@ function renderHeroCovers(books) {
 }
 
 function updateLibrary() {
-  const query = normalizeLibraryText(librarySearch.value.trim());
+  const query = librarySearch.value;
   let shown = 0;
 
   libraryCards.forEach((card) => {
     const matchesCategory = activeLibraryFilter === 'all' || card.dataset.category === activeLibraryFilter;
-    const matchesSearch = !query || normalizeLibraryText(card.dataset.search).includes(query);
+    const matchesSearch = matchesLibrarySearch(card.dataset.search, query);
     card.hidden = !(matchesCategory && matchesSearch);
     if (!card.hidden) shown += 1;
   });
@@ -216,6 +231,7 @@ function updateLibrary() {
     ? 'No featured books match that search. Try a different title or category.'
     : 'There are no featured books to show right now.';
   catalogGrid.classList.toggle('has-single-result', shown === 1);
+  catalogGrid.dataset.resultCount = String(shown);
   catalogResult.textContent = `Showing ${shown} ${shown === 1 ? 'featured title' : 'featured titles'}`;
 }
 
@@ -265,6 +281,30 @@ librarySearch.addEventListener('input', () => {
   cancelLibraryScrollRestore();
   updateLibrary();
   saveLibraryView();
+});
+
+// Handle catalog shortcuts explicitly so history restoration cannot undo the jump,
+// including when the URL already ends in #catalog after scrolling back to the top.
+document.querySelectorAll('a[href="#catalog"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    cancelLibraryScrollRestore();
+    clearTimeout(libraryScrollSaveTimer);
+    saveLibraryView();
+    if (window.location.hash !== '#catalog') {
+      const url = new URL(window.location.href);
+      url.hash = 'catalog';
+      history.pushState(history.state, '', url);
+    }
+    const heading = document.querySelector('#catalog-title');
+    heading.setAttribute('tabindex', '-1');
+    heading.focus({ preventScroll: true });
+    document.querySelector('#catalog').scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      block: 'start',
+    });
+  });
 });
 
 ['pointerdown', 'wheel', 'touchstart', 'keydown'].forEach((eventName) => {

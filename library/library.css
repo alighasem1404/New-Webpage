@@ -64,6 +64,8 @@
 .book-card h3 .book-title-link { font-family: inherit !important; }
 .book-title-link:hover { color: var(--orange); }
 .book-cover-wrap:focus-visible, .book-title-link:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
+.book-details-button:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+.book-card:has(.book-details-button:focus-visible) { outline: 2px solid var(--orange); outline-offset: 4px; }
 .book-card-copy > p:not(.book-card-type) { flex: 1; margin: 8px 0 16px; color: #b7aa94; font: var(--library-text-body)/1.6 'IBM Plex Serif', Georgia, serif; }
 .book-details-button { display: inline-flex; align-items: center; justify-content: center; align-self: flex-start; gap: 12px; min-height: var(--library-control-height); margin-top: auto; padding: 10px 14px; border: 1px solid rgba(210,168,70,.4); color: #e2d2b8; font: 600 var(--library-text-small)/1.4 'DM Sans', sans-serif; text-decoration: none; }
 .book-details-button span { color: var(--orange); font-size: var(--library-text-body); line-height: 1; transition: transform .2s ease; }
@@ -145,4 +147,88 @@
 @media (max-width: 620px) {
   .library-page .catalog-grid, .library-page .catalog-grid.has-single-result { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .library-page .book-card h3 { overflow-wrap: anywhere; }
+}
+
+/* Balance each title beneath its cover, with a centered reading column. */
+.library-page .catalog-grid .book-card {
+  padding-bottom: 0;
+  border: 1px solid rgba(252, 230, 207, .15);
+  background: linear-gradient(180deg, #1c1712, #15110d);
+}
+.library-page .catalog-grid .book-card-copy {
+  align-items: center;
+  padding: 22px 18px 24px;
+  text-align: center;
+}
+.library-page .catalog-grid .book-card h3 {
+  width: 100%;
+  margin: 0;
+  text-wrap: balance;
+}
+.library-page .catalog-grid .book-card-type {
+  max-width: 100%;
+  margin: 12px 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+.library-page .catalog-grid .book-card-copy > p:not(.book-card-type) {
+  width: 100%;
+  max-width: 30ch;
+  margin: 16px 0 24px;
+  text-wrap: pretty;
+}
+.library-page .catalog-grid .book-details-button {
+  align-self: center;
+  margin-top: auto;
+}
+@media (max-width: 620px) {
+  .library-page .catalog-grid .book-card-copy { padding: 24px 22px 26px; }
+}
+
+/* Center short result sets without stretching the covers or changing card size. */
+@media (min-width: 621px) {
+  .library-page .catalog-grid {
+    --result-card-width: calc((100% - 40px) / 3);
+  }
+  .library-page .catalog-grid[data-result-count="1"] { --result-columns: 1; }
+  .library-page .catalog-grid[data-result-count="2"] { --result-columns: 2; }
+  .library-page .catalog-grid[data-result-count="3"] { --result-columns: 3; }
+  .library-page .catalog-grid:is([data-result-count="1"], [data-result-count="2"], [data-result-count="3"]) {
+    grid-template-columns: repeat(var(--result-columns), minmax(0, var(--result-card-width)));
+    justify-content: center;
+  }
+}
+@media (min-width: 1051px) {
+  .library-page .catalog-grid { --result-card-width: calc((100% - 60px) / 4); }
+}
+
+/* Compact phone rows keep the cover visible without making it a full screen tall. */
+@media (max-width: 620px) {
+  .library-page .catalog-grid,
+  .library-page .catalog-grid.has-single-result { gap: 16px; }
+  .library-page .catalog-grid .book-card:not([hidden]) {
+    display: grid;
+    grid-template-columns: clamp(76px, 25vw, 128px) minmax(0, 1fr);
+    align-items: center;
+    gap: 14px;
+    padding: 14px;
+  }
+  .library-page .catalog-grid .book-cover-wrap {
+    width: 100%;
+    align-self: center;
+  }
+  .library-page .catalog-grid .book-card-copy {
+    min-width: 0;
+    padding: 0;
+  }
+  .library-page .catalog-grid .book-card h3 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    overflow-wrap: normal;
+  }
+  .library-page .catalog-grid .book-card-type { margin-top: 8px; }
+  .library-page .catalog-grid .book-card-copy > p:not(.book-card-type) {
+    margin: 10px 0 14px;
+  }
 }

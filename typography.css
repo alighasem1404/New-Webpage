@@ -1,0 +1,139 @@
+/* Shared public-site type scale. Load after page and responsive styles. */
+:root {
+  --text-caption: .75rem;
+  --text-small: .875rem;
+  --text-body: 1rem;
+  --text-lead: clamp(1rem, .95rem + .25vw, 1.125rem);
+  --text-card: clamp(1.25rem, 1.1rem + .6vw, 1.5rem);
+  --text-section: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-display: clamp(2.5rem, 1.6rem + 3.5vw, 4.75rem);
+}
+
+body { font-size: var(--text-body); line-height: 1.6; }
+.library-page {
+  --library-text-small: var(--text-small);
+  --library-text-body: var(--text-body);
+  --library-text-title: var(--text-card);
+}
+
+/* The page title and section headings share a hierarchy across destinations. */
+.site-shell :is(.hero h1, .library-hero h1, .projects-hero h1,
+  .about-intro h1, .contact-intro h1, .blog-masthead h1,
+  .blog-hero h1, .article-hero h1, .book-detail-copy h1) {
+  font-size: var(--text-display);
+  line-height: 1.12;
+}
+.site-shell :is(.proof-heading h2, .about-copy h2, .projects-heading h2,
+  .library-preview h2, .blog-heading h2, .alt-three-copy h2,
+  .catalog-heading h2, .library-contact h2, .projects-cta h2,
+  .blog-cta h2, .identity-panel h2, .book-description-copy h2,
+  .book-detail-note h2, .related-books-heading h2, .article-related h2) {
+  font-size: var(--text-section);
+  line-height: 1.2;
+}
+.site-shell :is(.book-card h3, .related-book-copy h3, .blog-card-copy h3,
+  .article-related-card h3, .group-label h3, .sheet-section-heading,
+  .contact-form-panel h2) {
+  font-size: var(--text-card);
+  line-height: 1.3;
+}
+.site-shell .blog-feature-copy h3 { font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); line-height: 1.3; }
+.site-shell .blog-slide-copy h1 { font-size: var(--text-section); line-height: 1.2; }
+.site-shell .article-copy h2 { font-size: var(--text-card); line-height: 1.3; }
+
+/* Reading text keeps its size on small screens; the layout provides the space. */
+.site-shell :is(.hero-intro, .library-intro, .about-intro-copy,
+  .contact-intro-copy, .article-dek, .book-detail-subtitle,
+  .projects-hero-copy > p:not(.projects-kicker),
+  .blog-hero-copy > p:not(.blog-page-kicker)) {
+  font-size: var(--text-lead);
+  line-height: 1.7;
+}
+.site-shell :is(.library-preview > p, .proof-heading > p, .about-body,
+  .about-values p, .projects-heading > p, .project-card-body p,
+  .blog-heading > p, .blog-feature-copy > p, .blog-slide-copy p,
+  .blog-masthead-copy > p:not(.blog-page-kicker),
+  .alt-three-copy > p, .catalog-heading > p, .library-contact > p,
+  .book-detail-description, .book-description-copy > p:not(.library-kicker),
+  .book-detail-note > p, .related-books-heading > p,
+  .projects-cta > p:not(.projects-kicker), .blog-cta > p:not(.blog-page-kicker),
+  .identity-description, .trait-card p, .contact-form-intro,
+  .article-copy p, .article-copy li) {
+  font-size: var(--text-body);
+  line-height: 1.7;
+}
+.site-shell :is(.library-breadcrumb, .book-breadcrumb, .projects-breadcrumb,
+  .about-breadcrumb, .contact-breadcrumb, .blog-breadcrumb, .article-breadcrumb,
+  .book-facts dd, .identity-field strong, .equipment-list li, .article-aside > div a) {
+  font-size: var(--text-small);
+  line-height: 1.6;
+}
+
+/* Labels and captions remain secondary without becoming tiny. */
+.site-shell :is(.eyebrow, .library-kicker, .projects-kicker, .about-kicker,
+  .contact-kicker, .blog-page-kicker, .article-kicker,
+  .blog-category, .blog-count, .article-meta, .article-endnote,
+  .related-book-type, .book-card-type, .book-tags span, .book-facts dt,
+  .book-price > span, .catalog-result, .catalog-footnote,
+  .contact-section-label, .contact-panel-topline, .contact-form-note,
+  .contact-privacy-note, .record-number, .panel-label, .identity-field span,
+  .sheet-topline, .sheet-bottomline, .sheet-record, .sheet-portrait figcaption,
+  .book-detail-art figcaption, .projects-hero-art figcaption,
+  .blog-hero-art figcaption, .article-hero-art figcaption,
+  .article-inline-image figcaption, .project-meta, .stat span,
+  .quote-author small, .footer-label, .footer-bottom, .blog-masthead-meta,
+  .blog-carousel-status, .blog-slide-art > span, .alt-edition) {
+  font-size: var(--text-caption);
+  line-height: 1.5;
+}
+.site-shell :is(.trait-card h3, .quote-author strong) {
+  font-size: var(--text-body);
+  line-height: 1.4;
+}
+.site-shell .about-values h3 { font-size: var(--text-card); line-height: 1.3; }
+.site-shell .contact-guidance h2 { font-size: var(--text-card); line-height: 1.3; white-space: normal; }
+.site-shell .contact-guidance-copy { font-size: var(--text-body); line-height: 1.7; }
+.site-shell .contact-topic-copy strong { font-size: var(--text-body); line-height: 1.4; }
+.site-shell .contact-topic-copy small { font-size: var(--text-small); line-height: 1.6; }
+.site-shell .contact-topic { padding-block: 16px; }
+.site-shell .library-hero-copy h1 { font-size: var(--text-display); }
+.site-shell .projects-current .projects-heading .eyebrow { font-size: var(--text-caption); }
+.site-shell .modal-hint { font-size: var(--text-caption); line-height: 1.5; }
+.site-shell .site-footer :is(.footer-label, .footer-bottom, .brand-descriptor) {
+  font-size: var(--text-caption);
+  line-height: 1.5;
+}
+.site-shell .site-footer .footer-links a { font-size: var(--text-small); line-height: 1.5; }
+
+/* Apply the same text size to text buttons, links, and navigation controls. */
+.site-shell :is(.main-nav a, .small-button, .primary-button, .text-link,
+  .hero-values-button, .about-action-button, .library-hero-link,
+  .catalog-filter, .book-details-button, .book-back-link, .book-contact-link,
+  .book-library-link, .related-book-link, .book-pdf-fullscreen,
+  .projects-hero-link, .projects-cta-link, .blog-hero-link,
+  .blog-filter, .blog-read-link, .blog-card-copy > a, .blog-slide-copy > a,
+  .blog-cta > a, .article-back-link, .article-related-card a,
+  .article-aside > a, .about-next a, .contact-submit,
+  .group-label > a, .footer-links a) {
+  font-size: var(--text-small);
+  line-height: 1.4;
+}
+.site-shell :is(.contact-field, .contact-field > span) { font-size: var(--text-small); line-height: 1.5; }
+.site-shell :is(.contact-field input, .contact-field select, .contact-field textarea,
+  .search-box input, .catalog-search input, .alt-three-form input) {
+  font-size: var(--text-body);
+  line-height: 1.5;
+}
+
+/* Larger copy must be allowed to wrap within the illustrated About sheet. */
+.site-shell :is(.sheet-topline, .sheet-bottomline, .sheet-topline > div,
+  .sheet-portrait figcaption, .about-kicker) { flex-wrap: wrap; }
+.site-shell .trait-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.site-shell .equipment-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.site-shell :is(.trait-card, .identity-field, .equipment-list li) { min-width: 0; overflow-wrap: anywhere; }
+.site-shell .main-nav { flex-wrap: wrap; }
+
+@media (max-width: 620px) {
+  .site-shell .trait-list, .site-shell .equipment-list { grid-template-columns: minmax(0, 1fr); }
+  .site-shell .record-number { margin-left: 0; }
+}

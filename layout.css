@@ -1,0 +1,74 @@
+/* Full-width backgrounds with a shared, centered content area. */
+:root {
+  --content-width: 73.125rem;
+  --page-gutter: clamp(1.25rem, 6vw, 6rem);
+  --section-space: clamp(3rem, 6vw, 6rem);
+  --section-inset: max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
+}
+
+body > .site-shell {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.site-shell > .site-header,
+.site-shell > .site-footer {
+  padding-inline: var(--section-inset);
+}
+.site-shell > main > section {
+  width: 100%;
+  margin-inline: 0;
+  background-origin: border-box;
+  background-clip: border-box;
+}
+
+/* Regular sections use the same gutters and vertical rhythm. */
+.site-shell > main > :is(.library-catalog, .library-contact,
+  .book-description-section, .book-detail-note, .related-books-section,
+  .projects-current, .projects-upcoming, .projects-cta,
+  .about-section, .projects-section, .blog-section,
+  .article-content, .article-related, .contact-content) {
+  padding-block: var(--section-space);
+  padding-inline: var(--section-inset);
+}
+.site-shell > main > .proof-section {
+  padding-inline: var(--section-inset);
+  padding-bottom: var(--section-space);
+}
+
+/* Page introductions share coverage, with height free to grow around the copy. */
+.site-shell > main > :is(.library-hero, .book-detail-hero,
+  .projects-hero, .about-intro, .contact-intro, .article-hero, .blog-hero) {
+  min-height: 34rem;
+  padding-block: var(--section-space);
+  padding-inline: var(--section-inset);
+}
+.site-shell > main > .library-hero { align-items: center; }
+.site-shell > main > .contact-intro { height: auto; }
+
+/* Keep the About record connected to its introduction and closing links. */
+.site-shell > main > .character-sheet-section {
+  padding: 0 var(--section-inset) var(--section-space);
+}
+.site-shell > main > .about-next {
+  padding: 0 var(--section-inset) var(--section-space);
+}
+
+/* The home hero and newsletter art keep their full-width composition. */
+.site-shell > main > .hero { min-height: 42.5rem; }
+.site-shell > main > .lead-alt-three { padding-inline: 0; }
+
+@media (max-width: 1000px) {
+  .site-shell > main > :is(.library-hero, .book-detail-hero,
+    .projects-hero, .about-intro, .contact-intro, .article-hero, .blog-hero) {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 1480px) {
+  /* Anchor the home hero's reading panel to the same content column. */
+  .site-shell .hero-carousel-hero .hero-glass {
+    left: var(--section-inset);
+    width: min(49%, 43.75rem);
+  }
+}

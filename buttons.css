@@ -1,0 +1,107 @@
+/* Shared button geometry: centered content and a small, predictable size scale. */
+:root {
+  --button-gap: .625rem;
+  --button-padding: .625rem 1rem;
+  --button-height: 2.75rem;
+}
+
+.site-shell :is(.small-button, .primary-button, .hero-values-button,
+  .about-action-button, .library-hero-link, .book-details-button,
+  .book-back-link, .book-contact-link, .book-library-link, .related-book-link,
+  .book-pdf-fullscreen, .projects-hero-link, .projects-cta-link,
+  .blog-hero-link, .blog-cta > a, .contact-submit, .preview-open,
+  .catalog-filter, .blog-filter, .alt-three-form > button):not([hidden]) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-gap);
+  min-height: var(--button-height);
+  max-width: 100%;
+  padding: var(--button-padding);
+  font-size: var(--text-small, .875rem);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+/* Prominent calls to action get more space, using the same proportions. */
+.site-shell .hero-actions :is(.primary-button, .hero-values-button):not([hidden]),
+.site-shell .book-detail-actions .book-back-link:not([hidden]) {
+  min-height: 3rem;
+  padding: .875rem 1.25rem;
+}
+.site-shell .library-hero-copy .library-hero-link:not([hidden]) {
+  min-height: 3rem;
+  padding: .875rem 1.25rem;
+}
+
+/* Inline arrows share the label's line box instead of adding uneven margins. */
+.site-shell :is(.small-button, .primary-button, .hero-values-button,
+  .about-action-button, .library-hero-link, .book-details-button,
+  .book-back-link, .book-contact-link, .book-library-link, .related-book-link,
+  .book-pdf-fullscreen, .projects-hero-link, .projects-cta-link,
+  .blog-hero-link, .blog-cta > a, .contact-submit) > span {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Keep compact navigation controls square and center their icons or numbers. */
+.site-shell :is(.flip-button, .upcoming-nav, .modal-close, .book-pdf-exit,
+  .book-pdf-controls button, .testimonial-navigation button,
+  .blog-carousel-button, .blog-carousel-dots button):not([hidden]) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+}
+.site-shell :is(.flip-button, .upcoming-nav, .modal-close, .book-pdf-exit,
+  .book-pdf-controls button, .testimonial-navigation button) > :is(span, svg) {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.site-shell .catalog-filter span { line-height: inherit; }
+.site-shell .blog-filters { flex-wrap: wrap; gap: .5rem; }
+.site-shell .blog-filter { border-bottom: 1px solid transparent; }
+.site-shell .blog-filter:is(:hover, .active) { border-bottom-color: var(--orange); }
+
+/* Match the header button across page-specific header layouts. */
+.site-shell > .site-header > .header-actions > .small-button:not([hidden]) {
+  padding: var(--button-padding);
+  min-height: var(--button-height);
+  gap: var(--button-gap);
+}
+
+/* Newsletter embeds bring their own layout; normalize the submit label in place. */
+.site-shell .kit-newsletter-embed .formkit-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--button-height);
+  padding: var(--button-padding);
+  font-size: var(--text-small, .875rem);
+  line-height: 1.4;
+  text-align: center;
+}
+.site-shell .about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.site-shell .about-actions .about-action-button:not([hidden]) {
+  flex: 0 1 auto;
+  width: auto;
+  min-width: min(100%, 8rem);
+}
+.site-shell .kit-newsletter-embed .formkit-submit > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
