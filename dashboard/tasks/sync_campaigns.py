@@ -9,6 +9,7 @@ import argparse
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation, ROUND_FLOOR
+from html import unescape
 from html.parser import HTMLParser
 import json
 import os
@@ -45,13 +46,26 @@ class WidgetParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.cards = []
         self.deadlines = []
+        self.scripts = []
+        self._script = None
 
     def handle_starttag(self, tag, attrs):
+        if tag == 'script':
+            self._script = []
         attrs = dict(attrs)
         if 'project-card' in attrs.get('class', '').split():
             self.cards.append(attrs)
         if 'ksr_page_timer' in attrs.get('class', '').split() and attrs.get('data-end-time'):
             self.deadlines.append(attrs['data-end-time'])
+
+    def handle_data(self, data):
+        if self._script is not None:
+            self._script.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == 'script' and self._script is not None:
+            self.scripts.append(''.join(self._script))
+            self._script = None
 
 
 def utc_now():
@@ -61,6 +75,65 @@ def utc_now():
 def parse_widget(html, url, checked_at=None):
     parser = WidgetParser()
     parser.feed(html)
+    normalized_url = campaign_url(url)
+    if not normalized_url:
+        raise ValueError('Invalid Kickstarter campaign URL.')
+    embedded = [(script, match.end()) for script in parser.scripts
+                for match in re.finditer(r'\bwindow\.current_project\s*=\s*', script)]
+    if embedded:
+        # Both live and completed cards carry this public JSON. Decode data only;
+        # never execute the page's JavaScript. Completed cards omit the timer and
+        # live-card data attributes used by the original parser.
+        if len(embedded) != 1 or len(parser.cards) != 1:
+            raise ValueError('The widget contains ambiguous campaign data.')
+        script, offset = embedded[0]
+        try:
+            project, _ = json.JSONDecoder(parse_float=Decimal).raw_decode(script[offset:])
+            if isinstance(project, str):
+                project = json.loads(unescape(project), parse_float=Decimal)
+            if not isinstance(project, dict):
+                raise ValueError('Unsupported project data.')
+            source_url = campaign_url(project['urls']['web']['project'])
+            if source_url != normalized_url:
+                raise ValueError('The widget belongs to a different campaign.')
+            project_id = project['id']
+            backers = project['backers_count']
+            if type(project_id) is not int or type(backers) is not int:
+                raise ValueError('Invalid campaign ID or backer count.')
+            card_id = parser.cards[0].get('data-project-pid') or parser.cards[0].get('data-pid')
+            if card_id is not None and int(card_id) != project_id:
+                raise ValueError('The widget card and project IDs do not match.')
+            goal = Decimal(str(project['goal']))
+            pledged = Decimal(str(project['pledged']))
+            if not goal.is_finite() or not pledged.is_finite() or goal <= 0 or pledged < 0:
+                raise ValueError('Invalid campaign funding totals.')
+            percent = pledged * 100 / goal
+            state = project['state']
+            timestamp = project['deadline']
+            if type(timestamp) is not int:
+                raise ValueError('Invalid closing timestamp.')
+            deadline = datetime.fromtimestamp(timestamp, timezone.utc)
+        except (KeyError, TypeError, ValueError, InvalidOperation, OverflowError, OSError) as error:
+            raise ValueError('The embedded campaign statistics have an unsupported format.') from error
+    else:
+        percent, backers, project_id, state, deadline = parse_legacy_widget(parser)
+    if (not percent.is_finite() or not 0 <= percent <= 100_000
+            or not 0 <= backers <= 100_000_000 or project_id <= 0
+            or state not in ('live', 'successful', 'failed', 'canceled', 'suspended')
+            or deadline.utcoffset() is None):
+        raise ValueError('The widget returned invalid campaign statistics.')
+    return {
+        'sourceUrl': normalized_url,
+        'sourceProjectId': project_id,
+        'fundingPercent': int(percent.to_integral_value(rounding=ROUND_FLOOR)),
+        'backers': backers,
+        'deadline': deadline.astimezone(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z'),
+        'state': state,
+        'updatedAt': checked_at or utc_now(),
+    }
+
+
+def parse_legacy_widget(parser):
     if len(parser.cards) != 1 or len(set(parser.deadlines)) != 1:
         raise ValueError('The widget is missing its campaign card or closing date.')
     card = parser.cards[0]
@@ -72,23 +145,7 @@ def parse_widget(html, url, checked_at=None):
         deadline = datetime.fromisoformat(parser.deadlines[0].replace('Z', '+00:00'))
     except (KeyError, ValueError, InvalidOperation) as error:
         raise ValueError('The widget statistics have an unsupported format.') from error
-    if (not percent.is_finite() or not 0 <= percent <= 100_000
-            or not 0 <= backers <= 100_000_000 or project_id <= 0
-            or state not in ('live', 'successful', 'failed', 'canceled', 'suspended')
-            or deadline.utcoffset() is None):
-        raise ValueError('The widget returned invalid campaign statistics.')
-    normalized_url = campaign_url(url)
-    if not normalized_url:
-        raise ValueError('Invalid Kickstarter campaign URL.')
-    return {
-        'sourceUrl': normalized_url,
-        'sourceProjectId': project_id,
-        'fundingPercent': int(percent.to_integral_value(rounding=ROUND_FLOOR)),
-        'backers': backers,
-        'deadline': deadline.astimezone(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z'),
-        'state': state,
-        'updatedAt': checked_at or utc_now(),
-    }
+    return percent, backers, project_id, state, deadline
 
 
 class WidgetRedirects(HTTPRedirectHandler):
@@ -190,7 +247,7 @@ def sync(projects_path=PROJECTS_PATH, stats_path=STATS_PATH, fetcher=fetch_widge
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--watch', action='store_true', help='Refresh periodically for a local preview.')
-    parser.add_argument('--interval', type=int, default=900, help='Watch interval in seconds (minimum 300).')
+    parser.add_argument('--interval', type=int, default=3600, help='Watch interval in seconds (default 3600; minimum 300).')
     args = parser.parse_args()
     if args.interval < 300:
         parser.error('The minimum interval is 300 seconds.')

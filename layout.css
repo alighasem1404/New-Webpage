@@ -6,6 +6,66 @@
   --section-inset: max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
 }
 
+/* The landing page uses half the original space above and below its sections. */
+.home-page {
+  --section-space: clamp(1.5rem, 3vw, 3rem);
+}
+
+.home-page .site-shell > main > .hero,
+.home-page .hero-carousel-hero,
+.home-page .site-shell > main > .lead-alt-three {
+  min-height: 0;
+}
+
+.home-page .hero-carousel-hero { padding-block: 35px 45px; }
+.home-page .hero .scroll-note { bottom: 16px; }
+.home-page .alt-three-copy { padding-block: 35px; }
+
+.home-page .proof-heading {
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.home-page .proof-heading > div {
+  flex: 0 0 auto;
+}
+
+.home-page .proof-heading > p {
+  flex: 1 1 142px;
+  min-width: 80px;
+  max-width: 142px;
+  align-self: center;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.home-page .proof-heading > p > span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.home-page .proof-heading > p > span:first-child { display: block; }
+
+.home-page .proof-intro-row .stat {
+  align-items: center;
+}
+
+.home-page .flip-controls .flip-button:hover:not(:disabled) {
+  border-color: transparent;
+  color: var(--orange);
+  background: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .home-page .alt-three-copy { padding-block: 37.5px; }
+}
+
+@media (max-width: 560px) {
+  .home-page .hero-carousel-hero { padding-block: 20px 37.5px; }
+  .home-page .alt-three-copy { padding-block: 31px; }
+}
+
 body > .site-shell {
   width: 100%;
   max-width: none;

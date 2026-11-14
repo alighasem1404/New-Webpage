@@ -177,12 +177,14 @@ h1, h2 { margin: 0; font: 600 clamp(40px, 5.4vw, 78px)/1.06 'Unbounded', sans-se
 /* The selected hero uses a moving archive behind a glass copy panel. */
 .hero-carousel-hero { position: absolute; z-index: 4; inset: 0; overflow: hidden; color: var(--hero-text); background: var(--cream); isolation: isolate; }
 .hero-carousel-hero:before { content: ''; position: absolute; z-index: 1; inset: 0; pointer-events: none; }
-.hero-carousel-stage { position: absolute; z-index: 0; inset: -18% -11%; display: grid; grid-template-rows: repeat(3, 1fr); gap: 16px; overflow: hidden; transform: rotate(-4deg) scale(1.08); transform-origin: center; perspective: 1500px; background: #100d0a; }
+.hero-carousel-stage { position: absolute; z-index: 0; inset: -18% -11%; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: repeat(3, 1fr); gap: 16px; overflow: hidden; transform: rotate(-4deg) scale(1.08); transform-origin: center; perspective: 1500px; background: #100d0a; }
 .hero-carousel-stage:after { content: ''; position: absolute; z-index: 2; inset: 0; background: radial-gradient(circle at 66% 44%, transparent 0 17%, rgba(16,13,10,.08) 48%, rgba(16,13,10,.64) 100%); pointer-events: none; }
-.hero-carousel-row { display: flex; width: max-content; gap: 16px; align-items: center; transform-style: preserve-3d; will-change: transform; }
-.hero-carousel-row-one { animation: heroShelfLeft 46s linear infinite; }
-.hero-carousel-row-two { margin-left: -12%; animation: heroShelfRight 56s linear infinite; }
-.hero-carousel-row-three { margin-left: 4%; animation: heroShelfLeft 64s linear infinite; }
+.hero-carousel-row { display: flex; width: max-content; align-items: center; transform-style: preserve-3d; will-change: transform; }
+/* Each identical set includes the final gap, so 50% is exactly one full loop. */
+.hero-carousel-set { display: flex; flex: 0 0 auto; align-items: center; gap: 16px; padding-right: 16px; }
+.hero-carousel-row-one.is-ready { animation: heroShelfLeft 46s linear -8s infinite; }
+.hero-carousel-row-two.is-ready { animation: heroShelfRight 56s linear -20s infinite; }
+.hero-carousel-row-three.is-ready { animation: heroShelfLeft 64s linear -32s infinite; }
 .hero-carousel-row img { display: block; flex: 0 0 clamp(135px, 15vw, 235px); width: clamp(135px, 15vw, 235px); aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid rgba(252,230,207,.23); border-radius: 3px; opacity: .78; filter: saturate(.72) contrast(.94) brightness(.72); box-shadow: 9px 13px 0 rgba(0,0,0,.2), 0 18px 30px rgba(0,0,0,.25); user-select: none; }
 .hero-carousel-row-one img { transform: rotateY(-17deg) rotateZ(-1deg); }
 .hero-carousel-row-two img { flex-basis: clamp(122px, 13.5vw, 210px); width: clamp(122px, 13.5vw, 210px); opacity: .66; filter: saturate(.62) contrast(.92) brightness(.64); transform: rotateY(14deg) rotateZ(1deg); }
@@ -194,7 +196,7 @@ h1, h2 { margin: 0; font: 600 clamp(40px, 5.4vw, 78px)/1.06 'Unbounded', sans-se
 .hero-glass .eyebrow, .hero-glass h1, .hero-glass .hero-intro, .hero-glass .primary-button { position: relative; z-index: 1; }
 .hero-glass h1 { color: var(--hero-text); }
 .hero-glass .hero-intro { margin-bottom: 36px; }
-@media (prefers-reduced-motion: reduce) { .hero-carousel-row-one, .hero-carousel-row-two, .hero-carousel-row-three { animation-play-state: paused; } }
+@media (prefers-reduced-motion: reduce) { .hero-carousel-row.is-ready { animation-play-state: paused; } }
 
 :root { --hero-text: #f8f5ee; }
 .hero { position: relative; display: block; min-height: 680px; overflow: hidden; background: #151515; }
@@ -1052,13 +1054,13 @@ h6 i,
   background: var(--paper);
 }
 
-.stat strong .stat-plus {
+.home-page .stat strong .stat-plus {
   display: inline;
   margin-inline-end: .08em;
   color: inherit;
   font-family: 'DM Sans', Arial, sans-serif !important;
-  font-size: .88em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 600;
   letter-spacing: 0;
   vertical-align: baseline;
 }
@@ -1426,6 +1428,7 @@ h6 i,
   row-gap: 8px;
   justify-content: initial;
   padding: 9px 11px 10px;
+  border-radius: 0;
 }
 
 .flipbook-wrap .flip-controls #flip-prev { grid-column: 1; grid-row: 1; }
@@ -1434,13 +1437,20 @@ h6 i,
   flex-basis: 40px;
   width: 40px;
   height: 40px;
+  border-radius: 0;
 }
 .flipbook-wrap .flip-controls .flip-button svg {
   width: 30px;
   height: 30px;
   stroke-width: 3.8;
 }
-.flipbook-wrap .flip-controls .page-count { grid-column: 2; grid-row: 1; justify-self: center; }
+.flipbook-wrap .flip-controls .page-count { grid-column: 2; grid-row: 1; justify-self: center; border-radius: 0; }
+.home-page .flipbook-wrap #open-pdf {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin: 18px auto 0;
+}
 .flipbook-wrap .flip-controls .page-dots {
   grid-column: 1 / -1;
   grid-row: 2;
@@ -1466,11 +1476,22 @@ h6 i,
 }
 
 .content-proof-grid .testimonial-navigation {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 40px;
   justify-content: center;
   width: 100%;
   gap: 0;
   margin-left: 0;
-  column-gap: clamp(70px, 8vw, 100px);
+  column-gap: 12px;
+}
+
+.testimonial-count {
+  color: var(--orange);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .06em;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .content-proof-grid .testimonial-navigation button {
@@ -1506,7 +1527,7 @@ h6 i,
   .content-proof-grid .testimonial-navigation {
     width: 100%;
     margin-left: 0;
-    column-gap: 72px;
+    column-gap: 12px;
   }
 }
 
@@ -1527,7 +1548,7 @@ h6 i,
 
 /* Match live campaign card dimensions across the desktop grid. */
 .projects-section .live-projects {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
 }
 
@@ -1544,8 +1565,11 @@ h6 i,
 }
 
 .projects-section .live-projects .project-card-body {
-  flex: 1 0 270px;
-  height: 270px;
+  flex: 1 0 auto;
+  height: auto;
+  min-height: 300px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 12px;
 }
 
 @media (max-width: 900px) {
@@ -1567,6 +1591,17 @@ h6 i,
   grid-row: 2;
   align-self: center;
   margin-top: 0;
+  flex-wrap: nowrap;
+  gap: 12px;
+  font-size: 12px;
+  letter-spacing: .02em;
+  justify-content: space-between;
+}
+
+.projects-section .live-projects .project-meta > span { white-space: nowrap; }
+
+.projects-section .live-projects .project-meta strong {
+  font-size: 16px;
 }
 
 .projects-section .live-projects .live-bottom-row {
@@ -1574,6 +1609,20 @@ h6 i,
   grid-row: 2;
   align-self: center;
   justify-content: flex-end;
+}
+
+/* Keep larger figures in one row on compact cards and small phones. */
+@media (min-width: 901px) and (max-width: 1100px), (max-width: 350px) {
+  .projects-section .live-projects .project-card-body {
+    grid-template-rows: minmax(0, 1fr) auto auto;
+    padding-inline: 22px;
+  }
+  .projects-section .live-projects .project-meta { grid-column: 1 / -1; }
+  .projects-section .live-projects .live-bottom-row { grid-row: 3; }
+}
+
+@media (max-width: 400px) {
+  .projects-section .live-projects .project-card-body { column-gap: 8px; }
 }
 
 .projects-section .live-projects .project-card-body h3 {
@@ -1587,8 +1636,27 @@ h6 i,
 }
 
 /* Keep the full-screen sample controls clear and easy to use. */
+.pdf-modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .pdf-modal-top {
   gap: 16px;
+  flex: 0 0 auto;
+  height: auto;
+  min-height: 58px;
+  margin-bottom: 24px;
+}
+
+.pdf-modal-book {
+  flex: 1 1 0;
+  min-height: 0;
+  height: auto;
+}
+
+.modal-hint {
+  flex: 0 0 auto;
 }
 
 .pdf-modal-top h3 {

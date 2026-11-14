@@ -55,7 +55,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261025-footer-placeholders-hidden" />
+    <link rel="stylesheet" href="styles.css?v=20261109-spaced-statistics" />
 <link rel="stylesheet" href="responsive.css?v=20261019-compact-footer-type" />
     <style>
       .upcoming-group:not(.is-enhanced) .upcoming-deck-wrap {
@@ -91,9 +91,9 @@
     <link rel="stylesheet" href="/scroll-to-top.css?v=20261019" />
       <link rel="stylesheet" href="/typography.css?v=20261104" />
       <link rel="stylesheet" href="/buttons.css?v=20261104" />
-      <link rel="stylesheet" href="/layout.css?v=20261104" />
+      <link rel="stylesheet" href="/layout.css?v=20261109-arrow-hover" />
   </head>
-  <body>
+  <body class="home-page">
     <div class="site-shell">
       <header class="site-header" id="top">
         <a class="brand" href="#top" aria-label="Verseluft home">
@@ -105,7 +105,7 @@
           <a class="active" href="#top">Home</a>
           <a href="#projects">Projects</a>
           <a href="#values">About us</a>
-          <a href="https://discord.gg/ByZrKpwUwh">Contact</a>
+          <a href="https://discord.gg/ByZrKpwUwh" target="_blank" rel="noopener noreferrer">Contact</a>
         </nav>
 
         <div class="header-actions">
@@ -137,9 +137,9 @@
           <div class="proof-intro-row">
             <div class="proof-heading">
               <div>
-                <h2 id="proof-title"><span>Less prep,</span><br /><i>More play</i></h2>
+                <h2 id="proof-title"><span>Less Prep,</span><br /><i>More Play</i></h2>
               </div>
-              <p>Pick, plug, and play from:</p>
+              <p><span>Pick, plug,</span> <span>and play</span> <span>from:</span></p>
             </div>
             <div class="stats-row" aria-label="Verseluft publishing statistics">
               <div class="stat"><strong><span class="stat-plus">+</span>90</strong><span>Books of assets</span></div>
@@ -167,6 +167,7 @@ We need a part 2 with stat blocks for the members of gangs, this is great conten
                 <div class="quote-author"><span class="author-avatar" id="testimonial-avatar" aria-hidden="true">SK</span><span><strong id="testimonial-name">Sqoody7Kick</strong><small id="testimonial-role">Order of Criminals</small></span></div>
                 <div class="testimonial-navigation" role="group" aria-label="Comment navigation">
                   <button type="button" id="testimonial-prev" aria-label="Previous comment"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5m7 7-7-7 7-7" /></svg></button>
+                  <span class="testimonial-count" id="testimonial-count" aria-label="Comment 1 of 6">1 / 6</span>
                   <button type="button" id="testimonial-next" aria-label="Next comment"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7" /></svg></button>
                 </div>
               </div>
@@ -175,7 +176,7 @@ We need a part 2 with stat blocks for the members of gangs, this is great conten
 
           <div class="pdf-modal" id="pdf-modal" aria-hidden="true">
             <div class="pdf-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-pdf-title">
-              <div class="pdf-modal-top"><div><span class="modal-kicker">D&amp;D SUPPLEMENT PREVIEW</span><h3 id="modal-pdf-title">Inside a Verseluft book</h3></div><button class="modal-close" id="close-pdf" type="button" aria-label="Close book sample"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" /></svg></button></div>
+              <div class="pdf-modal-top"><div><span class="modal-kicker">D&amp;D SUPPLEMENT PREVIEW</span><h3 id="modal-pdf-title">Inside a Verseluft Book</h3></div><button class="modal-close" id="close-pdf" type="button" aria-label="Close book sample"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" /></svg></button></div>
               <div class="pdf-modal-book" id="modal-book"></div>
               <p class="modal-hint">Drag the page or use the corners to turn through the document.</p>
             </div>
@@ -186,7 +187,7 @@ We need a part 2 with stat blocks for the members of gangs, this is great conten
           <div class="about-grid">
             <div class="about-copy">
               <p class="eyebrow"><span></span> About Verseluft</p>
-              <h2 id="about-title">Expanding the<br /><i>Collective imagination</i></h2>
+              <h2 id="about-title">Expanding the<br /><i>Collective Imagination</i></h2>
               <p class="about-lead">We are a collective of indie DnD creators, DMs, and players, who make and share what we wish we had.</p>
               <p class="about-body">We want to add to the collective imagination of the D&amp;D community—creating adventures, NPCs, settings, and ideas that give Game Masters more to work with and players more to discover.</p>
               <div class="about-actions" aria-label="Verseluft community links"><a href="https://discord.gg/ByZrKpwUwh" class="about-action-button about-action-discord">Discord</a><a href="#updates" class="about-action-button about-action-newsletter">Newsletter</a><!-- Temporarily hidden until the creators page is ready; remove hidden to restore. --><a href="#" class="about-action-button about-action-creators" hidden>Our Creators</a></div>
@@ -204,7 +205,7 @@ We need a part 2 with stat blocks for the members of gangs, this is great conten
 
         <section class="projects-section" id="projects" aria-labelledby="projects-title">
           <div class="projects-heading">
-            <div><p class="eyebrow"><span></span>Up on Kickstarter</p><h2 id="projects-title">See what's brewing</h2></div>
+            <div><p class="eyebrow"><span></span>Up on Kickstarter</p><h2 id="projects-title">See What's Brewing</h2></div>
             <p>Discover upcoming D&amp;D adventures, campaign settings, and Dungeon Master resources from Verseluft. Explore the projects below and follow their journey to your table.</p>
           </div>
 
@@ -227,30 +228,30 @@ We need a part 2 with stat blocks for the members of gangs, this is great conten
         </section>
 
         <section class="lead-alt lead-alt-three" id="updates" aria-labelledby="alt-three-title">
-          <div class="alt-three-index"></div><div class="alt-three-copy"><span class="alt-edition">D&amp;D NEWS FROM VERSELUFT</span><h2 id="alt-three-title">Stay in touch,<br /><em>Stay inspired.</em></h2><p>New releases, project updates, and D&amp;D tips and inspiration, delivered straight to your inbox. No Spam, we promise.</p><div id="kit-newsletter-form" class="kit-newsletter-embed"><script async data-uid="40d9c960b5" src="https://verseluft.kit.com/40d9c960b5/index.js"></script></div></div><div class="alt-three-mark"><img id="newsletter-art-image" class="newsletter-art-image" src="assets/newsletter-dispatch.webp" srcset="assets/responsive/newsletter-dispatch-480.webp 480w, assets/responsive/newsletter-dispatch-800.webp 800w, assets/newsletter-dispatch.webp 1122w" sizes="(max-width: 900px) 1px, 39vw" alt="Gold-sealed dispatch on a dark oak desk" width="1122" height="1402" loading="lazy" decoding="async" /></div><div class="alt-three-index alt-three-index-right" aria-hidden="true"></div>
+          <div class="alt-three-index"></div><div class="alt-three-copy"><span class="alt-edition">D&amp;D NEWS FROM VERSELUFT</span><h2 id="alt-three-title">Stay in Touch,<br /><em>Stay Inspired.</em></h2><p>New releases, project updates, and D&amp;D tips and inspiration, delivered straight to your inbox. No Spam, we promise.</p><div id="kit-newsletter-form" class="kit-newsletter-embed"><script async data-uid="40d9c960b5" src="https://verseluft.kit.com/40d9c960b5/index.js"></script></div></div><div class="alt-three-mark"><img id="newsletter-art-image" class="newsletter-art-image" src="assets/newsletter-dispatch.webp" srcset="assets/responsive/newsletter-dispatch-480.webp 480w, assets/responsive/newsletter-dispatch-800.webp 800w, assets/newsletter-dispatch.webp 1122w" sizes="(max-width: 900px) 1px, 39vw" alt="Gold-sealed dispatch on a dark oak desk" width="1122" height="1402" loading="lazy" decoding="async" /></div><div class="alt-three-index alt-three-index-right" aria-hidden="true"></div>
         </section>
 
         <!-- Temporarily hidden until the journal has real published articles. Remove hidden to restore. -->
         <section class="blog-section" id="blog" aria-labelledby="blog-title" hidden>
           <div class="blog-heading"><div><p class="eyebrow"><span></span> The Verseluft Blog</p><h2 id="blog-title">Tabletop Dispatches</h2></div><p>Find inspiration for your D&amp;D campaign with worldbuilding ideas, advice for Dungeon Masters, and a look behind the scenes of our books.</p></div>
-          <div class="blog-feature"><div class="blog-feature-art"><img src="assets/test images/article PH1.webp" alt="Fantasy city illuminated by lava" width="1672" height="941" loading="lazy" decoding="async" /><span>01 / BEHIND THE SCENES</span><strong>Worldbuilding<br /><i>for the table.</i></strong><small>Inside the making of a campaign world</small></div><div class="blog-feature-copy"><span class="blog-category">Behind the scenes · 8 min read</span><h3>D&amp;D worldbuilding: what makes a setting playable?</h3><p>A memorable D&amp;D setting gives players reasons to explore. Look beyond maps and lore to the people, places, and unanswered questions that invite your group into the story.</p><a href="#blog" class="blog-read-link">Read the worldbuilding article <span>↗</span></a></div></div>
+          <div class="blog-feature"><div class="blog-feature-art"><img src="assets/test images/article PH1.webp" alt="Fantasy city illuminated by lava" width="1672" height="941" loading="lazy" decoding="async" /><span>01 / BEHIND THE SCENES</span><strong>Worldbuilding<br /><i>for the table.</i></strong><small>Inside the making of a campaign world</small></div><div class="blog-feature-copy"><span class="blog-category">Behind the scenes · 8 min read</span><h3>D&amp;D Worldbuilding: What Makes a Setting Playable?</h3><p>A memorable D&amp;D setting gives players reasons to explore. Look beyond maps and lore to the people, places, and unanswered questions that invite your group into the story.</p><a href="#blog" class="blog-read-link">Read the worldbuilding article <span>↗</span></a></div></div>
           <div class="blog-toolbar"><div class="blog-filters"><button class="blog-filter active" type="button" data-blog-filter="all">All notes</button><button class="blog-filter" type="button" data-blog-filter="advice">DM advice</button><button class="blog-filter" type="button" data-blog-filter="making">Making games</button><button class="blog-filter" type="button" data-blog-filter="news">News</button></div><a class="blog-all-link" href="/blog/">View all notes <span>↗</span></a></div>
           <div class="blog-grid">
-            <article class="blog-card" data-blog-category="advice"><div class="blog-card-art"><img src="assets/test images/article PH2.webp" alt="Dark fantasy character" width="1672" height="941" loading="lazy" decoding="async" /><span>DM ADVICE</span></div><div class="blog-card-copy"><span class="blog-category">DM advice · 5 min read</span><h3>5 ways to make quiet D&amp;D scenes matter</h3><a href="#blog">Read the DM advice <span>↗</span></a></div></article>
-            <article class="blog-card" data-blog-category="making"><div class="blog-card-art"><img src="assets/test images/article PH3.webp" alt="Alchemist in a candlelit workshop" width="1672" height="941" loading="lazy" decoding="async" /><span>MAKING GAMES</span></div><div class="blog-card-copy"><span class="blog-category">Making games · 7 min read</span><h3>Creating a D&amp;D supplement: from idea to table</h3><a href="#blog">Explore the publishing process <span>↗</span></a></div></article>
-            <article class="blog-card" data-blog-category="news"><div class="blog-card-art"><img src="assets/test images/article PH4.webp" alt="Dark fantasy queen" width="1672" height="941" loading="lazy" decoding="async" /><span>NEWS</span></div><div class="blog-card-copy"><span class="blog-category">News · 3 min read</span><h3>Upcoming D&amp;D books from Verseluft</h3><a href="#blog">Read the studio update <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="advice"><div class="blog-card-art"><img src="assets/test images/article PH2.webp" alt="Dark fantasy character" width="1672" height="941" loading="lazy" decoding="async" /><span>DM ADVICE</span></div><div class="blog-card-copy"><span class="blog-category">DM advice · 5 min read</span><h3>5 Ways to Make Quiet D&amp;D Scenes Matter</h3><a href="#blog">Read the DM advice <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="making"><div class="blog-card-art"><img src="assets/test images/article PH3.webp" alt="Alchemist in a candlelit workshop" width="1672" height="941" loading="lazy" decoding="async" /><span>MAKING GAMES</span></div><div class="blog-card-copy"><span class="blog-category">Making games · 7 min read</span><h3>Creating a D&amp;D Supplement: From Idea to Table</h3><a href="#blog">Explore the publishing process <span>↗</span></a></div></article>
+            <article class="blog-card" data-blog-category="news"><div class="blog-card-art"><img src="assets/test images/article PH4.webp" alt="Dark fantasy queen" width="1672" height="941" loading="lazy" decoding="async" /><span>NEWS</span></div><div class="blog-card-copy"><span class="blog-category">News · 3 min read</span><h3>Upcoming D&amp;D Books from Verseluft</h3><a href="#blog">Read the studio update <span>↗</span></a></div></article>
           </div>
         </section>
       </main>
       <footer class="site-footer">
         <div class="footer-top"><a class="brand footer-brand" href="#top" aria-label="Verseluft home"><img class="brand-logo" src="assets/images/Verseluft logo.webp" alt="Verseluft" width="2048" height="2048" /><span class="brand-copy"><span class="brand-name">Verseluft</span><small class="brand-descriptor">Tabletop RPG publishing</small></span></a></div>
-        <div class="footer-links"><div><span class="footer-label">Explore</span><a href="/#projects">Projects</a><a href="#updates">Get updates</a></div><div><span class="footer-label">Company</span><a href="/#values">About us</a><a href="#values">Our values</a></div><div><span class="footer-label">Find us</span><a href="#" hidden>Kickstarter ↗</a><a href="#" hidden>Instagram ↗</a><a href="https://discord.gg/ByZrKpwUwh">Contact ↗</a></div></div>
+        <div class="footer-links"><div><span class="footer-label">Explore</span><a href="/#projects">Projects</a><a href="#updates">Get updates</a></div><div><span class="footer-label">Company</span><a href="/#values">About us</a><a href="#values">Our values</a></div><div><span class="footer-label">Find us</span><a href="#" hidden>Kickstarter ↗</a><a href="#" hidden>Instagram ↗</a><a href="https://discord.gg/ByZrKpwUwh" target="_blank" rel="noopener noreferrer">Contact ↗</a></div></div>
         <div class="footer-bottom"><span>© 2026 Verseluft</span><span>Made for the joy of playing</span><span hidden>Privacy · Terms</span></div>
       </footer>
     </div>
     <script src="/projects/campaign-stats.js?v=20261026-live-campaigns" defer></script>
-    <script src="/projects/projects.js?v=20261026-live-campaigns" defer></script>
-    <script type="module" src="script.js?v=20261024-testimonial-nav-timer-fix"></script>
+    <script src="/projects/projects.js?v=20261109-hourly-campaigns" defer></script>
+    <script type="module" src="script.js?v=20261109-contact-new-tab"></script>
     <script src="/scroll-to-top.js?v=20261019" defer></script>
 </body>
 </html>

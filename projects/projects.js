@@ -2,6 +2,7 @@
   const LOCAL_PREVIEW_KEY = 'verseluft-projects-preview-v1';
   const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
   const isFilePreview = window.location.protocol === 'file:';
+  const STATS_REFRESH_INTERVAL = 60 * 60 * 1000;
   const filePreviewProjects = [
     { id: 'the-wilds-beyond', section: 'live', title: 'NPC Vault 3, The Undead: 42 DnD 2024 Undead NPCs', description: '14 Undead Types, 42 NPCs; Three faces of every death for every Undead Type in D&D 5E and 5.5E', image: 'assets/images/npc-vault-3-the-undead-banner.jpg', imageAlt: 'NPC Vault 3: The Undead campaign banner with a skeletal figure', fundingPercent: 412, daysRemaining: 18, backers: 1800, progressWidth: 82, link: 'https://www.kickstarter.com/projects/bradleyhorton/npc-vault-3-the-undead-42-dnd-2024-undead-npcs?ref=nav_search&category_id=34' },
     { id: 'city-of-embers', section: 'live', title: 'Everything Haunted: 150+ Haunted & Cursed Assets for DnD', description: '150+ Cursed and Haunted Items, Creatures & Locations for D&D 5E & 5.5E', image: 'assets/images/everything-haunted-banner.jpg', imageAlt: 'Everything Haunted campaign banner featuring a raven above a glowing haunted crypt', fundingPercent: 238, daysRemaining: 9, backers: 940, progressWidth: 58, link: 'https://www.kickstarter.com/projects/blackcubegames/everything-haunted-a-haunted-and-cursed-toolkit-for-dnd-2024?ref=nav_search&category_id=34' },
@@ -17,10 +18,7 @@
 
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
   const number = (value) => new Intl.NumberFormat('en-US').format(Number(value) || 0);
-  const backers = (value) => {
-    const count = Number(value) || 0;
-    return count >= 1000 ? `${(count / 1000).toFixed(1).replace(/\.0$/, '')}k` : number(count);
-  };
+  const backers = number;
   let activeLiveProjects = [];
   let campaignSnapshots = [];
   let refreshingStats = false;
@@ -194,12 +192,12 @@
   if (!isFilePreview && liveGrid) {
     window.setInterval(() => {
       if (!document.hidden) refreshCampaignStats();
-    }, 5 * 60 * 1000);
+    }, STATS_REFRESH_INTERVAL);
     window.setInterval(applyCampaignStats, 60 * 1000);
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) return;
       applyCampaignStats();
-      if (Date.now() - lastStatsCheck >= 5 * 60 * 1000) refreshCampaignStats();
+      if (Date.now() - lastStatsCheck >= STATS_REFRESH_INTERVAL) refreshCampaignStats();
     });
   }
 

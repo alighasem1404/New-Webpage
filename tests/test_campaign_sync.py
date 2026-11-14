@@ -1,4 +1,5 @@
 import importlib.util
+from html import escape
 import json
 from pathlib import Path
 import tempfile
@@ -20,6 +21,18 @@ def widget(percent='284.6', backers='46', deadline='2026-11-11T12:14:05-05:00', 
         <li class="ksr_page_timer" data-end-time="{deadline}"></li>'''
 
 
+def embedded_widget(changes=None, card_id=123, encoded=True):
+    project = {'id': 123, 'goal': 500.0, 'pledged': 1939.0, 'backers_count': 60,
+               'state': 'live', 'deadline': 1794417245,
+               'urls': {'web': {'project': URL}}}
+    project.update(changes or {})
+    payload = json.dumps(project)
+    if encoded:
+        payload = json.dumps(escape(payload, quote=True))
+    return (f'<script>window.current_project = {payload};</script>'
+            f'<div class="project-card" data-pid="{card_id}"></div>')
+
+
 class CampaignSyncTests(unittest.TestCase):
     def test_url_normalization_and_request_allowlist(self):
         self.assertEqual(sync.campaign_url(URL + '/?ref=card#details'), URL)
@@ -38,6 +51,46 @@ class CampaignSyncTests(unittest.TestCase):
         self.assertEqual(record['deadline'], '2026-11-11T17:14:05Z')
         self.assertEqual(record['updatedAt'], CHECKED)
         self.assertEqual(record['sourceUrl'], URL)
+
+    def test_current_live_widget_uses_embedded_totals_and_exact_backers(self):
+        for encoded in [True, False]:
+            with self.subTest(encoded=encoded):
+                record = sync.parse_widget(embedded_widget(encoded=encoded), URL, CHECKED)
+                self.assertEqual(record['backers'], 60)
+                self.assertEqual(record['fundingPercent'], 387)
+                self.assertEqual(record['deadline'], '2026-11-11T17:14:05Z')
+                self.assertEqual(record['state'], 'live')
+                self.assertEqual(record['updatedAt'], CHECKED)
+
+    def test_completed_widget_without_timer_still_refreshes(self):
+        record = sync.parse_widget(embedded_widget({'state': 'successful', 'backers_count': 115,
+                                                   'pledged': 3432.0}), URL, CHECKED)
+        self.assertEqual(record['fundingPercent'], 686)
+        self.assertEqual(record['backers'], 115)
+        self.assertEqual(record['state'], 'successful')
+
+    def test_embedded_funding_uses_decimal_arithmetic(self):
+        record = sync.parse_widget(embedded_widget({'goal': 100, 'pledged': 0.29}), URL, CHECKED)
+        self.assertEqual(record['fundingPercent'], 0)
+        record = sync.parse_widget(embedded_widget({'goal': 100, 'pledged': 29.0}), URL, CHECKED)
+        self.assertEqual(record['fundingPercent'], 29)
+
+    def test_embedded_widget_identity_and_invalid_values_are_rejected(self):
+        for changes in [{'urls': {'web': {'project': OTHER}}}, {'id': True},
+                        {'id': -1}, {'backers_count': '60'}, {'backers_count': True},
+                        {'backers_count': -1}, {'backers_count': 1.5},
+                        {'goal': 0}, {'goal': 'NaN'}, {'goal': True},
+                        {'pledged': 'Infinity'}, {'pledged': -1},
+                        {'deadline': True}, {'deadline': '1794417245'},
+                        {'state': 'unknown'}]:
+            with self.subTest(changes=changes):
+                with self.assertRaises(ValueError):
+                    sync.parse_widget(embedded_widget(changes), URL, CHECKED)
+        for html in [embedded_widget(card_id=456), embedded_widget() + embedded_widget(),
+                     '<script>window.current_project = "invalid JSON";</script>'
+                     '<div class="project-card" data-pid="123"></div>']:
+            with self.assertRaises(ValueError):
+                sync.parse_widget(html, URL, CHECKED)
 
     def test_changed_widget_and_invalid_metrics_are_rejected(self):
         for html in ['<title>Just a moment...</title>', widget() + widget(), widget(deadline='2026-11-11T12:00:00'),

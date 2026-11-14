@@ -1,5 +1,6 @@
 document.querySelectorAll('.main-nav a').forEach((link) => {
   link.addEventListener('click', () => {
+    if (link.target === '_blank') return;
     document.querySelectorAll('.main-nav a').forEach((item) => item.classList.remove('active'));
     link.classList.add('active');
   });
@@ -326,29 +327,53 @@ const heroCarouselImageDimensions = {
 
 function buildHeroCarousel() {
   document.querySelectorAll('.hero-carousel-row').forEach((row, rowIndex) => {
-    const fragment = document.createDocumentFragment();
-    for (let repeat = 0; repeat < 2; repeat += 1) {
-      for (let tileIndex = 0; tileIndex < 9; tileIndex += 1) {
-        if (rowIndex === 0 && repeat === 0 && tileIndex === 0) continue;
-        const image = document.createElement('img');
-        const imageIndex = (rowIndex * 3 + tileIndex + repeat * 9) % heroCarouselImagePool.length;
-        const imageSource = heroCarouselImagePool[imageIndex];
-        const [width, height] = heroCarouselImageDimensions[imageSource] || [247, 320];
-        image.src = imageSource;
-        image.width = width;
-        image.height = height;
-        image.alt = '';
-        image.loading = 'lazy';
-        image.decoding = 'async';
-        image.draggable = false;
-        fragment.append(image);
-      }
+    row.classList.remove('is-ready');
+    // Reuse the prioritized first cover and build one continuous, filled set.
+    const firstImage = row.querySelector('img');
+    const set = document.createElement('div');
+    set.className = 'hero-carousel-set';
+    const appendCover = (tileIndex) => {
+      const image = tileIndex === 0 && firstImage ? firstImage : document.createElement('img');
+      const imageSource = heroCarouselImagePool[(rowIndex * 3 + tileIndex) % heroCarouselImagePool.length];
+      const [width, height] = heroCarouselImageDimensions[imageSource] || [247, 320];
+      image.src = imageSource;
+      image.width = width;
+      image.height = height;
+      image.alt = '';
+      image.loading = 'eager';
+      image.decoding = 'async';
+      image.draggable = false;
+      set.append(image);
+      return image;
+    };
+    const image = appendCover(0);
+    row.replaceChildren(set);
+    const tileWidth = image.offsetWidth;
+    const stageWidth = row.parentElement.clientWidth;
+    // Allow for the shelf's rotation and overscan, including wide monitors.
+    const tileCount = Math.max(9, Math.ceil(stageWidth / Math.max(tileWidth, 1)) + 2);
+    for (let tileIndex = 1; tileIndex < tileCount; tileIndex += 1) {
+      appendCover(tileIndex);
     }
-    row.append(fragment);
+    const duplicate = set.cloneNode(true);
+    duplicate.querySelectorAll('img').forEach((cover) => cover.removeAttribute('fetchpriority'));
+    row.append(duplicate);
+    row.classList.add('is-ready');
   });
 }
 
 buildHeroCarousel();
+const heroCarouselStage = document.querySelector('.hero-carousel-stage');
+if (heroCarouselStage) {
+  let previousStageWidth = heroCarouselStage.clientWidth;
+  const heroResizeObserver = new ResizeObserver(() => {
+    const stageWidth = heroCarouselStage.clientWidth;
+    if (stageWidth === previousStageWidth) return;
+    previousStageWidth = stageWidth;
+    buildHeroCarousel();
+  });
+  heroResizeObserver.observe(heroCarouselStage);
+}
 
 const testimonialCarousel = document.querySelector('#testimonial-carousel');
 if (testimonialCarousel) {
@@ -405,6 +430,12 @@ if (testimonialCarousel) {
   let deadline = 0;
   let isHovered = false;
   const testimonialNavigation = testimonialCarousel.querySelector('.testimonial-navigation');
+  const testimonialCount = testimonialCarousel.querySelector('#testimonial-count');
+  const updateTestimonialCount = () => {
+    if (!testimonialCount) return;
+    testimonialCount.textContent = `${testimonialIndex + 1} / ${testimonials.length}`;
+    testimonialCount.setAttribute('aria-label', `Comment ${testimonialIndex + 1} of ${testimonials.length}`);
+  };
 
   const isPaused = () => isHovered || document.hidden;
 
@@ -458,6 +489,7 @@ if (testimonialCarousel) {
       testimonialAvatar.textContent = testimonial.initials;
       testimonialRole.textContent = testimonial.role;
       testimonialRole.hidden = !testimonial.role;
+      updateTestimonialCount();
       testimonialCarousel.classList.remove('is-changing');
       resetProgress();
       scheduleRotation();
@@ -485,6 +517,7 @@ if (testimonialCarousel) {
   document.addEventListener('visibilitychange', () => {
     updatePauseState();
   });
+  updateTestimonialCount();
   resetProgress();
   scheduleRotation();
 }
