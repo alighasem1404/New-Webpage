@@ -2,11 +2,21 @@ const bookParams = new URLSearchParams(window.location.search);
 const requestedSlug = bookParams.get('slug');
 const bookPageContent = document.querySelector('#book-page-content');
 
+function renderDescription(element, description) {
+  const parts = description.split(/\*\*([^*]+)\*\*/);
+  element.replaceChildren(...parts.map((part, index) => {
+    if (index % 2 === 0) return document.createTextNode(part);
+    const emphasis = document.createElement('strong');
+    emphasis.textContent = part;
+    return emphasis;
+  }));
+}
+
 function setBookMeta(book) {
   const title = `${book.title} | Verseluft Library`;
-  const description = book.description || book.shortDescription;
+  const description = (book.description || book.shortDescription).replace(/\*\*([^*]+)\*\*/g, '$1');
   const canonicalUrl = window.location.href;
-  const imageUrl = new URL(book.detailImage || book.coverImage, window.location.origin).href;
+  const coverPath = book.detailImage || book.coverImage;
 
   document.title = title;
   document.querySelector('meta[name="description"]').content = description;
@@ -14,7 +24,9 @@ function setBookMeta(book) {
   document.querySelector('meta[property="og:title"]').content = title;
   document.querySelector('meta[property="og:description"]').content = description;
   document.querySelector('meta[property="og:url"]').content = canonicalUrl;
-  document.querySelector('meta[property="og:image"]').content = imageUrl;
+  if (coverPath) {
+    document.querySelector('meta[property="og:image"]').content = new URL(coverPath, window.location.origin).href;
+  }
 }
 
 function showBookNotFound(message = 'We could not find that title in the library.') {
@@ -47,7 +59,8 @@ function createRelatedCard(book) {
   coverLink.setAttribute('aria-label', `View ${book.title}`);
 
   const cover = document.createElement('img');
-  cover.src = book.coverImage;
+  if (book.coverImage) cover.src = book.coverImage;
+  cover.hidden = !book.coverImage;
   cover.alt = book.coverAlt;
   cover.width = 247;
   cover.height = 320;
@@ -110,12 +123,17 @@ function renderBook(book, books) {
   document.querySelector('#book-category').textContent = book.categoryLabel;
   document.querySelector('#book-title').textContent = book.title;
   document.querySelector('#book-short-description').textContent = book.shortDescription;
-  document.querySelector('#book-description').textContent = book.description;
+  renderDescription(document.querySelector('#book-description'), book.description);
   document.querySelector('#book-story-book-title').textContent = `${book.title}.`;
-  document.querySelector('#book-cover').src = book.detailImage || book.coverImage;
-  document.querySelector('#book-cover').alt = book.coverAlt;
+  const cover = document.querySelector('#book-cover');
+  const coverPath = book.detailImage || book.coverImage;
+  if (coverPath) cover.src = coverPath;
+  cover.hidden = !coverPath;
+  cover.alt = book.coverAlt;
   document.querySelector('#book-number').textContent = `${String(index).padStart(2, '0')} / ${String(publishedBooks.length).padStart(2, '0')}`;
   document.querySelector('#book-type').textContent = book.categoryLabel;
+  document.querySelector('#book-author').textContent = book.author || '';
+  document.querySelector('#book-author-fact').hidden = !book.author;
   document.querySelector('#book-series').textContent = book.series ? book.series.name : 'Standalone title';
 
   const price = document.querySelector('#book-price');
@@ -137,7 +155,7 @@ function renderBook(book, books) {
     return chip;
   }));
   renderRelatedBooks(book, books);
-  document.querySelector('#book-story-description').textContent = book.description || book.shortDescription;
+  renderDescription(document.querySelector('#book-story-description'), book.description || book.shortDescription);
   // Show only a sample explicitly associated with this title.
   if (book.samplePdf) {
     bookPdfPreview.hidden = false;

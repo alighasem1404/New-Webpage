@@ -111,7 +111,7 @@ function validateBooks(books) {
   const slugs = new Set();
   const categories = new Set(['adventure', 'setting', 'resource']);
   const heroPositions = new Set(['back', 'left', 'right', 'front']);
-  const requiredText = ['id', 'slug', 'title', 'categoryLabel', 'shortDescription', 'description', 'coverImage', 'coverAlt'];
+  const requiredText = ['id', 'slug', 'title', 'categoryLabel', 'shortDescription', 'description', 'coverAlt'];
 
   books.forEach((book, index) => {
     if (!book || typeof book !== 'object') throw new Error(`Book record ${index + 1} is not an object.`);
@@ -162,13 +162,13 @@ function createBookCard(book) {
   coverWrap.setAttribute('aria-label', `View book: ${book.title}`);
 
   const cover = document.createElement('img');
-  cover.src = book.coverImage;
+  if (book.coverImage) cover.src = book.coverImage;
   cover.alt = book.coverAlt;
   cover.width = 247;
   cover.height = 320;
   cover.loading = 'lazy';
   cover.decoding = 'async';
-  coverWrap.append(cover);
+  if (book.coverImage) coverWrap.append(cover);
 
   const copy = document.createElement('div');
   copy.className = 'book-card-copy';
@@ -178,6 +178,7 @@ function createBookCard(book) {
   titleLink.tabIndex = -1;
   title.append(titleLink);
   copy.append(title);
+  if (book.author) copy.append(createTextElement('p', 'book-card-type', `By ${book.author}`));
   copy.append(createTextElement('p', 'book-card-type', book.categoryLabel));
   copy.append(createTextElement('p', '', book.shortDescription));
 
@@ -192,14 +193,14 @@ function createBookCard(book) {
   copy.append(detailsButton);
 
   card.append(coverWrap, copy);
-  card.dataset.search = [book.title, book.categoryLabel, book.shortDescription, book.description, ...book.tags, book.series?.name].filter(Boolean).join(' ');
+  card.dataset.search = [book.title, book.author, book.categoryLabel, book.shortDescription, book.description, ...book.tags, book.series?.name].filter(Boolean).join(' ');
   return card;
 }
 
 function renderHeroCovers(books) {
   const orbitDecorations = [...libraryHeroArt.querySelectorAll('.library-art-orbit')];
   const heroCovers = books
-    .filter((book) => book.status === 'published' && book.heroPosition)
+    .filter((book) => book.status === 'published' && book.heroPosition && book.coverImage)
     .sort((first, second) => ['back', 'left', 'right', 'front'].indexOf(first.heroPosition) - ['back', 'left', 'right', 'front'].indexOf(second.heroPosition))
     .map((book) => {
       const cover = document.createElement('img');

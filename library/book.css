@@ -198,3 +198,5 @@ body:has(.book-pdf-preview.is-fullscreen) .motion-test-tool, body:has(.book-pdf-
 @media (prefers-reduced-motion: reduce) { .book-detail-hero::after, .book-detail-orbit, .book-detail-art, .book-fireflies .firefly, .book-fireflies .firefly::before, .book-fireflies .firefly::after { animation: none !important; } .book-back-link, .book-description-image img { transition: none; } }
 
 .book-pdf-preview[hidden] { display: none !important; }
+.book-back-link[hidden], #book-cover[hidden], .related-book-cover img[hidden] { display: none; }
+.book-detail-description, #book-story-description { white-space: pre-line; }

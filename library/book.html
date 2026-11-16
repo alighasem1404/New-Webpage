@@ -18,9 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css?v=20261025-footer-placeholders-hidden" />
     <link rel="stylesheet" href="/library/library.css?v=20260913" />
-    <link rel="stylesheet" href="/library/book.css?v=20261031-cleanup" />
+    <link rel="stylesheet" href="/library/book.css?v=20261116-book-details" />
 <link rel="stylesheet" href="/responsive.css?v=20261011-carousel-pdf" />
-    <script src="/library/book.js?v=20261031-cleanup" defer></script>
+    <script src="/library/book.js?v=20261116-book-details" defer></script>
     <link rel="stylesheet" href="/scroll-to-top.css?v=20261019" />
       <link rel="stylesheet" href="/typography.css?v=20261104" />
       <link rel="stylesheet" href="/buttons.css?v=20261104" />
@@ -64,6 +64,7 @@
                 <p class="book-detail-subtitle" id="book-short-description"></p>
                 <p class="book-detail-description" id="book-description"></p>
                 <dl class="book-facts">
+                  <div id="book-author-fact" hidden><dt>Author</dt><dd id="book-author"></dd></div>
                   <div><dt>Type</dt><dd id="book-type">Tabletop RPG book</dd></div>
                   <div><dt>Series</dt><dd id="book-series">Standalone title</dd></div>
                 </dl>
@@ -73,7 +74,7 @@
                   <strong id="book-price">Price coming soon</strong>
                 </div>
                 <div class="book-detail-actions">
-                  <a class="book-back-link" id="book-store-link" href="https://www.drivethrurpg.com/" target="_blank" rel="noopener noreferrer">Buy this book <span aria-hidden="true">↗</span></a>
+                  <a class="book-back-link" id="book-store-link" hidden>Buy this book <span aria-hidden="true">↗</span></a>
                   <a class="book-library-link" href="/library/#catalog">More titles <span aria-hidden="true">↗</span></a>
                   <a class="book-contact-link" href="/contact/">Questions about this book? <span aria-hidden="true">↗</span></a>
                 </div>
