@@ -2,209 +2,28 @@
   "schemaVersion": 1,
   "books": [
     {
-      "id": "roll-for-outfit-1",
-      "slug": "roll-for-outfit-1",
-      "title": "Roll for Outfit 1, Adventuring Clothes",
-      "author": "Vault of Many Things",
-      "category": "resource",
-      "categoryLabel": "Game master resource",
+      "id": "complete-town-1-backerton",
+      "slug": "complete-town-1-backerton",
+      "title": "Complete Town 1: Backerton",
+      "author": "Moonstone Sculptors",
+      "category": "setting",
+      "categoryLabel": "Setting",
       "tags": [
-        "Magical clothing",
-        "Equipment"
+        "Town",
+        "Urban adventures",
+        "Social encounters"
       ],
-      "shortDescription": "221 magical garments and the Ritual of Style, a system for making appearance matter in play.",
-      "description": "An adventurer's clothes can open doors—or close them before a word is spoken. **Roll for Outfit 1** introduces **221 magical non-armor garments** across six wardrobe categories: Upper Body, Lower Body, Footwear, Hands and Arms, Head and Neck, and Accessories. Each garment features its own magical properties, rarity, value, materials, sizing, and lore.\n\nBeyond the enchanted wardrobe, the book introduces the **Ritual of Style**, a system that makes appearance matter in gameplay. It includes five cleanliness levels, four production quality tiers, eight garment sizes, and rules for environmental wear, maintenance, and repairs. Clothing condition and craftsmanship can influence Charisma checks, social interactions, and market value.\n\nDesigned for adventurers and Game Masters, these garments offer new possibilities for exploration, travel, stealth, disguise, and social encounters. Introduce them as magical treasures, merchant wares, or noble gifts, and give players new reasons to consider what their characters wear",
-      "coverImage": "/assets/covers/roll-for-outfit-1.webp",
-      "coverAlt": "Roll for Outfit 1, Adventuring Clothes cover featuring an embroidered traveler",
+      "shortDescription": "A medieval fantasy settlement of over 21,000 inhabitants, with detailed buildings, distinctive NPCs, a numbered map, and a Civil Registry Ledger.",
+      "description": "Step into a town where every building holds a story waiting to unfold. **Complete Town 1: Backerton** presents a fully realized medieval fantasy settlement of **over 21,000 inhabitants**, with established districts, a functioning economy, local traditions, and a detailed numbered map to guide exploration.\n\nAt the center of this sourcebook is an **extensive collection of richly developed buildings**, from bustling shops and marketplaces to temples, libraries, and other notable establishments. Each location offers **descriptive details, inventory and loot tables, and distinctive NPCs** with portraits, personal histories, stat blocks, bargaining mechanics, and quests featuring scalable challenges and rewards.\n\nBeyond its key establishments, the **Civil Registry Ledger** links numbered homes to their residents, giving even ordinary households a place in the town's daily life. Designed for Game Masters, Backerton provides a ready-to-use setting for urban adventures, social encounters, and ongoing campaigns, complemented by **ambient music links and downloadable artwork**.",
+      "coverImage": "/assets/covers/complete-town-1-backerton.webp",
+      "coverAlt": "Backerton cover showing a bustling medieval market street lined with timber buildings",
       "series": {
-        "name": "Roll for Outfit",
+        "name": "Complete Town",
         "number": 1
       },
       "status": "published",
       "featured": true,
       "sortOrder": 1,
-      "storeUrl": null,
-      "price": null
-    },
-    {
-      "id": "complete-town-9-village-chronicles",
-      "slug": "complete-town-9-village-chronicles",
-      "title": "Complete Town 9: Village Chronicles",
-      "author": "Moonstone Sculptors",
-      "category": "setting",
-      "categoryLabel": "Setting",
-      "tags": [
-        "Villages",
-        "Settlements",
-        "5e"
-      ],
-      "shortDescription": "30 fully developed fantasy villages with maps, memorable NPCs, and four local quests per village.",
-      "description": "Every village has a story, from the trades that sustain its people to the secrets hidden beneath its traditions. Complete Town 9: Village Chronicles introduces 30 fully developed villages for fantasy roleplaying campaigns, spanning ordinary rural settlements, extraordinary magical communities, and single-ancestry tribal societies. Each village features a unique map, detailed history, economy, culture, government, and local customs, creating living destinations ready to fit into any fantasy world.\n\nEach settlement includes two fully detailed buildings with atmospheric descriptions, read-aloud introductions, events, priced goods and services, and memorable NPCs. Detailed character profiles and four local quests per village provide opportunities for exploration and interaction, while the accompanying artwork brings these communities to life.\n\nBeyond the villages, discover 10 magical heirlooms, a harvest festival with 45 modular scenes, rural encounters, five original creatures, and five escalating natural disasters. A Civil Registry further connects inhabitants and households. Built on 5e mechanics and adaptable to other fantasy TTRPG rulesets, Village Chronicles offers Game Masters a versatile toolkit for turning ordinary settlements into unforgettable adventures.",
-      "coverImage": "/assets/covers/complete-town-9-village-chronicles.webp",
-      "coverAlt": "Village Chronicles cover showing a red-roofed village nestled between cliffs",
-      "series": {
-        "name": "Complete Town",
-        "number": 9
-      },
-      "status": "published",
-      "featured": true,
-      "sortOrder": 2,
-      "storeUrl": null,
-      "price": null
-    },
-    {
-      "id": "complete-town-8-beyond-the-gates",
-      "slug": "complete-town-8-beyond-the-gates",
-      "title": "Complete Town 8: Beyond the Gates",
-      "author": "Moonstone Sculptors",
-      "category": "resource",
-      "categoryLabel": "Game master resource",
-      "tags": [
-        "Worldbuilding",
-        "Exploration",
-        "Encounters"
-      ],
-      "shortDescription": "A two-book toolkit for the roads and wilderness between destinations, with modular encounters, locations, and treasure.",
-      "description": "The greatest adventures don't always happen in cities or dungeons—sometimes they begin along forgotten roads and unexplored wilderness. **Complete Town 8: Beyond the Gates** is a comprehensive **modular worldbuilding toolkit** designed to fill the spaces between major destinations in fantasy campaigns. Rather than presenting a single settlement, this installment provides an extensive collection of ready-to-use encounters, locations, and narrative situations, organized into two complementary books.\n\n**Book I** introduces a library of thematic categories, each containing unique variations with atmospheric descriptions, adaptable mechanics, artwork, and specialized gameplay elements. From abandoned buildings, dangerous wilderness, and traveling caravans to supernatural phenomena, rituals, and unexpected encounters, these resources help Game Masters bring spontaneous exploration to life.\n\n**Book II** expands the toolkit with **specialized treasure chests**, featuring detailed inventories, traps, and unique mechanics, alongside **an extensive collection of fully developed custom buildings** with NPCs, services, artwork, and encounter tables. A **Civil Registry** provides additional characters and household details to connect these locations into a living world. Designed for Game Masters using **any fantasy TTRPG ruleset**, Beyond the Gates transforms ordinary journeys into memorable adventures",
-      "coverImage": "/assets/covers/complete-town-8-beyond-the-gates.webp",
-      "coverAlt": "Beyond the Gates cover showing riders approaching a city in the snowy mountains",
-      "series": {
-        "name": "Complete Town",
-        "number": 8
-      },
-      "status": "published",
-      "featured": true,
-      "sortOrder": 3,
-      "storeUrl": null,
-      "price": null
-    },
-    {
-      "id": "complete-town-7-wavespire",
-      "slug": "complete-town-7-wavespire",
-      "title": "Complete Town 7: Wavespire",
-      "author": "Moonstone Sculptors",
-      "category": "setting",
-      "categoryLabel": "Setting",
-      "tags": [
-        "City",
-        "Urban exploration",
-        "Political intrigue"
-      ],
-      "shortDescription": "A medieval city with 19 districts and 15 noble houses, built for urban exploration and political intrigue.",
-      "description": "Between towering mountains and the open sea, a sprawling metropolis thrives on trade, ambition, and political rivalry. **Complete Town 7: Wavespire** introduces a richly developed medieval city of **over 20,000 inhabitants**, divided into **19 distinctive districts** and governed through the shifting influence of **15 noble houses**. From the prestigious halls of Regal Reach to the bustling docks and struggling neighborhoods of Lowtown, every district reveals another side of a city shaped by wealth, class, and power.\n\nDiscover **fully detailed key buildings**, each featuring atmospheric descriptions, inventory and loot tables, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. A **detailed city map featuring numbered buildings** and the accompanying **Civil Registry Ledger** connect residences to their inhabitants, allowing players to explore neighborhoods and discover who lives behind every door. Downloadable artwork provides additional resources for bringing Wavespire to life.\n\nDesigned for Game Masters using **any fantasy TTRPG ruleset**, Wavespire offers a living setting for political conspiracies, noble rivalries, criminal intrigue, and urban exploration. Whether serving as a campaign hub or a sprawling city sandbox, Wavespire provides countless opportunities for adventures shaped by its people, districts, and competing ambitions.",
-      "coverImage": "/assets/covers/complete-town-7-wavespire.webp",
-      "coverAlt": "Wavespire cover showing a sprawling coastal city beneath towering clouds",
-      "series": {
-        "name": "Complete Town",
-        "number": 7
-      },
-      "status": "published",
-      "featured": true,
-      "sortOrder": 4,
-      "storeUrl": null,
-      "price": null
-    },
-    {
-      "id": "complete-town-6-venturia",
-      "slug": "complete-town-6-venturia",
-      "title": "Complete Town 6, Venturia",
-      "author": "Moonstone Sculptors",
-      "category": "setting",
-      "categoryLabel": "Setting",
-      "tags": [
-        "City",
-        "Floating islands",
-        "Political intrigue"
-      ],
-      "shortDescription": "Explore the Skyborne City, a floating metropolis with four districts, four noble-controlled islands, and approximately 3,000 inhabitants.",
-      "description": "High above the clouds, a city of sacred flames, floating islands, and ancient magic lives by one unforgiving law: those who defy its order are cast down to the world below. Complete Town 6: Venturia introduces the Skyborne City, a floating metropolis of approximately 3,000 inhabitants, featuring four distinctive districts, four noble-controlled islands, and a richly developed society. From the sacred Emberheart District to the dragon-guarded Drakeward Bastion, every corner offers opportunities for intrigue and discovery.\n\nExplore fully detailed key buildings, each featuring atmospheric descriptions, inventory and loot tables, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. These interactive establishments bring the city's shops, residences, and institutions to life, while downloadable artwork provides additional visual resources.\n\nA detailed city map featuring numbered buildings and an accompanying Civil Registry Ledger connect residences to their inhabitants, allowing players to explore neighborhoods and discover who lives behind every door. Designed for Game Masters using any fantasy TTRPG ruleset, Venturia provides a living setting for political intrigue, arcane mysteries, divine conflicts, and adventures where a single mistake could mean exile from the heavens.",
-      "coverImage": "/assets/covers/complete-town-6-venturia.webp",
-      "coverAlt": "Venturia cover showing a towering castle on a floating island",
-      "series": {
-        "name": "Complete Town",
-        "number": 6
-      },
-      "status": "published",
-      "featured": true,
-      "sortOrder": 5,
-      "storeUrl": null,
-      "price": null
-    },
-    {
-      "id": "complete-town-5-tal-doluth",
-      "slug": "complete-town-5-tal-doluth",
-      "title": "Complete Town 5, Tal Doluth",
-      "author": "Moonstone Sculptors",
-      "category": "setting",
-      "categoryLabel": "Setting",
-      "tags": [
-        "City",
-        "Underground exploration",
-        "Dwarves"
-      ],
-      "shortDescription": "Explore the Spiral City, a subterranean metropolis of approximately 5,000 inhabitants, with dwarven forges, bustling markets, and hidden history.",
-      "description": "Deep within an ancient mountain, an entire city winds its way into the earth. **Complete Town 5: Tal Doluth** introduces the **Spiral City**, a thriving subterranean metropolis of approximately **5,000 inhabitants**, built upon dwarven craftsmanship, precious gemstones, and centuries of hidden history. Its interconnected districts, bustling markets, roaring forges, and mysterious tunnels create a richly developed setting for underground exploration and adventure.\n\nDiscover **fully detailed key buildings** with atmospheric descriptions, inventory and loot tables, and memorable NPCs featuring portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. A **numbered city map** and accompanying **Civil Registry Ledger** connect residences to their inhabitants, allowing players to explore neighborhoods and discover who lives behind every door. Downloadable artwork further enriches the experience.\n\nDesigned for Game Masters using **any fantasy TTRPG ruleset**, Tal Doluth offers a living underground setting for treasure hunts, ancient mysteries, merchant rivalries, and political intrigue. Whether serving as a campaign hub or a destination for deep-earth adventures, the Spiral City invites players to uncover what lies beneath its streets.",
-      "coverImage": "/assets/covers/complete-town-5-tal-doluth.webp",
-      "coverAlt": "Tal Doluth cover showing stone stairways and bridges winding through a vast underground cavern",
-      "series": {
-        "name": "Complete Town",
-        "number": 5
-      },
-      "status": "published",
-      "featured": true,
-      "sortOrder": 6,
-      "storeUrl": null,
-      "price": null
-    },
-    {
-      "id": "complete-town-4-ashbourne",
-      "slug": "complete-town-4-ashbourne",
-      "title": "Complete Town 4: Ashbourne",
-      "author": "Moonstone Sculptors",
-      "category": "setting",
-      "categoryLabel": "Setting",
-      "tags": [
-        "Town",
-        "Fortifications",
-        "Guild rivalries"
-      ],
-      "shortDescription": "A fortified settlement behind three concentric rings of walls, with detailed buildings, memorable NPCs, and a Civil Registry Ledger.",
-      "description": "Behind three concentric rings of towering walls, a city struggles to endure against relentless threats. Complete Town 4: Ashbourne introduces a fully developed fortified settlement where craftsmanship, resilience, and survival define everyday life. From the hardworking outer districts and bustling trade centers to the guarded inner ring, Ashbourne offers a richly detailed setting filled with workshops, forges, vibrant communities, and hidden tensions.\n\nAt the heart of the book are fully detailed key buildings, featuring atmospheric descriptions, inventory and loot tables, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. A numbered town map connects residences to their inhabitants through the Civil Registry Ledger, allowing players to explore neighborhoods and discover who lives behind every door. Downloadable artwork helps bring the setting to life.\n\nDesigned for Game Masters using any fantasy TTRPG ruleset, Ashbourne provides a versatile setting for adventures involving guild rivalries, resource disputes, wilderness dangers, and the challenges of defending a community under pressure. Whether serving as a fortified campaign hub or a living sandbox for exploration, Ashbourne offers a town where every street has a story.",
-      "coverImage": "/assets/covers/complete-town-4-ashbourne.webp",
-      "coverAlt": "Ashbourne cover showing a fortified city with concentric walls and orange rooftops",
-      "series": {
-        "name": "Complete Town",
-        "number": 4
-      },
-      "status": "published",
-      "featured": true,
-      "sortOrder": 7,
-      "storeUrl": null,
-      "price": null
-    },
-    {
-      "id": "complete-town-3-azure-shores",
-      "slug": "complete-town-3-azure-shores",
-      "title": "Complete Town 3: Azure Shores",
-      "author": "Moonstone Sculptors",
-      "category": "setting",
-      "categoryLabel": "Setting",
-      "tags": [
-        "Town",
-        "Coastal adventures",
-        "Social intrigue"
-      ],
-      "shortDescription": "A coastal paradise with distinctive districts, more than 1,000 numbered buildings, detailed NPCs, and a Civil Registry Ledger.",
-      "description": "Golden beaches, bustling markets, and elegant seaside estates conceal a world of secrets beneath the summer sun. **Complete Town 3: Azure Shores** brings a vibrant coastal paradise to your fantasy campaign, complete with distinctive districts, a detailed town map, and **more than 1,000 numbered buildings**. From lively waterfront establishments to secluded villas, every neighborhood offers opportunities for exploration, social intrigue, and discovery.\n\nAt the heart of the book are **fully detailed key buildings**, each featuring atmospheric descriptions, inventories, discoverable loot, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. The **Civil Registry Ledger** connects numbered residences on the map to their inhabitants, allowing players to knock on doors and discover who lives inside. Downloadable artwork further brings the town to life.\n\nDesigned for Game Masters using **any fantasy TTRPG ruleset**, Azure Shores provides a richly developed setting for coastal adventures, diplomatic encounters, merchant rivalries, and hidden mysteries. Whether serving as a campaign hub or a destination for exploration, this seaside town offers countless opportunities for meaningful interactions.",
-      "coverImage": "/assets/covers/complete-town-3-azure-shores.webp",
-      "coverAlt": "Azure Shores cover showing a lively seaside town with orange rooftops and sailboats on turquoise water",
-      "series": {
-        "name": "Complete Town",
-        "number": 3
-      },
-      "status": "published",
-      "featured": true,
-      "sortOrder": 8,
       "storeUrl": null,
       "price": null
     },
@@ -231,28 +50,209 @@
       },
       "status": "published",
       "featured": true,
-      "sortOrder": 9,
+      "sortOrder": 2,
       "storeUrl": null,
       "price": null
     },
     {
-      "id": "complete-town-1-backerton",
-      "slug": "complete-town-1-backerton",
-      "title": "Complete Town 1: Backerton",
+      "id": "complete-town-3-azure-shores",
+      "slug": "complete-town-3-azure-shores",
+      "title": "Complete Town 3: Azure Shores",
       "author": "Moonstone Sculptors",
       "category": "setting",
       "categoryLabel": "Setting",
       "tags": [
         "Town",
-        "Urban adventures",
-        "Social encounters"
+        "Coastal adventures",
+        "Social intrigue"
       ],
-      "shortDescription": "A medieval fantasy settlement of over 21,000 inhabitants, with detailed buildings, distinctive NPCs, a numbered map, and a Civil Registry Ledger.",
-      "description": "Step into a town where every building holds a story waiting to unfold. **Complete Town 1: Backerton** presents a fully realized medieval fantasy settlement of **over 21,000 inhabitants**, with established districts, a functioning economy, local traditions, and a detailed numbered map to guide exploration.\n\nAt the center of this sourcebook is an **extensive collection of richly developed buildings**, from bustling shops and marketplaces to temples, libraries, and other notable establishments. Each location offers **descriptive details, inventory and loot tables, and distinctive NPCs** with portraits, personal histories, stat blocks, bargaining mechanics, and quests featuring scalable challenges and rewards.\n\nBeyond its key establishments, the **Civil Registry Ledger** links numbered homes to their residents, giving even ordinary households a place in the town's daily life. Designed for Game Masters, Backerton provides a ready-to-use setting for urban adventures, social encounters, and ongoing campaigns, complemented by **ambient music links and downloadable artwork**.",
-      "coverImage": "/assets/covers/complete-town-1-backerton.webp",
-      "coverAlt": "Backerton cover showing a bustling medieval market street lined with timber buildings",
+      "shortDescription": "A coastal paradise with distinctive districts, more than 1,000 numbered buildings, detailed NPCs, and a Civil Registry Ledger.",
+      "description": "Golden beaches, bustling markets, and elegant seaside estates conceal a world of secrets beneath the summer sun. **Complete Town 3: Azure Shores** brings a vibrant coastal paradise to your fantasy campaign, complete with distinctive districts, a detailed town map, and **more than 1,000 numbered buildings**. From lively waterfront establishments to secluded villas, every neighborhood offers opportunities for exploration, social intrigue, and discovery.\n\nAt the heart of the book are **fully detailed key buildings**, each featuring atmospheric descriptions, inventories, discoverable loot, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. The **Civil Registry Ledger** connects numbered residences on the map to their inhabitants, allowing players to knock on doors and discover who lives inside. Downloadable artwork further brings the town to life.\n\nDesigned for Game Masters using **any fantasy TTRPG ruleset**, Azure Shores provides a richly developed setting for coastal adventures, diplomatic encounters, merchant rivalries, and hidden mysteries. Whether serving as a campaign hub or a destination for exploration, this seaside town offers countless opportunities for meaningful interactions.",
+      "coverImage": "/assets/covers/complete-town-3-azure-shores.webp",
+      "coverAlt": "Azure Shores cover showing a lively seaside town with orange rooftops and sailboats on turquoise water",
       "series": {
         "name": "Complete Town",
+        "number": 3
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 3,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "complete-town-4-ashbourne",
+      "slug": "complete-town-4-ashbourne",
+      "title": "Complete Town 4: Ashbourne",
+      "author": "Moonstone Sculptors",
+      "category": "setting",
+      "categoryLabel": "Setting",
+      "tags": [
+        "Town",
+        "Fortifications",
+        "Guild rivalries"
+      ],
+      "shortDescription": "A fortified settlement behind three concentric rings of walls, with detailed buildings, memorable NPCs, and a Civil Registry Ledger.",
+      "description": "Behind three concentric rings of towering walls, a city struggles to endure against relentless threats. Complete Town 4: Ashbourne introduces a fully developed fortified settlement where craftsmanship, resilience, and survival define everyday life. From the hardworking outer districts and bustling trade centers to the guarded inner ring, Ashbourne offers a richly detailed setting filled with workshops, forges, vibrant communities, and hidden tensions.\n\nAt the heart of the book are fully detailed key buildings, featuring atmospheric descriptions, inventory and loot tables, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. A numbered town map connects residences to their inhabitants through the Civil Registry Ledger, allowing players to explore neighborhoods and discover who lives behind every door. Downloadable artwork helps bring the setting to life.\n\nDesigned for Game Masters using any fantasy TTRPG ruleset, Ashbourne provides a versatile setting for adventures involving guild rivalries, resource disputes, wilderness dangers, and the challenges of defending a community under pressure. Whether serving as a fortified campaign hub or a living sandbox for exploration, Ashbourne offers a town where every street has a story.",
+      "coverImage": "/assets/covers/complete-town-4-ashbourne.webp",
+      "coverAlt": "Ashbourne cover showing a fortified city with concentric walls and orange rooftops",
+      "series": {
+        "name": "Complete Town",
+        "number": 4
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 4,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "complete-town-5-tal-doluth",
+      "slug": "complete-town-5-tal-doluth",
+      "title": "Complete Town 5, Tal Doluth",
+      "author": "Moonstone Sculptors",
+      "category": "setting",
+      "categoryLabel": "Setting",
+      "tags": [
+        "City",
+        "Underground exploration",
+        "Dwarves"
+      ],
+      "shortDescription": "Explore the Spiral City, a subterranean metropolis of approximately 5,000 inhabitants, with dwarven forges, bustling markets, and hidden history.",
+      "description": "Deep within an ancient mountain, an entire city winds its way into the earth. **Complete Town 5: Tal Doluth** introduces the **Spiral City**, a thriving subterranean metropolis of approximately **5,000 inhabitants**, built upon dwarven craftsmanship, precious gemstones, and centuries of hidden history. Its interconnected districts, bustling markets, roaring forges, and mysterious tunnels create a richly developed setting for underground exploration and adventure.\n\nDiscover **fully detailed key buildings** with atmospheric descriptions, inventory and loot tables, and memorable NPCs featuring portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. A **numbered city map** and accompanying **Civil Registry Ledger** connect residences to their inhabitants, allowing players to explore neighborhoods and discover who lives behind every door. Downloadable artwork further enriches the experience.\n\nDesigned for Game Masters using **any fantasy TTRPG ruleset**, Tal Doluth offers a living underground setting for treasure hunts, ancient mysteries, merchant rivalries, and political intrigue. Whether serving as a campaign hub or a destination for deep-earth adventures, the Spiral City invites players to uncover what lies beneath its streets.",
+      "coverImage": "/assets/covers/complete-town-5-tal-doluth.webp",
+      "coverAlt": "Tal Doluth cover showing stone stairways and bridges winding through a vast underground cavern",
+      "series": {
+        "name": "Complete Town",
+        "number": 5
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 5,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "complete-town-6-venturia",
+      "slug": "complete-town-6-venturia",
+      "title": "Complete Town 6, Venturia",
+      "author": "Moonstone Sculptors",
+      "category": "setting",
+      "categoryLabel": "Setting",
+      "tags": [
+        "City",
+        "Floating islands",
+        "Political intrigue"
+      ],
+      "shortDescription": "Explore the Skyborne City, a floating metropolis with four districts, four noble-controlled islands, and approximately 3,000 inhabitants.",
+      "description": "High above the clouds, a city of sacred flames, floating islands, and ancient magic lives by one unforgiving law: those who defy its order are cast down to the world below. Complete Town 6: Venturia introduces the Skyborne City, a floating metropolis of approximately 3,000 inhabitants, featuring four distinctive districts, four noble-controlled islands, and a richly developed society. From the sacred Emberheart District to the dragon-guarded Drakeward Bastion, every corner offers opportunities for intrigue and discovery.\n\nExplore fully detailed key buildings, each featuring atmospheric descriptions, inventory and loot tables, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. These interactive establishments bring the city's shops, residences, and institutions to life, while downloadable artwork provides additional visual resources.\n\nA detailed city map featuring numbered buildings and an accompanying Civil Registry Ledger connect residences to their inhabitants, allowing players to explore neighborhoods and discover who lives behind every door. Designed for Game Masters using any fantasy TTRPG ruleset, Venturia provides a living setting for political intrigue, arcane mysteries, divine conflicts, and adventures where a single mistake could mean exile from the heavens.",
+      "coverImage": "/assets/covers/complete-town-6-venturia.webp",
+      "coverAlt": "Venturia cover showing a towering castle on a floating island",
+      "series": {
+        "name": "Complete Town",
+        "number": 6
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 6,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "complete-town-7-wavespire",
+      "slug": "complete-town-7-wavespire",
+      "title": "Complete Town 7: Wavespire",
+      "author": "Moonstone Sculptors",
+      "category": "setting",
+      "categoryLabel": "Setting",
+      "tags": [
+        "City",
+        "Urban exploration",
+        "Political intrigue"
+      ],
+      "shortDescription": "A medieval city with 19 districts and 15 noble houses, built for urban exploration and political intrigue.",
+      "description": "Between towering mountains and the open sea, a sprawling metropolis thrives on trade, ambition, and political rivalry. **Complete Town 7: Wavespire** introduces a richly developed medieval city of **over 20,000 inhabitants**, divided into **19 distinctive districts** and governed through the shifting influence of **15 noble houses**. From the prestigious halls of Regal Reach to the bustling docks and struggling neighborhoods of Lowtown, every district reveals another side of a city shaped by wealth, class, and power.\n\nDiscover **fully detailed key buildings**, each featuring atmospheric descriptions, inventory and loot tables, and memorable NPCs with portraits, backstories, stat blocks, personal quests, rewards, and unique Bargaining DCs. A **detailed city map featuring numbered buildings** and the accompanying **Civil Registry Ledger** connect residences to their inhabitants, allowing players to explore neighborhoods and discover who lives behind every door. Downloadable artwork provides additional resources for bringing Wavespire to life.\n\nDesigned for Game Masters using **any fantasy TTRPG ruleset**, Wavespire offers a living setting for political conspiracies, noble rivalries, criminal intrigue, and urban exploration. Whether serving as a campaign hub or a sprawling city sandbox, Wavespire provides countless opportunities for adventures shaped by its people, districts, and competing ambitions.",
+      "coverImage": "/assets/covers/complete-town-7-wavespire.webp",
+      "coverAlt": "Wavespire cover showing a sprawling coastal city beneath towering clouds",
+      "series": {
+        "name": "Complete Town",
+        "number": 7
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 7,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "complete-town-8-beyond-the-gates",
+      "slug": "complete-town-8-beyond-the-gates",
+      "title": "Complete Town 8: Beyond the Gates",
+      "author": "Moonstone Sculptors",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Worldbuilding",
+        "Exploration",
+        "Encounters"
+      ],
+      "shortDescription": "A two-book toolkit for the roads and wilderness between destinations, with modular encounters, locations, and treasure.",
+      "description": "The greatest adventures don't always happen in cities or dungeons—sometimes they begin along forgotten roads and unexplored wilderness. **Complete Town 8: Beyond the Gates** is a comprehensive **modular worldbuilding toolkit** designed to fill the spaces between major destinations in fantasy campaigns. Rather than presenting a single settlement, this installment provides an extensive collection of ready-to-use encounters, locations, and narrative situations, organized into two complementary books.\n\n**Book I** introduces a library of thematic categories, each containing unique variations with atmospheric descriptions, adaptable mechanics, artwork, and specialized gameplay elements. From abandoned buildings, dangerous wilderness, and traveling caravans to supernatural phenomena, rituals, and unexpected encounters, these resources help Game Masters bring spontaneous exploration to life.\n\n**Book II** expands the toolkit with **specialized treasure chests**, featuring detailed inventories, traps, and unique mechanics, alongside **an extensive collection of fully developed custom buildings** with NPCs, services, artwork, and encounter tables. A **Civil Registry** provides additional characters and household details to connect these locations into a living world. Designed for Game Masters using **any fantasy TTRPG ruleset**, Beyond the Gates transforms ordinary journeys into memorable adventures",
+      "coverImage": "/assets/covers/complete-town-8-beyond-the-gates.webp",
+      "coverAlt": "Beyond the Gates cover showing riders approaching a city in the snowy mountains",
+      "series": {
+        "name": "Complete Town",
+        "number": 8
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 8,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "complete-town-9-village-chronicles",
+      "slug": "complete-town-9-village-chronicles",
+      "title": "Complete Town 9: Village Chronicles",
+      "author": "Moonstone Sculptors",
+      "category": "setting",
+      "categoryLabel": "Setting",
+      "tags": [
+        "Villages",
+        "Settlements",
+        "5e"
+      ],
+      "shortDescription": "30 fully developed fantasy villages with maps, memorable NPCs, and four local quests per village.",
+      "description": "Every village has a story, from the trades that sustain its people to the secrets hidden beneath its traditions. Complete Town 9: Village Chronicles introduces 30 fully developed villages for fantasy roleplaying campaigns, spanning ordinary rural settlements, extraordinary magical communities, and single-ancestry tribal societies. Each village features a unique map, detailed history, economy, culture, government, and local customs, creating living destinations ready to fit into any fantasy world.\n\nEach settlement includes two fully detailed buildings with atmospheric descriptions, read-aloud introductions, events, priced goods and services, and memorable NPCs. Detailed character profiles and four local quests per village provide opportunities for exploration and interaction, while the accompanying artwork brings these communities to life.\n\nBeyond the villages, discover 10 magical heirlooms, a harvest festival with 45 modular scenes, rural encounters, five original creatures, and five escalating natural disasters. A Civil Registry further connects inhabitants and households. Built on 5e mechanics and adaptable to other fantasy TTRPG rulesets, Village Chronicles offers Game Masters a versatile toolkit for turning ordinary settlements into unforgettable adventures.",
+      "coverImage": "/assets/covers/complete-town-9-village-chronicles.webp",
+      "coverAlt": "Village Chronicles cover showing a red-roofed village nestled between cliffs",
+      "series": {
+        "name": "Complete Town",
+        "number": 9
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 9,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "roll-for-outfit-1",
+      "slug": "roll-for-outfit-1",
+      "title": "Roll for Outfit 1, Adventuring Clothes",
+      "author": "Vault of Many Things",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Magical clothing",
+        "Equipment"
+      ],
+      "shortDescription": "221 magical garments and the Ritual of Style, a system for making appearance matter in play.",
+      "description": "An adventurer's clothes can open doors—or close them before a word is spoken. **Roll for Outfit 1** introduces **221 magical non-armor garments** across six wardrobe categories: Upper Body, Lower Body, Footwear, Hands and Arms, Head and Neck, and Accessories. Each garment features its own magical properties, rarity, value, materials, sizing, and lore.\n\nBeyond the enchanted wardrobe, the book introduces the **Ritual of Style**, a system that makes appearance matter in gameplay. It includes five cleanliness levels, four production quality tiers, eight garment sizes, and rules for environmental wear, maintenance, and repairs. Clothing condition and craftsmanship can influence Charisma checks, social interactions, and market value.\n\nDesigned for adventurers and Game Masters, these garments offer new possibilities for exploration, travel, stealth, disguise, and social encounters. Introduce them as magical treasures, merchant wares, or noble gifts, and give players new reasons to consider what their characters wear",
+      "coverImage": "/assets/covers/roll-for-outfit-1.webp",
+      "coverAlt": "Roll for Outfit 1, Adventuring Clothes cover featuring an embroidered traveler",
+      "series": {
+        "name": "Roll for Outfit",
         "number": 1
       },
       "status": "published",
