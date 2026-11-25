@@ -561,6 +561,494 @@
       "sortOrder": 23,
       "storeUrl": null,
       "price": null
+    },
+    {
+      "id": "mystic-grounds",
+      "slug": "mystic-grounds",
+      "title": "Mystic Grounds: 50+ D&D Magical Locations",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Magical locations",
+        "Exploration",
+        "NPCs and monsters"
+      ],
+      "shortDescription": "50 magical fantasy locations with detailed lore, magical items, themed loot tables, NPCs, and monsters with ready-to-use stat blocks.",
+      "description": "Every memorable adventure begins somewhere worth exploring. **Mystic Grounds: 50 Magical Locations** introduces **50 fully developed fantasy locations** designed to bring mystery, magic, and adventure into your campaigns. From forgotten ruins to enchanted landscapes, each location has its own history, atmosphere, and unique magical nature that shapes the dangers and opportunities within.\n\nEach location includes an evocative description, detailed history, distinctive magical characteristics, magical items, and a **themed loot table**. Every location also features detailed NPCs and thematic monsters with **ready-to-use stat blocks**, providing encounters and rewards connected to their surroundings.\n\nDesigned for Game Masters, these locations can serve as standalone destinations, the centerpiece of individual sessions, or interconnected settings for larger campaigns. Adapt their histories, inhabitants, and challenges to your world and party, turning unexpected detours into memorable adventures.",
+      "coverImage": null,
+      "coverAlt": "Mystic Grounds cover showing an enchanted forest and stream glowing with purple magical lights",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 24,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "witchs-soulstice",
+      "slug": "witchs-soulstice",
+      "title": "Witch's Soulstice: 100+ D&D Witches & Witch Hunters",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Witchcraft",
+        "NPCs",
+        "Magical dwellings"
+      ],
+      "shortDescription": "100 unique witches across 10 traditions with stat blocks, personal spells, secrets, relationships, and detailed magical dwellings.",
+      "description": "Not every witch is an enemy, and not every sanctuary is safe. **Witch’s Soulstice** introduces **100 unique witches across 10 traditions of witchcraft** for Dungeons & Dragons campaigns. From nature-bound green witches and secret-seeking occultists to dangerous blood witches and cunning urban practitioners, each character has their own history, personality, and approach to magic.\n\nEach witch includes a **ready-to-use stat block**, a unique personal spell, daily or weekly routines, secrets, possessions, and relationships with allies and enemies. Their homes, ranging from secluded huts to mysterious towers and hidden chambers, are described in detail, often featuring magical defenses, traps, and unusual features.\n\nDesigned for Game Masters, these witches can serve as allies, healers, quest-givers, rivals, or dangerous adversaries. Introduce them individually into existing adventures or use their personalities, secrets, and magical dwellings to create encounters involving investigation, negotiation, and exploration.",
+      "coverImage": null,
+      "coverAlt": "Witch's Soulstice cover resembling a brown leather-bound grimoire with ornate gold lettering and decorative borders",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 25,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "arcane-bookshelf",
+      "slug": "arcane-bookshelf",
+      "title": "Arcane Bookshelf: 100 In-game Books for TTRPG",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "In-game books",
+        "Lore",
+        "Magical artifacts"
+      ],
+      "shortDescription": "100 in-game books across four categories, each with an origin, rarity, hidden secret, physical description, and a read-aloud excerpt.",
+      "description": "Some books contain knowledge. Others contain secrets best left undiscovered. **Arcane Bookshelf** compiles **100 unique in-game books** across four categories: **Literature, Educational, History, and Religion & Cults.** From cursed ballads and forgotten chronicles to forbidden rituals and mysterious scholarly works, each book offers a new way to bring knowledge, magic, and intrigue into your campaign.\n\nEvery entry includes its **origin, rarity, hidden secret, physical appearance, and an evocative excerpt** that can be read aloud to players. These books range from ordinary-looking texts with hidden significance to extraordinary artifacts carrying dangerous secrets, unusual enchantments, or forgotten knowledge.\n\nDesigned for Game Masters, the collection provides versatile discoveries for libraries, ancient ruins, temples, treasure hoards, and private collections. Use these books as narrative clues, sources of lore, rewards, or the starting points for investigations and adventures, making written knowledge an interactive part of your world.",
+      "coverImage": null,
+      "coverAlt": "Arcane Bookshelf cover showing a swirling magical vortex of ancient books beneath a stormy sky",
+      "series": {
+        "name": "Arcane Bookshelf"
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 26,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "arcane-bookshelf-forgotten-studies",
+      "slug": "arcane-bookshelf-forgotten-studies",
+      "title": "Arcane Bookshelf, Forgotten Studies: 312 In-game Educational Books for TTRPG",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Educational texts",
+        "In-game books",
+        "Lore"
+      ],
+      "shortDescription": "312 in-game educational texts across eight categories, with physical descriptions, origins, rarities, hidden secrets, and read-aloud excerpts.",
+      "description": "Knowledge can be as dangerous as any spell. **Forgotten Studies**, part of the **Arcane Bookshelf** series, introduces **312 unique in-game educational texts** for fantasy roleplaying campaigns. From lost maps and encrypted manuscripts to medical treatises and practical magical manuals, these books turn scholarship into opportunities for discovery, investigation, and adventure.\n\nThe collection spans **8 categories: Cartographies, Cryptics, Dissertations, Games, Linguistics, Manuals, Medicines, and Tracts**. Each entry includes a **physical description, origin, rarity, hidden secret, and an evocative read-aloud excerpt**, bringing forgotten knowledge to life as something players can discover and interact with.\n\nDesigned for Game Masters, these texts can appear in ancient libraries, ruined academies, treasure hoards, and private collections. Use them to introduce puzzles, reveal hidden lore, develop scholarly factions, reward curiosity, or create adventures centered around dangerous and forgotten knowledge.",
+      "coverImage": null,
+      "coverAlt": "Forgotten Studies cover resembling a red leather-bound book with gilded borders and a quill in an inkwell",
+      "series": {
+        "name": "Arcane Bookshelf"
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 27,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "arcane-bookshelf-twisted-devotion",
+      "slug": "arcane-bookshelf-twisted-devotion",
+      "title": "Arcane Bookshelf, Twisted Devotion: 315 In-game Religious & Cultic Books for TTRPG",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Religious texts",
+        "Cults",
+        "In-game books"
+      ],
+      "shortDescription": "315 in-game religious and cultic texts across four categories, with origins, rarities, physical descriptions, hidden secrets, and read-aloud excerpts.",
+      "description": "Faith can protect, corrupt, or demand a terrible price. **Twisted Devotion**, part of the **Arcane Bookshelf** series, introduces **315 unique in-game religious and cultic texts** for fantasy roleplaying campaigns. From forbidden demonic writings and whispered prayers to dangerous rituals and divine invocations, these books bring belief, temptation, and supernatural mystery into your world.\n\nThe collection spans **4 categories: Demonic, Prayers, Rituals, and Magic**. Each entry includes its **origin, rarity, physical appearance, hidden secret, and an evocative read-aloud excerpt**, bringing sacred and forbidden knowledge to life through writings that may conceal dangerous secrets, supernatural bargains, or forgotten rites.\n\nDesigned for Game Masters, these texts can appear in ancient temples, hidden shrines, cult libraries, and ruined monasteries. Use them to introduce religious mysteries, develop cults and factions, uncover forbidden knowledge, or create adventures centered around faith, corruption, and the consequences of devotion.",
+      "coverImage": null,
+      "coverAlt": "Twisted Devotion cover resembling a red leather-bound grimoire with ornate golden borders and an engraved arcane pentagram",
+      "series": {
+        "name": "Arcane Bookshelf"
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 28,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "arcane-bookshelf-broken-ballads",
+      "slug": "arcane-bookshelf-broken-ballads",
+      "title": "Arcane Bookshelf, Broken Ballads: 217 In-game Literary Books for TTRPG",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Literature",
+        "In-game books",
+        "Personal mysteries"
+      ],
+      "shortDescription": "217 in-game literary works across four categories, with author backstories, hidden secrets, rarities, descriptions, and read-aloud excerpts.",
+      "description": "Not every story is meant to survive its author. **Broken Ballads**, part of the **Arcane Bookshelf** series, introduces **217 unique pieces of in-game literature** for fantasy roleplaying campaigns. Spanning themes of love, loss, desire, and forgotten secrets, these writings bring personal histories and emotional depth into your world.\n\nThe collection covers **4 categories: Erotics, Love Letters, Poems, and Tales**. Each entry includes an **author backstory, hidden secret, rarity, brief description, and evocative read-aloud excerpt**. From intimate correspondence and mysterious poetry to forgotten tales and cursed manuscripts, every piece offers opportunities for discovery and storytelling.\n\nDesigned for Game Masters, these works can appear in abandoned libraries, ancient tombs, private collections, and forgotten homes. Use them to uncover hidden relationships, introduce personal mysteries, reveal long-buried secrets, or create adventures shaped by the lives and emotions of their authors.",
+      "coverImage": null,
+      "coverAlt": "Broken Ballads cover resembling a red leather-bound book with ornate gold borders and an engraved open book and sword",
+      "series": {
+        "name": "Arcane Bookshelf"
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 29,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "arcane-bookshelf-shattered-histories",
+      "slug": "arcane-bookshelf-shattered-histories",
+      "title": "Arcane Bookshelf, Shattered Histories: 220 In-game Historical Books for TTRPG",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Historical texts",
+        "In-game books",
+        "World lore"
+      ],
+      "shortDescription": "220 in-game historical texts across five categories, with author backstories, hidden secrets, rarities, provenance, and read-aloud excerpts.",
+      "description": "History is rarely as truthful as those who record it. **Shattered Histories**, part of the **Arcane Bookshelf** series, introduces **220 unique in-game historical texts** for fantasy roleplaying campaigns. From forgotten biographies and personal diaries to accounts of great events and lost expeditions, these writings reveal the secrets, conflicts, and forgotten truths of the past.\n\nThe collection spans **5 categories: Biographies, Diaries, Great Events, Incidents, and Logbooks**. Each entry includes an **author backstory, hidden secret, rarity, origin and provenance, and an evocative read-aloud excerpt**. These details transform historical records into discoveries that can challenge established beliefs, expose buried scandals, or reveal long-lost knowledge.\n\nDesigned for Game Masters, these texts can appear in ancient archives, ruined monasteries, shipwrecks, and private collections. Use them to uncover historical mysteries, develop world lore, introduce political intrigue, or create adventures where forgotten events shape the present.",
+      "coverImage": null,
+      "coverAlt": "Shattered Histories cover resembling a red leather-bound book with ornate gilded borders and two engraved historical figures",
+      "series": {
+        "name": "Arcane Bookshelf"
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 30,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "xtreme-loot-table",
+      "slug": "xtreme-loot-table",
+      "title": "Xtreme Loot Table: 100 Loot Tables for 100 D&D Monsters",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Loot tables",
+        "Monsters",
+        "Magic items"
+      ],
+      "shortDescription": "100 creature-specific loot tables for 5e and OGL-compatible games, with rules for cursed rewards and magical items organized by challenge rating.",
+      "description": "Every fallen foe should leave something more memorable than a handful of coins. **Xtreme Loot Tables** introduces **100 creature-specific loot tables** for 5e and OGL-compatible games, offering rewards that reflect the nature, equipment, and lore of the monsters, beasts, and NPCs they come from.\n\nThe system uses a **d20 and d4 combination** to determine loot, followed by a separate GM roll that decides whether an item is normal, cursed, or cursed with a benefit. Rewards range from equipment and unusual trinkets to monster parts, alchemical components, and magical treasures. A natural 20 also unlocks **three magical item tables** organized by creature challenge rating (CR 0–4, 5–12, and 13–30).\n\nDesigned for Game Masters, these tables make looting more varied and meaningful while supporting crafting, exploration, and storytelling. Use them after encounters, customize their effects, or adapt the system to homebrew creatures and your campaign's economy.",
+      "coverImage": null,
+      "coverAlt": "Xtreme Loot Tables cover showing an armored figure, an oversized shield, and piles of gemstones, weapons, and skulls",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 31,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "gods-and-avatars-norse-gods",
+      "slug": "gods-and-avatars-norse-gods",
+      "title": "Gods & Avatars: Norse Gods",
+      "author": "Vampire Rabbit",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Norse mythology",
+        "Deities",
+        "Character options"
+      ],
+      "shortDescription": "22 Norse deities with divine stat blocks, cleric domains, paladin oaths, detailed temples, priesthoods, and religious traditions.",
+      "description": "The gods of the Nine Realms are ready to shape the fate of your world. **Gods & Avatars: Norse Gods** introduces **22 deities from Norse mythology**, from Odin, the All-Father, to Thor and Loki. Each deity is explored through its mythology, divine domain, behavior, relationships, and devoted followers.\n\nThe collection features **powerful divine stat blocks, unique cleric domains, and paladin oaths**, alongside detailed descriptions of sacred temples, priesthoods, and religious practices. These entries combine divine abilities and character options with lore, temple features, sacred rituals, and the traditions of each faith.\n\nDesigned for Game Masters and players, the book offers resources for building Norse-inspired pantheons, creating divine characters, and introducing powerful celestial allies or adversaries. Use its deities, temples, and religious orders to develop adventures involving ancient prophecies, divine conflicts, and the fate of the Nine Realms.",
+      "coverImage": null,
+      "coverAlt": "Norse Gods cover showing Thor wielding a hammer amid lightning above a Viking longship",
+      "series": {
+        "name": "Gods & Avatars"
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 32,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-betrayal-and-deceit",
+      "slug": "1001-nights-betrayal-and-deceit",
+      "title": "1001 Nights: D&D Betrayal & Deceit One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Political intrigue",
+        "Betrayal"
+      ],
+      "shortDescription": "44 one-shot adventures about deception and shifting loyalties, each with an adventure hook, five-step narrative, and three possible endings.",
+      "description": "Trust is fragile, and the truth is rarely what it seems. **1001 Nights: Volume 1 – Betrayal & Deceit** introduces **44 one-shot adventures** centered on secrets, espionage, hidden identities, broken alliances, and shifting loyalties. As the first installment in a collection spanning 21 thematic categories, this volume explores the dangers and consequences of deception.\n\nEach one-shot includes **an overview, an adventure hook, a five-step narrative progression, and three distinct endings** with their own consequences and rewards. Detailed descriptions of important NPCs and locations provide additional resources for bringing each scenario to life, while unexpected twists and difficult choices keep players engaged.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played as standalone sessions or incorporated into ongoing campaigns. Use them to introduce political intrigue, uncover hidden motives, test loyalties, and create memorable stories where every decision can change who deserves to be trusted.",
+      "coverImage": null,
+      "coverAlt": "Betrayal & Deceit cover showing a fallen crowned king before an empty throne",
+      "series": {
+        "name": "1001 Nights",
+        "number": 1
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 33,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-city-intrigue",
+      "slug": "1001-nights-city-intrigue",
+      "title": "1001 Nights: D&D City Intrigue One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Urban adventures",
+        "Political intrigue"
+      ],
+      "shortDescription": "44 one-shot adventures about urban politics, guild rivalries, corruption, and competing noble houses, each with three distinct endings.",
+      "description": "Behind every city's bustling streets lies a web of secrets, ambitions, and dangerous alliances. **1001 Nights: Volume 2 – City Intrigue** presents **44 one-shot adventures** centered on urban politics, criminal underworlds, corrupt officials, guild rivalries, and competing noble houses. Part of a larger collection spanning 21 thematic categories, this volume explores the hidden struggles for power within civilization.\n\nEach one-shot features **an overview, an adventure hook, five narrative steps, and three distinct endings** with their own consequences and rewards. Detailed NPCs and urban locations provide the characters and settings needed to bring conspiracies, investigations, and unexpected betrayals to life.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played as standalone sessions or incorporated into ongoing campaigns. Navigate dangerous negotiations, uncover hidden agendas, and draw your players into a world where influence, deception, and clever decisions can prove more powerful than steel.",
+      "coverImage": null,
+      "coverAlt": "City Intrigue cover showing a cloaked figure walking through a shadowy medieval city street illuminated by lanterns",
+      "series": {
+        "name": "1001 Nights",
+        "number": 2
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 34,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-corruption-and-power",
+      "slug": "1001-nights-corruption-and-power",
+      "title": "1001 Nights: D&D Corruption & Power One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Political intrigue",
+        "Moral dilemmas"
+      ],
+      "shortDescription": "45 one-shot adventures exploring ambition, corruption, forbidden magic, and difficult moral choices, each with three possible endings.",
+      "description": "Power promises everything, but rarely comes without a price. **1001 Nights: Volume 3 – Corruption & Power** features **45 one-shot adventures** exploring ambition, political manipulation, forbidden magic, and the consequences of unchecked influence. Part of a larger collection spanning 21 thematic categories, this volume challenges players to confront corruption, divided loyalties, and the temptation to sacrifice their principles for greater power.\n\nEvery one-shot includes **an overview, an adventure hook, a five-step narrative progression, and three distinct endings** with their own consequences and rewards. Detailed locations and key NPCs provide the foundations for stories involving dangerous alliances, hidden agendas, and difficult moral choices.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played independently or woven into existing campaigns. Explore the cost of ambition, challenge powerful figures, and discover what happens when those fighting corruption risk becoming corrupted themselves.",
+      "coverImage": null,
+      "coverAlt": "Corruption & Power cover showing a crowned skeletal ruler wearing a red cloak and holding a skull-topped staff in a misty street",
+      "series": {
+        "name": "1001 Nights",
+        "number": 3
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 35,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-courtly-conspiracies",
+      "slug": "1001-nights-courtly-conspiracies",
+      "title": "1001 Nights: D&D Courtly Conspiracies One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Courtly intrigue",
+        "Diplomacy"
+      ],
+      "shortDescription": "44 one-shot adventures about royal rivalries, diplomatic deception, romantic scandals, and dynastic intrigue, each with three possible endings.",
+      "description": "Behind the elegance of royal courts, ambition and betrayal are never far apart. **1001 Nights: Volume 4 – Courtly Conspiracies** presents **44 one-shot adventures** exploring noble rivalries, diplomatic deception, romantic scandals, and dynastic intrigue. Part of a larger collection spanning 21 thematic categories, this volume draws players into the dangerous politics of kings, queens, and influential courtiers.\n\nEach one-shot features **an overview, an adventure hook, a five-step narrative progression, and three distinct endings** with their own consequences and rewards. Detailed locations and key NPCs provide the foundations for stories involving secret alliances, delicate negotiations, and political schemes where appearances can be deceiving.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played as standalone sessions or incorporated into ongoing campaigns. Place your players in the roles of diplomats, spies, or reluctant participants in royal conspiracies, where a single decision could alter the balance of power.",
+      "coverImage": null,
+      "coverAlt": "Courtly Conspiracies cover showing nobles and courtiers gathered before a royal throne in a grand stone hall",
+      "series": {
+        "name": "1001 Nights",
+        "number": 4
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 36,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-mushrooms-land",
+      "slug": "1001-nights-mushrooms-land",
+      "title": "1001 Nights: D&D Mushrooms Land One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Sentient fungi",
+        "Surreal exploration"
+      ],
+      "shortDescription": "44 one-shot adventures exploring sentient fungi, surreal landscapes, psychic illusions, and altered perceptions, each with three possible endings.",
+      "description": "Reality is fragile in a world where spores can reshape the mind. **1001 Nights: Volume 10 – Mushrooms Land** presents **44 one-shot adventures** exploring sentient fungi, psychic hallucinations, bioluminescent landscapes, and altered states of consciousness. Part of a larger collection spanning 21 thematic categories, this volume immerses players in surreal environments where perception and truth are rarely the same.\n\nEach one-shot features **an overview, an adventure hook, five narrative steps, and three distinct endings** with their own consequences and rewards. Detailed locations and key NPCs provide the foundations for stories involving shifting landscapes, strange illusions, psychic echoes, and mysterious connections between living organisms and the mind.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played independently or incorporated into ongoing campaigns. Explore dreamlike realms, confront unsettling mysteries, and challenge your players to distinguish reality from the hallucinations surrounding them.",
+      "coverImage": null,
+      "coverAlt": "Mushrooms Land cover showing an armored knight in a red cloak surrounded by oversized mushrooms and lush foliage",
+      "series": {
+        "name": "1001 Nights",
+        "number": 10
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 37,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-nocturnal-tale",
+      "slug": "1001-nights-nocturnal-tale",
+      "title": "1001 Nights: D&D Nocturnal Tale One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Supernatural mysteries",
+        "Nighttime encounters"
+      ],
+      "shortDescription": "44 one-shot adventures exploring haunted streets, moonlit rituals, supernatural mysteries, and eerie nighttime encounters, each with three possible endings.",
+      "description": "When darkness falls, the world reveals secrets hidden beneath the daylight. **1001 Nights: Volume 12 – Nocturnal Tale** presents **44 one-shot adventures** exploring haunted streets, moonlit rituals, whispered conspiracies, and mysteries that awaken after dusk. Part of a larger collection spanning 21 thematic categories, this volume blends supernatural suspense, hidden desires, and the unsettling beauty of the night.\n\nEach one-shot features **an overview, an adventure hook, five narrative steps, and three distinct endings** with their own consequences and rewards. Detailed locations and key NPCs provide the foundations for stories involving ancient curses, fog-covered alleyways, eerie investigations, and surreal encounters in twilight realms.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played as standalone sessions or incorporated into ongoing campaigns. Uncover secrets concealed by darkness, navigate mysterious nighttime encounters, and explore stories where wonder and danger emerge beneath the moonlight.",
+      "coverImage": null,
+      "coverAlt": "Nocturnal Tale cover showing a werewolf beneath a full moon in a misty forest",
+      "series": {
+        "name": "1001 Nights",
+        "number": 12
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 38,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-power-of-friendship",
+      "slug": "1001-nights-power-of-friendship",
+      "title": "1001 Nights: D&D Power of Friendship One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Friendship",
+        "Unlikely alliances"
+      ],
+      "shortDescription": "44 one-shot adventures about friendship, loyalty, reconciliation, and cooperation against overwhelming odds, each with three possible endings.",
+      "description": "Some challenges cannot be overcome alone. **1001 Nights: Volume 13 – Power of Friendship** presents **44 one-shot adventures** exploring camaraderie, loyalty, trust, and the bonds that unite unlikely allies. Part of a larger collection spanning 21 thematic categories, this volume celebrates the power of cooperation, shared sacrifice, and friendships forged through adversity.\n\nEach one-shot includes **an overview, an adventure hook, five narrative steps, and three distinct endings** with their own consequences and rewards. Detailed locations and key NPCs provide the foundations for stories involving unlikely alliances, reconciliation, overcoming differences, and standing together against overwhelming odds.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played independently or incorporated into ongoing campaigns. Strengthen the bonds between characters, explore the challenges of trust and loyalty, and create memorable stories where friendship can prove more powerful than any weapon or spell.",
+      "coverImage": null,
+      "coverAlt": "Power of Friendship cover showing two armored companions standing together with swords in a burning medieval village",
+      "series": {
+        "name": "1001 Nights",
+        "number": 13
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 39,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-rebellion-and-revolution",
+      "slug": "1001-nights-rebellion-and-revolution",
+      "title": "1001 Nights: D&D Rebellion & Revolution One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Political intrigue",
+        "Revolution"
+      ],
+      "shortDescription": "44 one-shot fantasy adventures about uprisings, divided loyalties, political conflict, and the consequences of revolutionary change.",
+      "description": "Every revolution begins with a spark, but no one knows what will rise from the ashes. **1001 Nights: Volume 14 – Rebellion & Revolution** presents **44 one-shot adventures** centered on uprisings, resistance movements, political coups, and struggles against established powers. Part of a larger collection spanning 21 thematic categories, this volume explores the hope, conflict, and sacrifice that accompany revolutionary change.\n\nEach one-shot includes **an overview, an adventure hook, five narrative steps, and three distinct endings** with their own consequences and rewards. Detailed locations and key NPCs provide the foundations for stories involving secret rebellions, ideological conflicts, shifting loyalties, and difficult choices with far-reaching consequences.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played independently or incorporated into ongoing campaigns. Lead underground resistance movements, challenge powerful regimes, or navigate the chaos of revolution as your players help determine what rises in place of the old order.",
+      "coverImage": null,
+      "coverAlt": "Rebellion & Revolution cover showing an armored figure raising a blue banner amid a crowd of medieval rebels",
+      "series": {
+        "name": "1001 Nights",
+        "number": 14
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 40,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "1001-nights-romance-and-love-story",
+      "slug": "1001-nights-romance-and-love-story",
+      "title": "1001 Nights: D&D Romance & Love Story One-shots",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "One-shots",
+        "Romance",
+        "Relationships"
+      ],
+      "shortDescription": "44 one-shot adventures exploring romance, unexpected connections, separation, reconciliation, and difficult choices, each with three possible endings.",
+      "description": "Love can inspire extraordinary courage, but it can also lead to heartbreak and impossible choices. **1001 Nights: Volume 17 – Romance & Love Story** presents **44 one-shot adventures** exploring forbidden romances, unexpected connections, separation, and reconciliation. Part of a larger collection spanning 21 thematic categories, this volume places relationships and the complexities of love at the heart of every story.\n\nEach one-shot includes **an overview, an adventure hook, five narrative steps, and three distinct endings** with their own consequences and rewards. Detailed locations and key NPCs provide the foundations for emotionally driven stories involving romantic intrigue, difficult relationships, heartfelt reunions, and the challenges of following one's heart.\n\nDesigned for Game Masters using **any TTRPG ruleset**, these adventures can be played independently or incorporated into ongoing campaigns. Explore the joys and hardships of romance, introduce meaningful relationships, and create memorable stories where love, loyalty, and personal choices shape the outcome.",
+      "coverImage": null,
+      "coverAlt": "Romance & Love Story cover showing an armored knight embracing a red-haired woman in a blue dress",
+      "series": {
+        "name": "1001 Nights",
+        "number": 17
+      },
+      "status": "published",
+      "featured": true,
+      "sortOrder": 41,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "eldritch-whispers",
+      "slug": "eldritch-whispers",
+      "title": "The Eldritch Whispers: D&D Spell, Curse & Potion",
+      "category": "resource",
+      "categoryLabel": "Game master resource",
+      "tags": [
+        "Witchcraft",
+        "Spells and curses",
+        "Magical potions"
+      ],
+      "shortDescription": "A 5e witchcraft grimoire with 150 spells, 110 curses, 40 blessings, magical potions, ritual lore, and an ingredient index.",
+      "description": "Magic always demands something in return. **Eldritch Whispers** is a witchcraft grimoire for 5e featuring **150 spells, 110 curses, 40 blessings**, and a collection of potions, all designed to bring ritual, risk, and consequence into your campaigns.\n\nEach magical working combines **gameplay mechanics with detailed lore and ritual instructions**. Curses feature unique removal methods and additional effects when applied to objects, while potions include ingredients, brewing instructions, prices, and side effects. A comprehensive ingredient index provides a practical reference for managing magical components.\n\nDesigned for Game Masters and players, the book also includes **narrative events, bewitched locations, and magical items** to help incorporate witchcraft into existing adventures. An accessible audiobook edition and downloadable art pack provide additional resources for exploring and presenting the material at your table.",
+      "coverImage": null,
+      "coverAlt": "Eldritch Whispers cover resembling a dark leather-bound grimoire with gilt borders, candles, and a skull-adorned potion bottle",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 42,
+      "storeUrl": null,
+      "price": null
+    },
+    {
+      "id": "15-ways-to-die-underground",
+      "slug": "15-ways-to-die-underground",
+      "title": "15 Ways to Die Underground",
+      "category": "adventure",
+      "categoryLabel": "Adventure",
+      "tags": [
+        "Dungeon exploration",
+        "Low-level adventures",
+        "Puzzles and traps"
+      ],
+      "shortDescription": "15 dungeons with quests, maps, traps, puzzles, treasures, and adjustable encounters across an abandoned dwarven fortress.",
+      "description": "Deep beneath an abandoned dwarven stronghold lies a secret that has survived for centuries. **15 Ways to Die Underground** presents **a collection of 15 dungeons with quests and maps** for low-level adventurers, inviting players to explore a forgotten fortress built to imprison a mysterious captive.\n\nThe adventure is structured around **four chapters**: **The Culinary Depths**, a royal kitchen complex; **Sentinel's Rest**, a mysterious cemetery; **The Forgotten Chateau**, an abandoned estate; and **The Bizarre Tower**, a three-floor challenge featuring a deadly mimic room, a maze, and a treacherous ice pit. Throughout these environments, players encounter varied enemies, hidden treasures, traps, and legendary items, with enemy stat blocks provided for each chapter.\n\nDesigned for Game Masters, the collection combines **exploration, combat, puzzles, and environmental challenges**, with adjustable enemy encounters to accommodate different party sizes and levels. Uncover the stronghold's forgotten history and the secrets buried beneath its walls.",
+      "coverImage": null,
+      "coverAlt": "Into the Dwarf Fortress cover showing an abandoned throne room with stone columns, a glowing chandelier, and falling snow",
+      "series": null,
+      "status": "published",
+      "featured": true,
+      "sortOrder": 43,
+      "storeUrl": null,
+      "price": null
     }
   ]
 }
